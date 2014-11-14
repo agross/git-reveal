@@ -170,8 +170,8 @@ index 0000000..4b5fa63
           <br>
           <p>Your options:</p>
           <ul>
-            <li><code>git merge</code></li>
-            <li><code>git rebase</code></li>
+            <li><code><a href="#/merge">git merge</a> (<a href="#/merge-ff">2 variants</a>)</code></li>
+            <li><code><a href="#/rebase">git rebase</a></code></li>
           </ul>
         </section>
 
@@ -180,7 +180,7 @@ index 0000000..4b5fa63
           <img src="images/integration/diverged-history.png">
         </section>
 
-        <section>
+        <section id="merge">
           <h2><code>git merge</code></h2>
           <pre>$ git checkout <span style="color: #F44D27">master</span>
 $ git merge experiment</pre>
@@ -189,7 +189,7 @@ $ git merge experiment</pre>
           <small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
         </section>
 
-        <section>
+        <section id="rebase">
           <h2><code>git rebase</code></h2>
           <pre>$ git checkout <span style="color: #F44D27">experiment</span>
 $ git rebase master</pre>
@@ -203,7 +203,7 @@ $ git rebase master</pre>
           <img src="images/integration/linear-history.png">
         </section>
 
-        <section>
+        <section id="merge-ff">
           <h2>A special <code>git merge</code> case</h2>
           <pre>$ git checkout <span style="color: #F44D27">master</span>
 $ git rebase experiment</pre>
