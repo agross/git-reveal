@@ -189,13 +189,20 @@ $ git merge experiment</pre>
           <small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
         </section>
 
+        <section>
+          <h2>Undoing the merge</h2>
+          <pre>$ git reset --hard C3</pre>
+
+          <img src="images/integration/diverged-history.png">
+        </section>
+
         <section id="rebase">
           <h2><code>git rebase</code></h2>
           <pre>$ git checkout <span style="color: #F44D27">experiment</span>
 $ git rebase master</pre>
           <img src="images/integration/diverged-history-rebase.png">
 
-          <small>Commit C4 is applied on top of master.</small>
+          <small>Commit C4 is applied on top of master as C4'.</small>
         </section>
 
         <section>
@@ -228,7 +235,7 @@ $ git rebase experiment</pre>
           <ul>
             <li>
               <code>git merge --squash topic</code><br>
-              <small>Apply commits from topic branch squashed into a single commit on top of HEAD.</small>
+              <small>Apply commits from the topic branch squashed into a single commit on top of HEAD.</small>
             </li>
             <li>
               <code>git cherry-pick &lt;SHA&gt;</code><br>
@@ -236,11 +243,11 @@ $ git rebase experiment</pre>
             </li>
             <li>
               <code>git merge feature/login bugfix/42 experiment/foo</code><br>
-              <small>Merge n branches with a single merge commit.</small>
+              <small>Integrate any number of non-conflicting branches with a single merge commit.</small>
             </li>
             <li>
               <code>git merge --strategy=ours obsolete</code><br>
-              <small>Ignores all changes from the obsolete branch.</small>
+              <small>Integrate history, but ignore (undo) all changes introduced by the obsolete branch.</small>
             </li>
           </ul>
         </section>
