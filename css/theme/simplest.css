@@ -137,7 +137,7 @@ body {
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
- .reveal pre {
+.reveal pre {
   font-size: 1em;
   width: auto;
   padding: 15px;
