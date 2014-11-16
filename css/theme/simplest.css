@@ -146,3 +146,9 @@ body {
   background-color: #3F3F3F;
   color: white;
 }
+
+.reveal blockquote {
+  margin-top: 3em;
+  text-align: left;
+  width: 80%;
+}
