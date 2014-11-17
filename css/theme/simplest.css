@@ -152,3 +152,7 @@ body {
   text-align: left;
   width: 80%;
 }
+
+.reveal h2 {
+  margin-bottom: .5em;
+}
