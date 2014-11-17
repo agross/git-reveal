@@ -144,7 +144,7 @@ index 0000000..4b5fa63
         </section>
 
         <section>
-          <h2>Creating another branch</h2>
+          <h2>Creating a branch</h2>
           <pre>$ git branch testing &lt;where&gt;</pre>
           <small>(<code>&lt;where&gt;</code> defaults to HEAD)</small>
           <img src="images/branching/3-create-branch.png">
@@ -158,8 +158,12 @@ index 0000000..4b5fa63
 
         <section>
           <h2>A Shortcut</h2>
-          <pre>$ git checkout -b &lt;name&gt; &lt;where&gt</pre>
-          <small>(it stands for <code>git branch</code> and <code>git checkout</code>)</small>
+          <pre>$ git checkout -b &lt;name&gt; &lt;where&gt
+
+==
+
+$ git branch &lt;name&gt; &lt;where&gt && git checkout &lt;name&gt;
+</pre>
         </section>
 
         <section>
