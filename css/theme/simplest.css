@@ -156,3 +156,7 @@ body {
 .reveal h2 {
   margin-bottom: .5em;
 }
+
+.reveal small {
+  font-size: .9em;
+}
