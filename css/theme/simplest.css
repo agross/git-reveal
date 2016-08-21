@@ -83,6 +83,10 @@ body {
   border-color: darkblue;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
+.reveal div.twitter-video {
+  margin: 10px auto !important;
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
