@@ -257,6 +257,16 @@ $ git merge experiment</pre>
           <p>Enforces a <strong>recursive merge</strong>, even if a fast-forward merge would be possible.</p>
         </section>
 
+        <section>
+          <h2>Controlling <code>git merge</code> <a href="https://git-scm.com/docs/git-merge#_merge_strategies" target="_blank">recursive strategy</a></h2>
+
+          <pre style="margin-top: 2em">$ git merge --strategy-option ours</pre>
+          <p>Prefer <strong>our changes</strong> when encountering conflicts.</p>
+
+          <pre style="margin-top: 2em">$ git merge -X theirs</pre>
+          <p>Prefer <strong>their changes</strong> when encountering conflicts.</p>
+        </section>
+
         <section id="rebase">
           <h2><code>git rebase</code></h2>
           <pre>$ git checkout <span style="color: #F44D27">experiment</span>
