@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url("simplest-cross-fade.css");
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is #003478.
@@ -163,45 +164,4 @@ body {
 
 .reveal small {
   font-size: .9em;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.reveal .cross-fade  {
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
-
-.reveal .cross-fade img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-
-  animation-name: fade;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
-}
-
-.reveal .cross-fade img:nth-of-type(2) {
-  opacity: 0;
-  animation-direction: alternate-reverse;
 }
