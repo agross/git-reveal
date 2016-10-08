@@ -205,6 +205,15 @@ $ git branch &lt;name&gt; &lt;where&gt && git checkout &lt;name&gt;
         </section>
 
         <section>
+          <blockquote class="twitter-video" data-lang="en">
+            <p lang="en" dir="ltr">
+              Visualizing a &quot;Git Merge&quot; <a href="https://t.co/RQJ2AV7JRQ">pic.twitter.com/RQJ2AV7JRQ</a>
+            </p>
+            &mdash; David Rousset (@davrous) <a href="https://twitter.com/davrous/status/767013225426620417">August 20, 2016</a>
+          </blockquote>
+        </section>
+
+        <section>
           <h2>Diverged History</h2>
           <img src="images/integration/diverged-history.png">
         </section>
@@ -216,15 +225,6 @@ $ git merge experiment</pre>
           <img src="images/integration/diverged-history-merge.png">
 
           <small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
-        </section>
-
-        <section>
-          <blockquote class="twitter-video" data-lang="en">
-            <p lang="en" dir="ltr">
-              Visualizing a &quot;Git Merge&quot; <a href="https://t.co/RQJ2AV7JRQ">pic.twitter.com/RQJ2AV7JRQ</a>
-            </p>
-            &mdash; David Rousset (@davrous) <a href="https://twitter.com/davrous/status/767013225426620417">August 20, 2016</a>
-          </blockquote>
         </section>
 
         <section>
@@ -268,6 +268,29 @@ $ git merge experiment</pre>
           <p>Prefer <strong>their changes</strong> when encountering conflicts.</p>
         </section>
 
+        <section>
+          <h2>Even more options</h2>
+
+          <ul>
+            <li>
+              <code>git cherry-pick &lt;SHA&gt;</code><br>
+              <small>Pick a single commit from another branch.</small>
+            </li>
+            <li>
+              <code>git merge --squash topic</code><br>
+              <small>Apply commits from the topic branch squashed into a single commit on top of HEAD.</small>
+            </li>
+            <li>
+              <code>git merge feature/login bugfix/42 experiment/foo</code><br>
+              <small>Integrate any number of non-conflicting branches with a single merge commit.</small>
+            </li>
+            <li>
+              <code>git merge --strategy=ours obsolete</code><br>
+              <small>Integrate history, but ignore (undo) all changes introduced by the obsolete branch.</small>
+            </li>
+          </ul>
+        </section>
+
         <section id="rebase">
           <h2><code>git rebase</code></h2>
           <pre>$ git checkout <span style="color: #F44D27">experiment</span>
@@ -301,29 +324,6 @@ $ git rebase master</pre>
           <small style="display: block; text-align: center">&hellip;is easy when you know the syntax</small>
           <pre>$ git rebase --onto master server client</pre>
           <img src="images/branching/rebase-onto-2.png">
-        </section>
-
-        <section>
-          <h2>Even more options</h2>
-
-          <ul>
-            <li>
-              <code>git cherry-pick &lt;SHA&gt;</code><br>
-              <small>Pick a single commit from another branch.</small>
-            </li>
-            <li>
-              <code>git merge --squash topic</code><br>
-              <small>Apply commits from the topic branch squashed into a single commit on top of HEAD.</small>
-            </li>
-            <li>
-              <code>git merge feature/login bugfix/42 experiment/foo</code><br>
-              <small>Integrate any number of non-conflicting branches with a single merge commit.</small>
-            </li>
-            <li>
-              <code>git merge --strategy=ours obsolete</code><br>
-              <small>Integrate history, but ignore (undo) all changes introduced by the obsolete branch.</small>
-            </li>
-          </ul>
         </section>
       </section>
 
