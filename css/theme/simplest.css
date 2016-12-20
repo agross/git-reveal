@@ -142,8 +142,13 @@ body {
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
+.reveal pre, .reveal code {
+  font-family: Consolas, Lucida Console, Monaco, Courier New, monospace;
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+
 .reveal pre {
-  font-size: 1em;
   width: auto;
   padding: 15px;
   word-wrap: normal;
