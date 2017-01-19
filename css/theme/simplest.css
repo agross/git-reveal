@@ -144,7 +144,7 @@ body {
  *********************************************/
 .reveal pre, .reveal code {
   font-family: Consolas, Lucida Console, Monaco, Courier New, monospace;
-  font-size: 2.1rem;
+  font-size: .95em;
   line-height: 2.4rem;
 }
 
