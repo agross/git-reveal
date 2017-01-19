@@ -147,19 +147,19 @@ index 0000000..4b5fa63
         </section>
 
         <section>
-          <h2>There is another pointer: HEAD</h2>
+          <h2>There is another pointer: <code>HEAD</code></h2>
           <img src="images/branching/2-HEAD.png">
         </section>
 
         <section>
           <h2>Creating a branch</h2>
           <pre>$ git branch testing &lt;where&gt;</pre>
-          <small>(<code>&lt;where&gt;</code> defaults to HEAD)</small>
+          <small>(<code>&lt;where&gt;</code> defaults to <code>HEAD</code>)</small>
           <img src="images/branching/3-create-branch.png">
         </section>
 
         <section>
-          <h2>Current branch = where HEAD is</h2>
+          <h2>Current branch = where <code>HEAD</code> is</h2>
           <pre>$ git checkout testing</pre>
           <img src="images/branching/4-switch-branch.png">
         </section>
@@ -278,7 +278,7 @@ $ git merge experiment</pre>
             </li>
             <li>
               <code>git merge --squash topic</code><br>
-              <small>Apply commits from the topic branch squashed into a single commit on top of HEAD.</small>
+              <small>Apply commits from the topic branch squashed into a single commit on top of <code>HEAD</code>.</small>
             </li>
             <li>
               <code>git merge feature/login bugfix/42 experiment/foo</code><br>
