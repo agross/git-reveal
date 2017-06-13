@@ -1,0 +1,122 @@
+$dark-gray: #3f3f3f
+$gw-dark-blue: #003478
+$gw-light-blue: #0073cf
+
+@import '../template/mixins'
+@import '../template/settings'
+
+$backgroundColor: #fff
+$mainFont: 'Lato', sans-serif
+$mainFontSize: 36px
+$mainColor: #000
+$selectionColor: #fff
+$selectionBackgroundColor: rgba(0, 0, 0, .99)
+
+$blockMargin: 20px
+$headingFont: 'News Cycle', Impact, sans-serif
+$headingColor: #000
+$headingLineHeight: .9em
+$headingLetterSpacing: .02em
+$headingTextTransform: none
+$headingTextShadow: none
+$headingFontWeight: normal
+$heading1TextShadow: 0 0 6px rgba(0, 0, 0, .2)
+
+$linkColor: $gw-dark-blue
+$linkColorHover: $gw-light-blue
+
+@import '../template/theme'
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700')
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic')
+
+=fade($num, $fade-time, $visible-time)
+  $percentage-per-second: 100 / (($fade-time + $visible-time) * $num)
+
+  @keyframes fade
+    0%
+      opacity: 0
+
+    #{$percentage-per-second * $fade-time}%
+      opacity: 1
+
+    #{$percentage-per-second * ($fade-time + $visible-time)}%
+      opacity: 1
+
+    #{$percentage-per-second * ($fade-time + $visible-time + $fade-time)}%
+      opacity: 0
+
+    100%
+      opacity: 0
+
+  animation-duration: (($fade-time + $visible-time) * $num) + s
+  animation-iteration-count: infinite
+  animation-name: fade
+  animation-timing-function: ease-in-out
+
+  @for $i from 1 through $num
+    &:nth-child(#{$i})
+      animation-delay: ($fade-time + $visible-time) * ($i - 1) * 1s
+      opacity: 0
+
+.reveal
+  h2
+    margin-bottom: .5em
+
+  a
+    transition-duration: .5s
+
+    &:hover
+      img
+        background: rgba(255, 255, 255, .2)
+        border-color: $gw-light-blue
+        box-shadow: 0 0 20px rgba(0, 0, 0, .55)
+
+  section
+    img
+      background: none
+      border: 0
+      box-shadow: none
+      transition: box-shadow .5s ease
+
+  .twitter-video
+    margin: 10px auto !important
+
+  pre,
+  code
+    font-family: Consolas, Lucida Console, Monaco, Courier New, monospace
+    font-size: .95em
+    line-height: 2.4rem
+
+  pre
+    background-color: $dark-gray
+    color: $backgroundColor
+    overflow: auto
+    padding: 15px
+    width: auto
+    word-wrap: normal
+
+    .highlight
+      text-shadow: 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue
+
+  blockquote
+    margin-top: 3em
+    text-align: left
+    width: 80%
+
+  small
+    font-size: .9em
+
+  .cross-fade
+    height: 500px
+    position: relative
+    width: 100%
+
+  .cross-fade > *
+    +fade($num: 3, $fade-time: 1, $visible-time: 15)
+    bottom: 0
+    left: 0
+    margin: auto
+    position: absolute
+    right: 0
+    top: 0
