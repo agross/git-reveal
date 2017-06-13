@@ -1,100 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<head>
-  <meta charset="utf-8">
+		<title>Git</title>
 
-  <title>Git</title>
+		<meta name="description" content="A completely childish person with no manners">
+		<meta name="author" content="Alexander Groß">
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAxTO0AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvEAMk7xADJO8gAyTvIAMk7zAP///wD///8AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7zADJO8wD///8A////ADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zADJO8wAyT/QA////AP///wAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x9TJO8vYyTvL/Mk7z/zJO8/8yT/QAM0/1AP///wD///8AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7z/zJO8/8yT/T/M0/1/zNP9QD///8A////ADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/b/////AP///wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zNzJO8zcyT/T/M0/1/zNP9f8zT/b/M0/2/zNQ9/////8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8zcyT/Q3M0/1/zNP9QAzT/YAM0/29jNQ9/8zUPf/M1D4/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/Q3M0/1NzNP9f8zT/YAM0/2ADNQ9/UzUPf/M1D4/zNQ+f8yTvEAMk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/T/M0/1NzNP9TczT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f////8AMk7xADJO8gAyTvL/Mk7z/zJO8/8yT/T/M0/1/zNP9QAzT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f////8A////ADJO8gAyTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f8zUPkA////AP///wAyTvIAMk7zADJO8wAyT/QAM0/1/zNP9f8zT/YAM0/2aDNQ9/QzUPf/M1D4/zNQ+f8zUPkANFD6AP///wD///8AMk7zADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2OjNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gD///8A////ADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoA////AP///wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9wAzUPgAM1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoANFH7AP///wD///8A/n8AAPw/AAD4HwAA8A8AAOGHAADBgwAAgYEAAAGwAAABsAAAgeEAAMHDAADhhwAA8w8AAP4fAAD8PwAA/n8AAA==" rel="icon" type="image/x-icon" />
 
-  <meta name="description" content="A completely childish person with no manners">
-  <meta name="author" content="Alexander Groß">
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simplest.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-  <link rel="stylesheet" href="css/reveal.min.css">
-  <link rel="stylesheet" href="css/theme/default.css" id="theme">
-
-  <!-- For syntax highlighting -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
-
-  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-  <script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'css/print/pdf.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-  </script>
-
-  <!--[if lt IE 9]>
-  <script src="lib/js/html5shiv.js"></script>
-  <![endif]-->
-
-  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAxTO0AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvEAMk7xADJO8gAyTvIAMk7zAP///wD///8AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7zADJO8wD///8A////ADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zADJO8wAyT/QA////AP///wAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x9TJO8vYyTvL/Mk7z/zJO8/8yT/QAM0/1AP///wD///8AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7z/zJO8/8yT/T/M0/1/zNP9QD///8A////ADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/b/////AP///wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zNzJO8zcyT/T/M0/1/zNP9f8zT/b/M0/2/zNQ9/////8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8zcyT/Q3M0/1/zNP9QAzT/YAM0/29jNQ9/8zUPf/M1D4/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/Q3M0/1NzNP9f8zT/YAM0/2ADNQ9/UzUPf/M1D4/zNQ+f8yTvEAMk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/T/M0/1NzNP9TczT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f////8AMk7xADJO8gAyTvL/Mk7z/zJO8/8yT/T/M0/1/zNP9QAzT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f////8A////ADJO8gAyTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f8zUPkA////AP///wAyTvIAMk7zADJO8wAyT/QAM0/1/zNP9f8zT/YAM0/2aDNQ9/QzUPf/M1D4/zNQ+f8zUPkANFD6AP///wD///8AMk7zADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2OjNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gD///8A////ADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoA////AP///wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9wAzUPgAM1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoANFH7AP///wD///8A/n8AAPw/AAD4HwAA8A8AAOGHAADBgwAAgYEAAAGwAAABsAAAgeEAAMHDAADhhwAA8w8AAP4fAAD8PwAA/n8AAA==" rel="icon" type="image/x-icon" />
-
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</head>
-
-<body>
-  <div class="reveal">
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-      <section>
-        <div class="cross-fade">
-          <img src="images/git-logo.png" alt="Git logo">
-          <img src="http://imgs.xkcd.com/comics/git.png" alt="xkcd">
-          <a href="https://twitter.com/mikehostetler/status/784101927260917760?s=09" style="display: block;">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			<section>
+				<div class="cross-fade">
+					<img src="images/git-logo.png"
+					     alt="Git logo">
+					<img src="http://imgs.xkcd.com/comics/git.png"
+					     alt="xkcd">
+					<a href="https://twitter.com/mikehostetler/status/784101927260917760?s=09"
+					   target="_blank"
+					   style="display: block;">
             <img src="images/search-volume.png" alt="Git search volume">
           </a>
-        </div>
-        <h3>Commit often, perfect later, publish once</h3>
-      </section>
+				</div>
+				<h3>Commit often, perfect later, publish once</h3>
+			</section>
 
-      <section data-background="#2b2b2b">
-        <img src="images/subversion-logo.svg" alt="Subversion logo">
-      </section>
+			<section data-background="#2b2b2b">
+				<img src="images/subversion-logo.svg"
+				     alt="Subversion logo">
+			</section>
 
-      <section data-background="#2b2b2b">
-        <img src="images/centralized-vcs.png" alt="Centralized VCS">
-      </section>
+			<section data-background="#2b2b2b">
+				<img src="images/centralized-vcs.png"
+				     alt="Centralized VCS">
+			</section>
 
-      <section style="margin-top: -50px;" data-transition="linear">
-        <img src="images/distributed-vcs.png" alt="Distributed VCS">
-      </section>
+			<section style="margin-top: -50px;"
+			         data-transition="linear">
+				<img src="images/distributed-vcs.png"
+				     alt="Distributed VCS">
+			</section>
 
-      <section data-background="images/offline.jpg">
-        <aside class="notes">http://www.flickr.com/photos/saschaaa/152502539/</aside>
-      </section>
+			<section data-background="images/offline.jpg">
+				<aside class="notes">http://www.flickr.com/photos/saschaaa/152502539/</aside>
+			</section>
 
-      <section>
-        <section>
-          <h1>Hello, git</h1>
-          <blockquote>
-            A completely ignorant, childish person with no manners.
-            <footer>
-              <cite>— <a href="http://www.urbandictionary.com/define.php?term=Git" target="_blank">Urban Dictionary</a></cite>
-            </footer>
-          </blockquote>
-        </section>
+			<section>
+				<section>
+					<h1>Hello, git</h1>
+					<blockquote>
+						A completely ignorant, childish person with no manners.
+						<footer>
+							<cite>— <a href="http://www.urbandictionary.com/define.php?term=Git" target="_blank">Urban Dictionary</a></cite>
+						</footer>
+					</blockquote>
+				</section>
 
-        <section>
-          <pre>$ /dont-panic/</pre>
-          <img src="images/command-line-works.png" alt="Use the bloody command line. It works!">
-        </section>
+				<section>
+					<pre>$ /dont-panic/</pre>
+					<img src="images/command-line-works.png"
+					     alt="Use the bloody command line. It works!">
+				</section>
 
-        <section>
-          <pre>$ git &lt;verb&gt;</pre>
-          <pre>$ git help &lt;verb&gt;
+				<section>
+					<pre>$ git &lt;verb&gt;</pre>
+					<pre>$ git help &lt;verb&gt;
 $ git &lt;verb&gt; --help</pre>
-        </section>
+				</section>
 
-        <section>
-          <pre>$ git init
+				<section>
+					<pre>$ git init
 Initialized empty Git repository in /scratch/.git/
 
 $ echo hello, world > hello.txt
@@ -105,10 +100,10 @@ $ git commit -m "my first commit!"
 [master (root-commit) ad9a291] my first commit!
  1 file changed, 1 insertion(+)
  create mode 100644 hello.txt</pre>
-        </section>
+				</section>
 
-        <section>
-          <pre>$ git log --patch
+				<section>
+					<pre>$ git log --patch
 <span style="color: #BFBF00">commit ad9a291416165bb95a541321a7acf9cef9731c1d</span>
 Author: Alexander Groß &lt;agross@therightstuff.de&gt;
 Date:   Sat Feb 6 12:41:24 2010 +0100
@@ -122,371 +117,391 @@ index 0000000..4b5fa63
 +++ b/hello.txt</span>
 <span style="color: #1FAECD">@@ -0,0 +1 @@</span>
 <span style="color: #00CC00">+hello, world</span></pre>
-        </section>
+				</section>
 
-        <section>
-          <h2>Content Lifecycle</h2>
-          <img src="images/lifecycle.png">
-        </section>
+				<section>
+					<h2>Content Lifecycle</h2>
+					<img src="images/lifecycle.png">
+				</section>
 
-        <section>
-          <h2>Staging Area = Power</h2>
-          <a href="http://ndpsoftware.com/git-cheatsheet.html" target="_blank"><img src="images/areas.png"></a>
-          <small style="display: block; text-align: center">It allows you to do partial operations with <code>git {add|checkout|reset HEAD} --patch</code></small>
-        </section>
-      </section>
+				<section>
+					<h2>Staging Area = Power</h2>
+					<a href="http://ndpsoftware.com/git-cheatsheet.html"
+					   target="_blank"><img src="images/areas.png"></a>
+					<small style="display: block; text-align: center">It allows you to do partial operations with <code>git {add|checkout|reset HEAD} --patch</code></small>
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Branching</h1>
-        </section>
+			<section>
+				<section>
+					<h1>Branching</h1>
+				</section>
 
-        <section>
-          <h2>Simple history</h2>
-          <img src="images/branching/1-simple-history.png">
-        </section>
+				<section>
+					<h2>Simple history</h2>
+					<img src="images/branching/1-simple-history.png">
+				</section>
 
-        <section>
-          <h2>There is another pointer: <code>HEAD</code></h2>
-          <img src="images/branching/2-HEAD.png">
-        </section>
+				<section>
+					<h2>There is another pointer: <code>HEAD</code></h2>
+					<img src="images/branching/2-HEAD.png">
+				</section>
 
-        <section>
-          <h2>Creating a branch</h2>
-          <pre>$ git branch testing &lt;where&gt;</pre>
-          <small>(<code>&lt;where&gt;</code> defaults to <code>HEAD</code>)</small>
-          <img src="images/branching/3-create-branch.png">
-        </section>
+				<section>
+					<h2>Creating a branch</h2>
+					<pre>$ git branch testing &lt;where&gt;</pre>
+					<small>(<code>&lt;where&gt;</code> defaults to <code>HEAD</code>)</small>
+					<img src="images/branching/3-create-branch.png">
+				</section>
 
-        <section>
-          <h2>Current branch = where <code>HEAD</code> is</h2>
-          <pre>$ git checkout testing</pre>
-          <img src="images/branching/4-switch-branch.png">
-        </section>
+				<section>
+					<h2>Current branch = where <code>HEAD</code> is</h2>
+					<pre>$ git checkout testing</pre>
+					<img src="images/branching/4-switch-branch.png">
+				</section>
 
-        <section>
-          <h2>A Shortcut</h2>
-          <pre>$ git checkout -b &lt;name&gt; &lt;where&gt
+				<section>
+					<h2>A Shortcut</h2>
+					<pre>$ git checkout -b &lt;name&gt; &lt;where&gt;
 
 ==
 
-$ git branch &lt;name&gt; &lt;where&gt && git checkout &lt;name&gt;
+$ git branch &lt;name&gt; &lt;where&gt; &amp;&amp; git checkout &lt;name&gt;
 </pre>
-        </section>
+				</section>
 
-        <section>
-          <h2>Advancing the testing branch</h2>
-          <pre>$ git commit -am "work on testing"</pre>
-          <img src="images/branching/5-advance-testing.png">
-        </section>
+				<section>
+					<h2>Advancing the testing branch</h2>
+					<pre>$ git commit -am "work on testing"</pre>
+					<img src="images/branching/5-advance-testing.png">
+				</section>
 
-        <section>
-          <h2>Back to master</h2>
-          <pre>$ git checkout master</pre>
-          <img src="images/branching/6-back-to-master.png">
-        </section>
+				<section>
+					<h2>Back to master</h2>
+					<pre>$ git checkout master</pre>
+					<img src="images/branching/6-back-to-master.png">
+				</section>
 
-        <section>
-          <h2>Advancing the master branch</h2>
-          <pre>$ git commit -am "work on master"</pre>
-          <img src="images/branching/7-advance-master.png">
-        </section>
-      </section>
+				<section>
+					<h2>Advancing the master branch</h2>
+					<pre>$ git commit -am "work on master"</pre>
+					<img src="images/branching/7-advance-master.png">
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Integration</h1>
-          <br>
-          <p>Your options:</p>
-          <ul>
-            <li><code><a href="#/merge">git merge</a> (<a href="#/merge-ff">2 variants</a>)</code></li>
-            <li><code><a href="#/rebase">git rebase</a></code></li>
-          </ul>
-        </section>
+			<section>
+				<section>
+					<h1>Integration</h1>
+					<br>
+					<p>Your options:</p>
+					<ul>
+						<li><code><a href="#/merge">git merge</a> (<a href="#/merge-ff">2 variants</a>)</code></li>
+						<li><code><a href="#/rebase">git rebase</a></code></li>
+					</ul>
+				</section>
 
-        <section>
-          <blockquote class="twitter-video" data-lang="en">
-            <p lang="en" dir="ltr">
-              Visualizing a &quot;Git Merge&quot; <a href="https://t.co/RQJ2AV7JRQ">pic.twitter.com/RQJ2AV7JRQ</a>
-            </p>
-            &mdash; David Rousset (@davrous) <a href="https://twitter.com/davrous/status/767013225426620417">August 20, 2016</a>
-          </blockquote>
-        </section>
+				<section>
+					<blockquote class="twitter-video"
+					            data-lang="en">
+						<p lang="en"
+						   dir="ltr">
+							Visualizing a &quot;Git Merge&quot; <a href="https://t.co/RQJ2AV7JRQ">pic.twitter.com/RQJ2AV7JRQ</a>
+						</p>
+						&mdash; David Rousset (@davrous) <a href="https://twitter.com/davrous/status/767013225426620417">August 20, 2016</a>
+					</blockquote>
+				</section>
 
-        <section>
-          <h2>Diverged History</h2>
-          <img src="images/integration/diverged-history.png">
-        </section>
+				<section>
+					<h2>Diverged History</h2>
+					<img src="images/integration/diverged-history.png">
+				</section>
 
-        <section id="merge">
-          <h2><code>git merge</code></h2>
-          <pre>$ git checkout <span style="color: #F44D27">master</span>
+				<section id="merge">
+					<h2><code>git merge</code></h2>
+					<pre>$ git checkout <span class="highlight">master</span>
 $ git merge experiment</pre>
-          <img src="images/integration/diverged-history-merge.png">
+					<img src="images/integration/diverged-history-merge.png">
 
-          <small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
-        </section>
+					<small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
+				</section>
 
-        <section>
-          <h2>Undoing the merge</h2>
-          <pre>$ git reset --hard C3</pre>
+				<section>
+					<h2>Undoing the merge</h2>
+					<pre>$ git reset --hard C3</pre>
 
-          <img src="images/integration/diverged-history.png">
-        </section>
+					<img src="images/integration/diverged-history.png">
+				</section>
 
-        <section>
-          <h2>Linear history</h2>
-          <img src="images/integration/linear-history.png">
-        </section>
+				<section>
+					<h2>Linear history</h2>
+					<img src="images/integration/linear-history.png">
+				</section>
 
-        <section id="merge-ff">
-          <h2>A <code>git merge</code> special case</h2>
-          <pre>$ git checkout <span style="color: #F44D27">master</span>
+				<section id="merge-ff">
+					<h2>A <code>git merge</code> special case</h2>
+					<pre>$ git checkout <span class="highlight">master</span>
 $ git merge experiment</pre>
-          <img src="images/integration/linear-history-merge.png">
+					<img src="images/integration/linear-history-merge.png">
 
-          <small>This is a <strong>fast-forward merge</strong> as the master pointer can be moved from C3 to C4 without losing commits reachable from master.</small>
-        </section>
+					<small>This is a <strong>fast-forward merge</strong> as the master pointer can be moved from C3 to C4 without losing commits reachable from master.</small>
+				</section>
 
-        <section>
-          <h2>Controlling <code>git merge</code> behavior</h2>
+				<section>
+					<h2>Controlling <code>git merge</code> behavior</h2>
 
-          <pre style="margin-top: 2em">$ git merge --ff-only</pre>
-          <p>Enforces a <strong>fast-forward merge</strong>, aborts if history is diverged.</p>
+					<pre style="margin-top: 2em">$ git merge --ff-only</pre>
+					<p>Enforces a <strong>fast-forward merge</strong>, aborts if history is diverged.</p>
 
-          <pre style="margin-top: 2em">$ git merge --no-ff</pre>
-          <p>Enforces a <strong>recursive merge</strong>, even if a fast-forward merge would be possible.</p>
-        </section>
+					<pre style="margin-top: 2em">$ git merge --no-ff</pre>
+					<p>Enforces a <strong>recursive merge</strong>, even if a fast-forward merge would be possible.</p>
+				</section>
 
-        <section>
-          <h2>Controlling <code>git merge</code> <a href="https://git-scm.com/docs/git-merge#_merge_strategies" target="_blank">recursive strategy</a></h2>
+				<section>
+					<h2>Controlling <code>git merge</code> <a href="https://git-scm.com/docs/git-merge#_merge_strategies"
+						   target="_blank">recursive strategy</a></h2>
 
-          <pre style="margin-top: 2em">$ git merge --strategy-option ours</pre>
-          <p>Prefer <strong>our changes</strong> when encountering conflicts.</p>
+					<pre style="margin-top: 2em">$ git merge --strategy-option ours</pre>
+					<p>Prefer <strong>our changes</strong> when encountering conflicts.</p>
 
-          <pre style="margin-top: 2em">$ git merge -X theirs</pre>
-          <p>Prefer <strong>their changes</strong> when encountering conflicts.</p>
-        </section>
+					<pre style="margin-top: 2em">$ git merge -X theirs</pre>
+					<p>Prefer <strong>their changes</strong> when encountering conflicts.</p>
+				</section>
 
-        <section>
-          <h2>Even more options</h2>
+				<section>
+					<h2>Even more options</h2>
 
-          <ul>
-            <li>
-              <code>git cherry-pick &lt;SHA&gt;</code><br>
-              <small>Pick a single commit from another branch.</small>
-            </li>
-            <li>
-              <code>git merge --squash topic</code><br>
-              <small>Apply commits from the topic branch squashed into a single commit on top of <code>HEAD</code>.</small>
-            </li>
-            <li>
-              <code>git merge feature/login bugfix/42 experiment/foo</code><br>
-              <small>Integrate any number of non-conflicting branches with a single merge commit.</small>
-            </li>
-            <li>
-              <code>git merge --strategy=ours obsolete</code><br>
-              <small>Integrate history, but ignore (undo) all changes introduced by the obsolete branch.</small>
-            </li>
-          </ul>
-        </section>
+					<ul>
+						<li>
+							<code>git cherry-pick &lt;SHA&gt;</code><br>
+							<small>Pick a single commit from another branch.</small>
+						</li>
+						<li>
+							<code>git merge --squash topic</code><br>
+							<small>Apply commits from the topic branch squashed into a single commit on top of <code>HEAD</code>.</small>
+						</li>
+						<li>
+							<code>git merge feature/login bugfix/42 experiment/foo</code><br>
+							<small>Integrate any number of non-conflicting branches with a single merge commit.</small>
+						</li>
+						<li>
+							<code>git merge --strategy=ours obsolete</code><br>
+							<small>Integrate history, but ignore (undo) all changes introduced by the obsolete branch.</small>
+						</li>
+					</ul>
+				</section>
 
-        <section id="rebase">
-          <h2><code>git rebase</code></h2>
-          <pre>$ git checkout <span style="color: #F44D27">experiment</span>
+				<section id="rebase">
+					<h2><code>git rebase</code></h2>
+					<pre>$ git checkout <span class="highlight">experiment</span>
 $ git rebase master</pre>
-          <img src="images/integration/diverged-history-rebase.png">
+					<img src="images/integration/diverged-history-rebase.png">
 
-          <small>Commit C4 is applied on top of master as C4'.</small>
-        </section>
+					<small>Commit C4 is applied on top of master as C4'.</small>
+				</section>
 
-        <section style="margin-top: -100px; padding: 0">
-          <blockquote class="twitter-tweet" lang="en" data-dnt="true" data-align="center">
-            <p lang="en" dir="ltr">$ git rebase origin/master <a href="http://t.co/pAHtrPrm84">pic.twitter.com/pAHtrPrm84</a></p>
-            &mdash; Alejandro AR (@kinduff) <a href="https://twitter.com/kinduff/status/556127056938151936">January 16, 2015</a>
-          </blockquote>
-        </section>
+				<section style="margin-top: -100px; padding: 0">
+					<blockquote class="twitter-tweet"
+					            lang="en"
+					            data-dnt="true"
+					            data-align="center">
+						<p lang="en"
+						   dir="ltr">$ git rebase origin/master <a href="http://t.co/pAHtrPrm84">pic.twitter.com/pAHtrPrm84</a></p>
+						&mdash; Alejandro AR (@kinduff) <a href="https://twitter.com/kinduff/status/556127056938151936">January 16, 2015</a>
+					</blockquote>
+				</section>
 
-        <section style="padding: 0">
-          <blockquote class="twitter-tweet" lang="en" data-dnt="true" data-align="center">
-            <p lang="en" dir="ltr">git rebase -i ;) <a href="https://t.co/Qy2k7Q0EQJ">pic.twitter.com/Qy2k7Q0EQJ</a></p>
-            &mdash; nixCraft (@nixcraft) <a href="https://twitter.com/nixcraft/status/861233192300273664">May 7, 2017</a>
-          </blockquote>
-        </section>
+				<section style="padding: 0">
+					<blockquote class="twitter-tweet"
+					            lang="en"
+					            data-dnt="true"
+					            data-align="center">
+						<p lang="en"
+						   dir="ltr">git rebase -i ;) <a href="https://t.co/Qy2k7Q0EQJ">pic.twitter.com/Qy2k7Q0EQJ</a></p>
+						&mdash; nixCraft (@nixcraft) <a href="https://twitter.com/nixcraft/status/861233192300273664">May 7, 2017</a>
+					</blockquote>
+				</section>
 
-        <section style="margin-top: -70px; padding: 0">
-          <blockquote class="twitter-tweet" lang="en" data-dnt="true" data-align="center">
-            <p lang="en" dir="ltr">This is from a project I am working on.&#10;<a href="https://twitter.com/hashtag/git?src=hash">#git</a> <a href="https://twitter.com/hashtag/rebase?src=hash">#rebase</a> vs. <a href="https://twitter.com/hashtag/merge?src=hash">#merge</a> <a href="http://t.co/TRgsq7BSin">pic.twitter.com/TRgsq7BSin</a></p>
-            &mdash; MiCHΛΞl (@michaelhenke) <a href="https://twitter.com/michaelhenke/status/585142133167751169">April 6, 2015</a></blockquote>
-        </section>
+				<section style="margin-top: -70px; padding: 0">
+					<blockquote class="twitter-tweet"
+					            lang="en"
+					            data-dnt="true"
+					            data-align="center">
+						<p lang="en"
+						   dir="ltr">This is from a project I am working on.&#10;<a href="https://twitter.com/hashtag/git?src=hash">#git</a> <a href="https://twitter.com/hashtag/rebase?src=hash">#rebase</a>							vs. <a href="https://twitter.com/hashtag/merge?src=hash">#merge</a> <a href="http://t.co/TRgsq7BSin">pic.twitter.com/TRgsq7BSin</a></p>
+						&mdash; MiCHΛΞl (@michaelhenke) <a href="https://twitter.com/michaelhenke/status/585142133167751169">April 6, 2015</a></blockquote>
+				</section>
 
-        <section>
-          <h2>Complex Rebase</h2>
-          <small style="display: block; text-align: center">How to get rid of C3 when rebasing client on master?</small>
-          <img src="images/branching/rebase-onto-1.png">
-        </section>
+				<section>
+					<h2>Complex Rebase</h2>
+					<small style="display: block; text-align: center">How to get rid of C3 when rebasing client on master?</small>
+					<img src="images/branching/rebase-onto-1.png">
+				</section>
 
-        <section>
-          <h2>Complex Rebase</h2>
-          <small style="display: block; text-align: center">&hellip;is easy when you know the syntax</small>
-          <pre>$ git rebase --onto master server client</pre>
-          <img src="images/branching/rebase-onto-2.png">
-        </section>
-      </section>
+				<section>
+					<h2>Complex Rebase</h2>
+					<small style="display: block; text-align: center">&hellip;is easy when you know the syntax</small>
+					<pre>$ git rebase --onto master server client</pre>
+					<img src="images/branching/rebase-onto-2.png">
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Branching Strategies</h1>
-        </section>
+			<section>
+				<section>
+					<h1>Branching Strategies</h1>
+				</section>
 
-        <section>
-          <h2>Feature Branches Provide Isolation</h2>
-          <img src="images/branching-strategies/feature-branches.png">
+				<section>
+					<h2>Feature Branches Provide Isolation</h2>
+					<img src="images/branching-strategies/feature-branches.png">
 
-          <small>
+					<small>
             <p>Again, you have two options:</p>
             <ul>
               <li><code><a href="#/merge">git merge</a></code> if you want to keep information about integrated branches</li>
               <li><code><a href="#/rebase">git rebase</a></code> if you do not care</li>
             </ul>
           </small>
-        </section>
+				</section>
 
-        <section>
-          <h2><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">git-flow</a></h2>
-          <a href="images/branching-strategies/gitflow.png" target="_blank"><img src="images/branching-strategies/gitflow.png"></a>
-        </section>
+				<section>
+					<h2><a href="http://nvie.com/posts/a-successful-git-branching-model/"
+						   target="_blank">git-flow</a></h2>
+					<a href="images/branching-strategies/gitflow.png"
+					   target="_blank"><img src="images/branching-strategies/gitflow.png"></a>
+				</section>
 
-        <section>
-          <h2><a href="http://datasift.github.io/gitflow/" target="_blank">HubFlow</a></h2>
-          <a href="images/branching-strategies/hubflow.png" target="_blank"><img src="images/branching-strategies/hubflow.png"></a>
-        </section>
-      </section>
+				<section>
+					<h2><a href="http://datasift.github.io/gitflow/"
+						   target="_blank">HubFlow</a></h2>
+					<a href="images/branching-strategies/hubflow.png"
+					   target="_blank"><img src="images/branching-strategies/hubflow.png"></a>
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Workflows</h1>
-        </section>
+			<section>
+				<section>
+					<h1>Workflows</h1>
+				</section>
 
-        <section>
-          <h2>Centralized</h2>
-          <img src="images/workflow/centralized.png" alt="Centralized workflow">
-        </section>
+				<section>
+					<h2>Centralized</h2>
+					<img src="images/workflow/centralized.png"
+					     alt="Centralized workflow">
+				</section>
 
-        <section>
-          <h2>Integration Manager</h2>
-          <img src="images/workflow/integration-manager.png" alt="Integration manager">
-        </section>
+				<section>
+					<h2>Integration Manager</h2>
+					<img src="images/workflow/integration-manager.png"
+					     alt="Integration manager">
+				</section>
 
-        <section>
-          <h2>Benevolent Dictator</h2>
-          <img src="images/workflow/benevolent-dictator.png" alt="Benevolent dictator">
-        </section>
-      </section>
+				<section>
+					<h2>Benevolent Dictator</h2>
+					<img src="images/workflow/benevolent-dictator.png"
+					     alt="Benevolent dictator">
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Git Internals</h1>
-        </section>
+			<section>
+				<section>
+					<h1>Git Internals</h1>
+				</section>
 
-        <section>
-          <h2>Commit = Trees + Blobs</h2>
-          <img src="images/internals/commit-objects.png" alt="A commit object has references to tree and blob objects">
-        </section>
+				<section>
+					<h2>Commit = Trees + Blobs</h2>
+					<img src="images/internals/commit-objects.png"
+					     alt="A commit object has references to tree and blob objects">
+				</section>
 
-        <section>
-          <h2>History = Linked Commits</h2>
-          <img src="images/internals/commit-history.png" alt="The history is a sequence of commits objects">
-        </section>
+				<section>
+					<h2>History = Linked Commits</h2>
+					<img src="images/internals/commit-history.png"
+					     alt="The history is a sequence of commits objects">
+				</section>
 
-        <section>
-          <h2>Pointers Everywhere</h2>
-          <img src="images/internals/branch-and-history.png" alt="Pointers reference individual commits">
-        </section>
+				<section>
+					<h2>Pointers Everywhere</h2>
+					<img src="images/internals/branch-and-history.png"
+					     alt="Pointers reference individual commits">
+				</section>
 
-        <section>
-          <h2>Pointers Everywhere</h2>
-          <img src="images/internals/data-model.png" alt="Full data model">
-        </section>
+				<section>
+					<h2>Pointers Everywhere</h2>
+					<img src="images/internals/data-model.png"
+					     alt="Full data model">
+				</section>
 
-        <section>
-          <h2>Delta Storage</h2>
-          <img src="images/internals/delta-storage.png" alt="Delta storage">
-        </section>
+				<section>
+					<h2>Delta Storage</h2>
+					<img src="images/internals/delta-storage.png"
+					     alt="Delta storage">
+				</section>
 
-        <section>
-          <h2>Snapshot Storage</h2>
-          <img src="images/internals/snapshot-storage.png" alt="Snapshot storage">
-        </section>
-      </section>
+				<section>
+					<h2>Snapshot Storage</h2>
+					<img src="images/internals/snapshot-storage.png"
+					     alt="Snapshot storage">
+				</section>
+			</section>
 
-      <section>
-        <section>
-          <h1>Documentation</h1>
-        </section>
+			<section>
+				<section>
+					<h1>Documentation</h1>
+				</section>
 
-        <section>
-          <h2>Written by Experts</h2>
-          <a href="http://git-scm.com/docs" target="_blank"><img src="images/docs/le-petit-robert.png" alt="Le petit Robert"></a>
-          <blockquote style="margin-top: 0">
-            git-rebase - Forward-port local commits to the updated upstream head
-            <footer>
-              <cite>— <a href="http://git-scm.com/docs/git-rebase" target="_blank">git-rebase</a> <a href="http://git-scm.com/docs" target="_blank">manpage</a></cite>
-            </footer>
-          </blockquote>
-        </section>
+				<section>
+					<h2>Written by Experts</h2>
+					<a href="http://git-scm.com/docs"
+					   target="_blank"><img src="images/docs/le-petit-robert.png" alt="Le petit Robert"></a>
+					<blockquote style="margin-top: 0">
+						git-rebase - Forward-port local commits to the updated upstream head
+						<footer>
+							<cite>— <a href="https://git-scm.com/docs/git-rebase/2.6.4" target="_blank">git-rebase 2.6.4 manpage</a></cite>
+						</footer>
+					</blockquote>
+				</section>
 
-        <section>
-          <a href="http://git-scm.com/book/en/v2" target="_blank"><img src="images/docs/pro-git.png" alt="Pro Git"></a>
-        </section>
-      </section>
-    </div>
-  </div>
+				<section>
+					<a href="http://git-scm.com/book/en/v2"
+					   target="_blank"><img src="images/docs/pro-git.png" alt="Pro Git"></a>
+				</section>
+			</section>
+			</div>
+		</div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.min.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-  <script>
-    // Full list of configuration options available here:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-      // The "normal" size of the presentation, aspect ratio will be preserved
-      // when the presentation is scaled to fit different resolutions. Can be
-      // specified using percentage units.
-      width: 1024,
-      height: 768,
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// The "normal" size of the presentation, aspect ratio will be preserved
+				// when the presentation is scaled to fit different resolutions. Can be
+				// specified using percentage units.
+				width: 1024,
+				height: 768,
 
-      // Factor of the display size that should remain empty around the content
-      margin: 0.1,
+				// Factor of the display size that should remain empty around the content
+				margin: 0.1,
 
-      // Bounds for smallest/largest possible scale to apply to content
-      minScale: 0.2,
-      maxScale: 1.0,
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.0,
 
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-
-      theme: Reveal.getQueryHash().theme || 'simplest', // available themes are in /css/theme
-      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-      backgroundTransition: 'slide', // default/none/slide/concave/convex/zoom
-
-      // Parallax scrolling
-      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-      // parallaxBackgroundSize: '2100px 900px',
-
-      // Optional libraries used to extend on reveal.js
-      dependencies: [
-      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-      ]
-    });
-  </script>
-
-</body>
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+				]
+			});
+		</script>
+	</body>
 </html>
