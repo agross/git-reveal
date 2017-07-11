@@ -59,10 +59,12 @@ $linkColorHover: $gw-light-blue
       animation-delay: ($fade-time + $visible-time) * ($i - 1) * 1s
       opacity: 0
 
-.reveal.overview .slides section.present
-  outline-color: $gw-light-blue
-
 .reveal
+  &.overview
+    .slides
+      section.present
+        outline-color: $gw-light-blue
+
   h2
     margin-bottom: .5em
 
