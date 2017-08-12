@@ -9,7 +9,7 @@ digraph Git {
         penwidth=2
         dir="forward"]
   node [shape=box
-        fontname="Menlo, Consolas, Courier New, monospace"
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         margin="0,0"
         penwidth=0]

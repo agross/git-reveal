@@ -16,13 +16,13 @@
 <g id="node1" class="node">
 <title>A</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M139,-164C139,-164 12,-164 12,-164 6,-164 0,-158 0,-152 0,-152 0,-120 0,-120 0,-114 6,-108 12,-108 12,-108 139,-108 139,-108 145,-108 151,-114 151,-120 151,-120 151,-152 151,-152 151,-158 145,-164 139,-164"/>
-<text text-anchor="middle" x="75.5" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">A</text>
+<text text-anchor="middle" x="75.5" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">A</text>
 </g>
 <!-- B -->
 <g id="node2" class="node">
 <title>B</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M362,-164C362,-164 235,-164 235,-164 229,-164 223,-158 223,-152 223,-152 223,-120 223,-120 223,-114 229,-108 235,-108 235,-108 362,-108 362,-108 368,-108 374,-114 374,-120 374,-120 374,-152 374,-152 374,-158 368,-164 362,-164"/>
-<text text-anchor="middle" x="298.5" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">B</text>
+<text text-anchor="middle" x="298.5" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">B</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
@@ -34,7 +34,7 @@
 <g id="node3" class="node">
 <title>C</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M585,-164C585,-164 458,-164 458,-164 452,-164 446,-158 446,-152 446,-152 446,-120 446,-120 446,-114 452,-108 458,-108 458,-108 585,-108 585,-108 591,-108 597,-114 597,-120 597,-120 597,-152 597,-152 597,-158 591,-164 585,-164"/>
-<text text-anchor="middle" x="521.5" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">C</text>
+<text text-anchor="middle" x="521.5" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">C</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge2" class="edge">
@@ -46,7 +46,7 @@
 <g id="node4" class="node">
 <title>D</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M808,-164C808,-164 681,-164 681,-164 675,-164 669,-158 669,-152 669,-152 669,-120 669,-120 669,-114 675,-108 681,-108 681,-108 808,-108 808,-108 814,-108 820,-114 820,-120 820,-120 820,-152 820,-152 820,-158 814,-164 808,-164"/>
-<text text-anchor="middle" x="744.5" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">D</text>
+<text text-anchor="middle" x="744.5" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">D</text>
 </g>
 <!-- C&#45;&gt;D -->
 <g id="edge3" class="edge">
@@ -58,7 +58,7 @@
 <g id="node5" class="node">
 <title>E</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M1031,-164C1031,-164 904,-164 904,-164 898,-164 892,-158 892,-152 892,-152 892,-120 892,-120 892,-114 898,-108 904,-108 904,-108 1031,-108 1031,-108 1037,-108 1043,-114 1043,-120 1043,-120 1043,-152 1043,-152 1043,-158 1037,-164 1031,-164"/>
-<text text-anchor="middle" x="967.5" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">E</text>
+<text text-anchor="middle" x="967.5" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">E</text>
 </g>
 <!-- D&#45;&gt;E -->
 <g id="edge4" class="edge">
@@ -70,7 +70,7 @@
 <g id="node7" class="node">
 <title>master</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="1043,-256 892,-256 892,-200 1043,-200 1043,-256"/>
-<text text-anchor="middle" x="967.5" y="-222" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
+<text text-anchor="middle" x="967.5" y="-222" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- E&#45;&gt;master -->
 <g id="edge5" class="edge">
@@ -82,7 +82,7 @@
 <g id="node8" class="node">
 <title>topic</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="1043,-72 892,-72 892,-16 1043,-16 1043,-72"/>
-<text text-anchor="middle" x="967.5" y="-38" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">topic</text>
+<text text-anchor="middle" x="967.5" y="-38" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">topic</text>
 </g>
 <!-- E&#45;&gt;topic -->
 <g id="edge7" class="edge">
@@ -94,7 +94,7 @@
 <g id="node6" class="node">
 <title>HEAD</title>
 <polygon fill="#c8a036" stroke="#000000" stroke-width="0" points="1043,-348 892,-348 892,-292 1043,-292 1043,-348"/>
-<text text-anchor="middle" x="967.5" y="-314" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
+<text text-anchor="middle" x="967.5" y="-314" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- master&#45;&gt;HEAD -->
 <g id="edge6" class="edge">

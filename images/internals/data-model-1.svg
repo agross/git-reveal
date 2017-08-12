@@ -16,8 +16,8 @@
 <polygon fill="transparent" stroke="#000000" stroke-width="0" points="525.0342,-118 275.0342,-118 275.0342,-28 525.0342,-28 525.0342,-118"/>
 <polygon fill="#f0efe8" stroke="transparent" points="275.0342,-28 275.0342,-118 525.0342,-118 525.0342,-28 275.0342,-28"/>
 <polyline fill="none" stroke="#ffffff" points="275.0342,-76 525.0342,-76 "/>
-<text text-anchor="start" x="372.2266" y="-91" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">8e93a</text>
-<text text-anchor="start" x="285.0342" y="-54.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#000000">💥🍺🎉 Initial commit</text>
+<text text-anchor="start" x="372.2266" y="-91" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">8e93a</text>
+<text text-anchor="start" x="285.0342" y="-54.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#000000">💥🍺🎉 Initial commit</text>
 </g>
 <!-- B -->
 <!-- A&#45;&#45;B -->
@@ -31,8 +31,8 @@
 <polygon fill="transparent" stroke="#000000" stroke-width="0" points="813.0342,-118 563.0342,-118 563.0342,-28 813.0342,-28 813.0342,-118"/>
 <polygon fill="#3e8f99" stroke="transparent" points="563.0342,-28 563.0342,-118 813.0342,-118 813.0342,-28 563.0342,-28"/>
 <polyline fill="none" stroke="#ffffff" points="563.0342,-76 813.0342,-76 "/>
-<text text-anchor="start" x="660.7881" y="-91" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">92ec2</text>
-<text text-anchor="start" x="573.0342" y="-54.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#ffffff">README</text>
+<text text-anchor="start" x="660.7881" y="-91" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">92ec2</text>
+<text text-anchor="start" x="573.0342" y="-54.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#ffffff">README</text>
 </g>
 <!-- tree_a&#45;&#45;A -->
 <g id="edge2" class="edge">
@@ -52,18 +52,18 @@
 <polygon fill="transparent" stroke="#000000" stroke-width="0" points="1245.0342,-133 995.0342,-133 995.0342,-13 1245.0342,-13 1245.0342,-133"/>
 <polygon fill="#c8a036" stroke="transparent" points="995.0342,-13 995.0342,-133 1245.0342,-133 1245.0342,-13 995.0342,-13"/>
 <polyline fill="none" stroke="#ffffff" points="995.0342,-91 1245.0342,-91 "/>
-<text text-anchor="start" x="1092.2266" y="-106" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">5b1d3</text>
-<text text-anchor="start" x="1005.0342" y="-69.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#ffffff">## Testing library</text>
-<text text-anchor="start" x="1005.0342" y="-55.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#ffffff"> </text>
-<text text-anchor="start" x="1005.0342" y="-41.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#ffffff">This library is used to</text>
-<text text-anchor="start" x="1005.0342" y="-27.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="14.00" fill="#ffffff">test Ruby projects.</text>
+<text text-anchor="start" x="1092.2266" y="-106" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">5b1d3</text>
+<text text-anchor="start" x="1005.0342" y="-69.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#ffffff">## Testing library</text>
+<text text-anchor="start" x="1005.0342" y="-55.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#ffffff"> </text>
+<text text-anchor="start" x="1005.0342" y="-41.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#ffffff">This library is used to</text>
+<text text-anchor="start" x="1005.0342" y="-27.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="14.00" fill="#ffffff">test Ruby projects.</text>
 </g>
 <!-- readme_1&#45;&#45;tree_a -->
 <g id="edge1" class="edge">
 <title>readme_1&#45;&#45;tree_a</title>
 <path fill="none" stroke="#8f8a83" stroke-width="2" d="M984.6601,-73C929.8741,-73 867.0084,-73 813.293,-73"/>
 <polygon fill="#8f8a83" stroke="#8f8a83" stroke-width="2" points="984.7919,-76.5001 994.7918,-73 984.7918,-69.5001 984.7919,-76.5001"/>
-<text text-anchor="middle" x="892.5144" y="-78.1338" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">README</text>
+<text text-anchor="middle" x="892.5144" y="-78.1338" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">README</text>
 </g>
 <!-- readme_1&#45;&#45;tree_b -->
 <!-- dummy_readme_3 -->

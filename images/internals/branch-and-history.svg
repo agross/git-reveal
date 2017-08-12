@@ -21,13 +21,13 @@
 <g id="node1" class="node">
 <title>A</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M162.6572,-164C162.6572,-164 35.6572,-164 35.6572,-164 29.6572,-164 23.6572,-158 23.6572,-152 23.6572,-152 23.6572,-120 23.6572,-120 23.6572,-114 29.6572,-108 35.6572,-108 35.6572,-108 162.6572,-108 162.6572,-108 168.6572,-108 174.6572,-114 174.6572,-120 174.6572,-120 174.6572,-152 174.6572,-152 174.6572,-158 168.6572,-164 162.6572,-164"/>
-<text text-anchor="middle" x="99.1572" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">8e93a1d</text>
+<text text-anchor="middle" x="99.1572" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">8e93a1d</text>
 </g>
 <!-- B -->
 <g id="node2" class="node">
 <title>B</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M401.5186,-164C401.5186,-164 274.5186,-164 274.5186,-164 268.5186,-164 262.5186,-158 262.5186,-152 262.5186,-152 262.5186,-120 262.5186,-120 262.5186,-114 268.5186,-108 274.5186,-108 274.5186,-108 401.5186,-108 401.5186,-108 407.5186,-108 413.5186,-114 413.5186,-120 413.5186,-120 413.5186,-152 413.5186,-152 413.5186,-158 407.5186,-164 401.5186,-164"/>
-<text text-anchor="middle" x="338.0186" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">b19dc7f</text>
+<text text-anchor="middle" x="338.0186" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">b19dc7f</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
@@ -39,7 +39,7 @@
 <g id="node3" class="node">
 <title>C</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M641.4785,-164C641.4785,-164 514.4785,-164 514.4785,-164 508.4785,-164 502.4785,-158 502.4785,-152 502.4785,-152 502.4785,-120 502.4785,-120 502.4785,-114 508.4785,-108 514.4785,-108 514.4785,-108 641.4785,-108 641.4785,-108 647.4785,-108 653.4785,-114 653.4785,-120 653.4785,-120 653.4785,-152 653.4785,-152 653.4785,-158 647.4785,-164 641.4785,-164"/>
-<text text-anchor="middle" x="577.9785" y="-130" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">caccf61</text>
+<text text-anchor="middle" x="577.9785" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">caccf61</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge2" class="edge">
@@ -51,7 +51,7 @@
 <g id="node5" class="node">
 <title>tag</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="413.5186,-256 262.5186,-256 262.5186,-200 413.5186,-200 413.5186,-256"/>
-<text text-anchor="middle" x="338.0186" y="-222" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.0</text>
+<text text-anchor="middle" x="338.0186" y="-222" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.0</text>
 </g>
 <!-- B&#45;&gt;tag -->
 <g id="edge5" class="edge">
@@ -63,7 +63,7 @@
 <g id="node4" class="node">
 <title>master</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="653.4785,-256 502.4785,-256 502.4785,-200 653.4785,-200 653.4785,-256"/>
-<text text-anchor="middle" x="577.9785" y="-222" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
+<text text-anchor="middle" x="577.9785" y="-222" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- C&#45;&gt;master -->
 <g id="edge7" class="edge">
@@ -75,7 +75,7 @@
 <g id="node6" class="node">
 <title>HEAD</title>
 <polygon fill="#c8a036" stroke="#000000" stroke-width="0" points="653.4785,-348 502.4785,-348 502.4785,-292 653.4785,-292 653.4785,-348"/>
-<text text-anchor="middle" x="577.9785" y="-314" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
+<text text-anchor="middle" x="577.9785" y="-314" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- master&#45;&gt;HEAD -->
 <g id="edge8" class="edge">
@@ -87,7 +87,7 @@
 <g id="node7" class="node">
 <title>snapshot_a</title>
 <polygon fill="#3e8f99" stroke="#000000" stroke-width="0" points="182.472,-72 15.8425,-72 15.8425,-16 182.472,-16 182.472,-72"/>
-<text text-anchor="middle" x="99.1572" y="-38" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot A</text>
+<text text-anchor="middle" x="99.1572" y="-38" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot A</text>
 </g>
 <!-- snapshot_a&#45;&gt;A -->
 <g id="edge3" class="edge">
@@ -99,7 +99,7 @@
 <g id="node8" class="node">
 <title>snapshot_b</title>
 <polygon fill="#3e8f99" stroke="#000000" stroke-width="0" points="421.9273,-72 254.1099,-72 254.1099,-16 421.9273,-16 421.9273,-72"/>
-<text text-anchor="middle" x="338.0186" y="-38" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot B</text>
+<text text-anchor="middle" x="338.0186" y="-38" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot B</text>
 </g>
 <!-- snapshot_b&#45;&gt;B -->
 <g id="edge4" class="edge">
@@ -111,7 +111,7 @@
 <g id="node9" class="node">
 <title>snapshot_c</title>
 <polygon fill="#3e8f99" stroke="#000000" stroke-width="0" points="661.9909,-72 493.9661,-72 493.9661,-16 661.9909,-16 661.9909,-72"/>
-<text text-anchor="middle" x="577.9785" y="-38" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot C</text>
+<text text-anchor="middle" x="577.9785" y="-38" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">Snapshot C</text>
 </g>
 <!-- snapshot_c&#45;&gt;C -->
 <g id="edge6" class="edge">

@@ -10,7 +10,7 @@ graph Git {
         penwidth=2]
   node [shape=box
         style="filled"
-        fontname="Menlo, Consolas, Courier New, monospace"
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         fontcolor="#ffffff"
         margin=".6,.25"
@@ -72,7 +72,7 @@ graph Git {
   staged -- staged_h
 
   edge [dir="none"
-        labelfontname="Menlo, Consolas, Courier New, monospace"
+        labelfontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         labelfontsize=20
         labelfontcolor="#ffffff"
         labeldistance=0

@@ -6,14 +6,14 @@ graph Git {
   nodesep=.5
 
   edge [color="#8f8a83"
-        fontname="Menlo, Consolas, Courier New, monospace"
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         labeldistance=8
         labelangle=8
         penwidth=2
         dir="back"]
   node [shape=box
-        fontname="Menlo, Consolas, Courier New, monospace"
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         margin=".45,.25"
         width=3.1

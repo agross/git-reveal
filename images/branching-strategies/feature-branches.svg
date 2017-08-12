@@ -20,13 +20,13 @@
 <g id="node1" class="node">
 <title>A</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M139,-240C139,-240 12,-240 12,-240 6,-240 0,-234 0,-228 0,-228 0,-196 0,-196 0,-190 6,-184 12,-184 12,-184 139,-184 139,-184 145,-184 151,-190 151,-196 151,-196 151,-228 151,-228 151,-234 145,-240 139,-240"/>
-<text text-anchor="middle" x="75.5" y="-206" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">A</text>
+<text text-anchor="middle" x="75.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">A</text>
 </g>
 <!-- B -->
 <g id="node2" class="node">
 <title>B</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M362,-240C362,-240 235,-240 235,-240 229,-240 223,-234 223,-228 223,-228 223,-196 223,-196 223,-190 229,-184 235,-184 235,-184 362,-184 362,-184 368,-184 374,-190 374,-196 374,-196 374,-228 374,-228 374,-234 368,-240 362,-240"/>
-<text text-anchor="middle" x="298.5" y="-206" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">B</text>
+<text text-anchor="middle" x="298.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">B</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
@@ -38,7 +38,7 @@
 <g id="node3" class="node">
 <title>E</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M585,-240C585,-240 458,-240 458,-240 452,-240 446,-234 446,-228 446,-228 446,-196 446,-196 446,-190 452,-184 458,-184 458,-184 585,-184 585,-184 591,-184 597,-190 597,-196 597,-196 597,-228 597,-228 597,-234 591,-240 585,-240"/>
-<text text-anchor="middle" x="521.5" y="-206" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">E</text>
+<text text-anchor="middle" x="521.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">E</text>
 </g>
 <!-- B&#45;&gt;E -->
 <g id="edge2" class="edge">
@@ -50,7 +50,7 @@
 <g id="node4" class="node">
 <title>C</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M585,-148C585,-148 458,-148 458,-148 452,-148 446,-142 446,-136 446,-136 446,-104 446,-104 446,-98 452,-92 458,-92 458,-92 585,-92 585,-92 591,-92 597,-98 597,-104 597,-104 597,-136 597,-136 597,-142 591,-148 585,-148"/>
-<text text-anchor="middle" x="521.5" y="-114" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">C</text>
+<text text-anchor="middle" x="521.5" y="-114" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">C</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge3" class="edge">
@@ -62,7 +62,7 @@
 <g id="node6" class="node">
 <title>master</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="374,-332 223,-332 223,-276 374,-276 374,-332"/>
-<text text-anchor="middle" x="298.5" y="-298" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
+<text text-anchor="middle" x="298.5" y="-298" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- B&#45;&gt;master -->
 <g id="edge5" class="edge">
@@ -74,7 +74,7 @@
 <g id="node7" class="node">
 <title>develop</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="597,-332 446,-332 446,-276 597,-276 597,-332"/>
-<text text-anchor="middle" x="521.5" y="-298" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">develop</text>
+<text text-anchor="middle" x="521.5" y="-298" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">develop</text>
 </g>
 <!-- E&#45;&gt;develop -->
 <g id="edge6" class="edge">
@@ -86,7 +86,7 @@
 <g id="node5" class="node">
 <title>D</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M812.8594,-148C812.8594,-148 685.8594,-148 685.8594,-148 679.8594,-148 673.8594,-142 673.8594,-136 673.8594,-136 673.8594,-104 673.8594,-104 673.8594,-98 679.8594,-92 685.8594,-92 685.8594,-92 812.8594,-92 812.8594,-92 818.8594,-92 824.8594,-98 824.8594,-104 824.8594,-104 824.8594,-136 824.8594,-136 824.8594,-142 818.8594,-148 812.8594,-148"/>
-<text text-anchor="middle" x="749.3594" y="-114" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">D</text>
+<text text-anchor="middle" x="749.3594" y="-114" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">D</text>
 </g>
 <!-- C&#45;&gt;D -->
 <g id="edge4" class="edge">
@@ -98,7 +98,7 @@
 <g id="node8" class="node">
 <title>ruby_client</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="829.5784,-56 669.1404,-56 669.1404,0 829.5784,0 829.5784,-56"/>
-<text text-anchor="middle" x="749.3594" y="-22" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">ruby_client</text>
+<text text-anchor="middle" x="749.3594" y="-22" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">ruby_client</text>
 </g>
 <!-- D&#45;&gt;ruby_client -->
 <g id="edge7" class="edge">

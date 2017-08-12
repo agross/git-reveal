@@ -12,13 +12,13 @@
 <g id="node1" class="node">
 <title>computer_a</title>
 <polygon fill="#d9d9d9" stroke="#8f8a83" stroke-width="2.1" points="274,-446 0,-446 0,0 274,0 274,-446"/>
-<text text-anchor="middle" x="137" y="-406" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Computer A</text>
+<text text-anchor="middle" x="137" y="-406" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Computer A</text>
 </g>
 <!-- computer_b -->
 <g id="node2" class="node">
 <title>computer_b</title>
 <polygon fill="#d9d9d9" stroke="#8f8a83" stroke-width="2.1" points="850,-446 576,-446 576,0 850,0 850,-446"/>
-<text text-anchor="middle" x="713" y="-406" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Computer B</text>
+<text text-anchor="middle" x="713" y="-406" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Computer B</text>
 </g>
 <!-- computer_a&#45;&#45;computer_b -->
 <g id="edge11" class="edge">
@@ -31,7 +31,7 @@
 <g id="node3" class="node">
 <title>server</title>
 <polygon fill="#d9d9d9" stroke="#8f8a83" stroke-width="2.1" points="562,-892.4 288,-892.4 288,-518.4 562,-518.4 562,-892.4"/>
-<text text-anchor="middle" x="425" y="-852.4" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Server</text>
+<text text-anchor="middle" x="425" y="-852.4" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Server</text>
 </g>
 <!-- computer_a&#45;&#45;server -->
 <g id="edge9" class="edge">
@@ -51,19 +51,19 @@
 <g id="node4" class="node">
 <title>server_versions</title>
 <polygon fill="#ffffff" stroke="#8f8a83" stroke-width="2.1" points="535.8907,-824.3 314.1093,-824.3 314.1093,-543.3 535.8907,-543.3 535.8907,-824.3"/>
-<text text-anchor="middle" x="425" y="-784.3" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
+<text text-anchor="middle" x="425" y="-784.3" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
 </g>
 <!-- a_versions -->
 <g id="node5" class="node">
 <title>a_versions</title>
 <polygon fill="#ffffff" stroke="#8f8a83" stroke-width="2.1" points="247.8907,-305.9 26.1093,-305.9 26.1093,-24.9 247.8907,-24.9 247.8907,-305.9"/>
-<text text-anchor="middle" x="137" y="-265.9" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
+<text text-anchor="middle" x="137" y="-265.9" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
 </g>
 <!-- a_file -->
 <g id="node16" class="node">
 <title>a_file</title>
 <path fill="#3e8f99" stroke="#8f8a83" stroke-width="0" d="M200.5,-395C200.5,-395 73.5,-395 73.5,-395 67.5,-395 61.5,-389 61.5,-383 61.5,-383 61.5,-351 61.5,-351 61.5,-345 67.5,-339 73.5,-339 73.5,-339 200.5,-339 200.5,-339 206.5,-339 212.5,-345 212.5,-351 212.5,-351 212.5,-383 212.5,-383 212.5,-389 206.5,-395 200.5,-395"/>
-<text text-anchor="middle" x="137" y="-361" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">File</text>
+<text text-anchor="middle" x="137" y="-361" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">File</text>
 </g>
 <!-- a_versions&#45;&#45;a_file -->
 <g id="edge7" class="edge">
@@ -75,13 +75,13 @@
 <g id="node6" class="node">
 <title>b_versions</title>
 <polygon fill="#ffffff" stroke="#8f8a83" stroke-width="2.1" points="823.8907,-305.9 602.1093,-305.9 602.1093,-24.9 823.8907,-24.9 823.8907,-305.9"/>
-<text text-anchor="middle" x="713" y="-265.9" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
+<text text-anchor="middle" x="713" y="-265.9" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version Database</text>
 </g>
 <!-- b_file -->
 <g id="node17" class="node">
 <title>b_file</title>
 <path fill="#3e8f99" stroke="#8f8a83" stroke-width="0" d="M776.5,-395C776.5,-395 649.5,-395 649.5,-395 643.5,-395 637.5,-389 637.5,-383 637.5,-383 637.5,-351 637.5,-351 637.5,-345 643.5,-339 649.5,-339 649.5,-339 776.5,-339 776.5,-339 782.5,-339 788.5,-345 788.5,-351 788.5,-351 788.5,-383 788.5,-383 788.5,-389 782.5,-395 776.5,-395"/>
-<text text-anchor="middle" x="713" y="-361" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">File</text>
+<text text-anchor="middle" x="713" y="-361" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">File</text>
 </g>
 <!-- b_versions&#45;&#45;b_file -->
 <g id="edge8" class="edge">
@@ -93,13 +93,13 @@
 <g id="node7" class="node">
 <title>server_version1</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M488.5,-618.2C488.5,-618.2 361.5,-618.2 361.5,-618.2 355.5,-618.2 349.5,-612.2 349.5,-606.2 349.5,-606.2 349.5,-574.2 349.5,-574.2 349.5,-568.2 355.5,-562.2 361.5,-562.2 361.5,-562.2 488.5,-562.2 488.5,-562.2 494.5,-562.2 500.5,-568.2 500.5,-574.2 500.5,-574.2 500.5,-606.2 500.5,-606.2 500.5,-612.2 494.5,-618.2 488.5,-618.2"/>
-<text text-anchor="middle" x="425" y="-584.2" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
+<text text-anchor="middle" x="425" y="-584.2" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
 </g>
 <!-- server_version2 -->
 <g id="node8" class="node">
 <title>server_version2</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M488.5,-690.2C488.5,-690.2 361.5,-690.2 361.5,-690.2 355.5,-690.2 349.5,-684.2 349.5,-678.2 349.5,-678.2 349.5,-646.2 349.5,-646.2 349.5,-640.2 355.5,-634.2 361.5,-634.2 361.5,-634.2 488.5,-634.2 488.5,-634.2 494.5,-634.2 500.5,-640.2 500.5,-646.2 500.5,-646.2 500.5,-678.2 500.5,-678.2 500.5,-684.2 494.5,-690.2 488.5,-690.2"/>
-<text text-anchor="middle" x="425" y="-656.2" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
+<text text-anchor="middle" x="425" y="-656.2" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
 </g>
 <!-- server_version2&#45;&#45;server_version1 -->
 <g id="edge2" class="edge">
@@ -110,7 +110,7 @@
 <g id="node9" class="node">
 <title>server_version3</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M488.5,-762.2C488.5,-762.2 361.5,-762.2 361.5,-762.2 355.5,-762.2 349.5,-756.2 349.5,-750.2 349.5,-750.2 349.5,-718.2 349.5,-718.2 349.5,-712.2 355.5,-706.2 361.5,-706.2 361.5,-706.2 488.5,-706.2 488.5,-706.2 494.5,-706.2 500.5,-712.2 500.5,-718.2 500.5,-718.2 500.5,-750.2 500.5,-750.2 500.5,-756.2 494.5,-762.2 488.5,-762.2"/>
-<text text-anchor="middle" x="425" y="-728.2" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
+<text text-anchor="middle" x="425" y="-728.2" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
 </g>
 <!-- server_version3&#45;&#45;server_version2 -->
 <g id="edge1" class="edge">
@@ -121,13 +121,13 @@
 <g id="node10" class="node">
 <title>a_version1</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M200.5,-99.8C200.5,-99.8 73.5,-99.8 73.5,-99.8 67.5,-99.8 61.5,-93.8 61.5,-87.8 61.5,-87.8 61.5,-55.8 61.5,-55.8 61.5,-49.8 67.5,-43.8 73.5,-43.8 73.5,-43.8 200.5,-43.8 200.5,-43.8 206.5,-43.8 212.5,-49.8 212.5,-55.8 212.5,-55.8 212.5,-87.8 212.5,-87.8 212.5,-93.8 206.5,-99.8 200.5,-99.8"/>
-<text text-anchor="middle" x="137" y="-65.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
+<text text-anchor="middle" x="137" y="-65.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
 </g>
 <!-- a_version2 -->
 <g id="node11" class="node">
 <title>a_version2</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M200.5,-171.8C200.5,-171.8 73.5,-171.8 73.5,-171.8 67.5,-171.8 61.5,-165.8 61.5,-159.8 61.5,-159.8 61.5,-127.8 61.5,-127.8 61.5,-121.8 67.5,-115.8 73.5,-115.8 73.5,-115.8 200.5,-115.8 200.5,-115.8 206.5,-115.8 212.5,-121.8 212.5,-127.8 212.5,-127.8 212.5,-159.8 212.5,-159.8 212.5,-165.8 206.5,-171.8 200.5,-171.8"/>
-<text text-anchor="middle" x="137" y="-137.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
+<text text-anchor="middle" x="137" y="-137.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
 </g>
 <!-- a_version2&#45;&#45;a_version1 -->
 <g id="edge4" class="edge">
@@ -138,7 +138,7 @@
 <g id="node12" class="node">
 <title>a_version3</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M200.5,-243.8C200.5,-243.8 73.5,-243.8 73.5,-243.8 67.5,-243.8 61.5,-237.8 61.5,-231.8 61.5,-231.8 61.5,-199.8 61.5,-199.8 61.5,-193.8 67.5,-187.8 73.5,-187.8 73.5,-187.8 200.5,-187.8 200.5,-187.8 206.5,-187.8 212.5,-193.8 212.5,-199.8 212.5,-199.8 212.5,-231.8 212.5,-231.8 212.5,-237.8 206.5,-243.8 200.5,-243.8"/>
-<text text-anchor="middle" x="137" y="-209.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
+<text text-anchor="middle" x="137" y="-209.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
 </g>
 <!-- a_version3&#45;&#45;a_version2 -->
 <g id="edge3" class="edge">
@@ -149,13 +149,13 @@
 <g id="node13" class="node">
 <title>b_version1</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M776.5,-99.8C776.5,-99.8 649.5,-99.8 649.5,-99.8 643.5,-99.8 637.5,-93.8 637.5,-87.8 637.5,-87.8 637.5,-55.8 637.5,-55.8 637.5,-49.8 643.5,-43.8 649.5,-43.8 649.5,-43.8 776.5,-43.8 776.5,-43.8 782.5,-43.8 788.5,-49.8 788.5,-55.8 788.5,-55.8 788.5,-87.8 788.5,-87.8 788.5,-93.8 782.5,-99.8 776.5,-99.8"/>
-<text text-anchor="middle" x="713" y="-65.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
+<text text-anchor="middle" x="713" y="-65.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 1</text>
 </g>
 <!-- b_version2 -->
 <g id="node14" class="node">
 <title>b_version2</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M776.5,-171.8C776.5,-171.8 649.5,-171.8 649.5,-171.8 643.5,-171.8 637.5,-165.8 637.5,-159.8 637.5,-159.8 637.5,-127.8 637.5,-127.8 637.5,-121.8 643.5,-115.8 649.5,-115.8 649.5,-115.8 776.5,-115.8 776.5,-115.8 782.5,-115.8 788.5,-121.8 788.5,-127.8 788.5,-127.8 788.5,-159.8 788.5,-159.8 788.5,-165.8 782.5,-171.8 776.5,-171.8"/>
-<text text-anchor="middle" x="713" y="-137.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
+<text text-anchor="middle" x="713" y="-137.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 2</text>
 </g>
 <!-- b_version2&#45;&#45;b_version1 -->
 <g id="edge6" class="edge">
@@ -166,7 +166,7 @@
 <g id="node15" class="node">
 <title>b_version3</title>
 <path fill="#f0efe8" stroke="#8f8a83" stroke-width="0" d="M776.5,-243.8C776.5,-243.8 649.5,-243.8 649.5,-243.8 643.5,-243.8 637.5,-237.8 637.5,-231.8 637.5,-231.8 637.5,-199.8 637.5,-199.8 637.5,-193.8 643.5,-187.8 649.5,-187.8 649.5,-187.8 776.5,-187.8 776.5,-187.8 782.5,-187.8 788.5,-193.8 788.5,-199.8 788.5,-199.8 788.5,-231.8 788.5,-231.8 788.5,-237.8 782.5,-243.8 776.5,-243.8"/>
-<text text-anchor="middle" x="713" y="-209.8" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
+<text text-anchor="middle" x="713" y="-209.8" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">Version 3</text>
 </g>
 <!-- b_version3&#45;&#45;b_version2 -->
 <g id="edge5" class="edge">

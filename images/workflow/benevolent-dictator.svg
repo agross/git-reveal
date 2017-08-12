@@ -12,14 +12,14 @@
 <g id="node1" class="node">
 <title>blessed</title>
 <polygon fill="#c8a036" stroke="#000000" stroke-width="0" points="605.7335,-364 432.1083,-364 432.1083,-288 605.7335,-288 605.7335,-364"/>
-<text text-anchor="middle" x="518.9209" y="-330" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">blessed</text>
-<text text-anchor="middle" x="518.9209" y="-310" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">repository</text>
+<text text-anchor="middle" x="518.9209" y="-330" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">blessed</text>
+<text text-anchor="middle" x="518.9209" y="-310" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">repository</text>
 </g>
 <!-- lt1 -->
 <g id="node3" class="node">
 <title>lt1</title>
 <polygon fill="#3e8f99" stroke="#000000" stroke-width="0" points="173.4209,-210 .4209,-210 .4209,-154 173.4209,-154 173.4209,-210"/>
-<text text-anchor="middle" x="86.9209" y="-176" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">lieutenant</text>
+<text text-anchor="middle" x="86.9209" y="-176" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">lieutenant</text>
 </g>
 <!-- blessed&#45;&#45;lt1 -->
 <g id="edge10" class="edge">
@@ -31,7 +31,7 @@
 <g id="node4" class="node">
 <title>lt2</title>
 <polygon fill="#3e8f99" stroke="#000000" stroke-width="0" points="389.4209,-210 216.4209,-210 216.4209,-154 389.4209,-154 389.4209,-210"/>
-<text text-anchor="middle" x="302.9209" y="-176" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">lieutenant</text>
+<text text-anchor="middle" x="302.9209" y="-176" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">lieutenant</text>
 </g>
 <!-- blessed&#45;&#45;lt2 -->
 <g id="edge11" class="edge">
@@ -43,8 +43,8 @@
 <g id="node5" class="node">
 <title>dev1</title>
 <polygon fill="#f0efe8" stroke="#000000" stroke-width="0" points="173.7628,-76 .079,-76 .079,0 173.7628,0 173.7628,-76"/>
-<text text-anchor="middle" x="86.9209" y="-42" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
-<text text-anchor="middle" x="86.9209" y="-22" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
+<text text-anchor="middle" x="86.9209" y="-42" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
+<text text-anchor="middle" x="86.9209" y="-22" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
 </g>
 <!-- blessed&#45;&#45;dev1 -->
 <g id="edge7" class="edge">
@@ -56,8 +56,8 @@
 <g id="node6" class="node">
 <title>dev2</title>
 <polygon fill="#f0efe8" stroke="#000000" stroke-width="0" points="389.7628,-76 216.079,-76 216.079,0 389.7628,0 389.7628,-76"/>
-<text text-anchor="middle" x="302.9209" y="-42" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
-<text text-anchor="middle" x="302.9209" y="-22" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
+<text text-anchor="middle" x="302.9209" y="-42" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
+<text text-anchor="middle" x="302.9209" y="-22" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
 </g>
 <!-- blessed&#45;&#45;dev2 -->
 <g id="edge8" class="edge">
@@ -69,8 +69,8 @@
 <g id="node7" class="node">
 <title>dev3</title>
 <polygon fill="#f0efe8" stroke="#000000" stroke-width="0" points="605.7628,-76 432.079,-76 432.079,0 605.7628,0 605.7628,-76"/>
-<text text-anchor="middle" x="518.9209" y="-42" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
-<text text-anchor="middle" x="518.9209" y="-22" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
+<text text-anchor="middle" x="518.9209" y="-42" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">developer</text>
+<text text-anchor="middle" x="518.9209" y="-22" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">public</text>
 </g>
 <!-- blessed&#45;&#45;dev3 -->
 <g id="edge9" class="edge">
@@ -82,7 +82,7 @@
 <g id="node2" class="node">
 <title>dictator</title>
 <polygon fill="#e93a1d" stroke="#000000" stroke-width="0" points="173.4209,-354 .4209,-354 .4209,-298 173.4209,-298 173.4209,-354"/>
-<text text-anchor="middle" x="86.9209" y="-320" font-family="Menlo, Consolas, Courier New, monospace" font-size="20.00" fill="#ffffff">dictator</text>
+<text text-anchor="middle" x="86.9209" y="-320" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">dictator</text>
 </g>
 <!-- dictator&#45;&#45;blessed -->
 <g id="edge1" class="edge">

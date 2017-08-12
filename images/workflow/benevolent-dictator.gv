@@ -11,7 +11,7 @@ graph Git {
   node [shape=box
         style="filled"
         fillcolor="#e93a1d"
-        fontname="Menlo, Consolas, Courier New, monospace"
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         fontcolor="#ffffff"
         margin=".6,.25"
