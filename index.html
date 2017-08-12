@@ -207,7 +207,7 @@ $ git branch &lt;name&gt; &lt;where&gt; &amp;&amp; git checkout &lt;name&gt;
 					<br>
 					<p>Your options:</p>
 					<ul>
-						<li><code><a href="#/merge">git merge</a> (<a href="#/merge-ff">2 variants</a>)</code></li>
+						<li><code><a href="#/merge">git merge</a></code> (<a href="#/merge-ff">2 variants</a>)</li>
 						<li><code><a href="#/rebase">git rebase</a></code></li>
 					</ul>
 				</section>
@@ -243,8 +243,8 @@ $ git merge topic</pre>
 					<h2>Undoing the merge</h2>
 					<pre>$ git reset --hard E
 
-# Like a pro:
-$ git reset --hard HEAD~</pre>
+# Like a pro (covers <a href="#/merge">recursive</a> and <a href="#/merge-ff">ff merges</a>):
+$ git reset --hard @@{1}</pre>
 
 					<img src="images/integration/diverged-history.svg"
 						   height="420rem">

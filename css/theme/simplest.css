@@ -321,6 +321,8 @@ body {
   word-wrap: normal; }
   .reveal pre .highlight {
     text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
+  .reveal pre a {
+    color: #fff; }
 
 .reveal blockquote {
   margin-top: 3em;
