@@ -15,12 +15,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: rgba(0, 0, 0, 0.99);
+  background: #e93a1d;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: rgba(0, 0, 0, 0.99);
+  background: #e93a1d;
   text-shadow: none; }
 
 .reveal .slides > section,
