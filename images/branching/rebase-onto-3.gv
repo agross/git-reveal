@@ -1,0 +1,57 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  node [group=master]
+  A -> B -> E -> F
+  node [group=server]
+  B -> C -> D -> I
+  node [group=client_new]
+  Gr [label="G'"]
+  Hr [label="H'"]
+  B -> Gr -> Hr
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+
+  subgraph cluster_master {
+    color=invis
+    {
+      rank=same
+      F -> master
+    }
+  }
+
+  {
+    rank=same
+    I -> server
+  }
+
+  {
+    rank=same
+    Hr -> client
+  }
+
+  node [style="rounded,filled"
+        group=client
+        fillcolor="#f0efe864"
+        fontcolor="#7f7f7f"]
+  edge [color="#8f8a8364"]
+  C -> G -> H
+}

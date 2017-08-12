@@ -1,0 +1,86 @@
+graph Git {
+  layout=neato
+  bgcolor="transparent"
+
+  ranksep=4
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        dir="none"
+        penwidth=2]
+  node [shape=box
+        style="filled"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        fontcolor="#ffffff"
+        margin=".6,.25"
+        width=2.5
+        penwidth=0]
+
+  untracked [fillcolor="#f0efe8"
+             fontcolor="#000000"
+             label="Untracked"
+             pos="0,5.5!"]
+
+  unmodified [fillcolor="#3e8f99"
+              label="Unmodified"
+              pos="3,5.5!"]
+
+  modified [fillcolor="#c8a036"
+            label="Modified"
+            pos="6,5.5!"]
+
+  staged [fillcolor="#e93a1d"
+          label="Staged"
+          pos="9,5.5!"]
+
+  node [color="#8f8a83"
+        width=0
+        penwidth=1
+        label=""]
+  add_untracked [pos="0,4!"]
+  edit_unmodified [pos="3,3!"]
+  stage_modified [pos="6,2!"]
+  remove_unmodified [pos="3,1.5!"]
+  commit_staged [pos="9,.5!"]
+
+  node [shape=triangle
+        width=1
+        height=1
+        fixedsize=true
+        orientation=270]
+
+  add_staged [pos="8.5,4!"]
+  edit_modified [pos="5.5,3!"]
+  stage_staged [pos="8.5,2!"]
+
+  node [orientation=90]
+  remove_untracked [pos=".5,1.5!"]
+  commit_unmodified [pos="3.5,.5!"]
+
+  node [style="invis"
+        height=0
+        fixedsize=true]
+  untracked_h [pos="0,0!"]
+  unmodified_h [pos="3,0!"]
+  modified_h [pos="6,0!"]
+  staged_h [pos="9,0!"]
+
+  untracked -- untracked_h
+  unmodified -- unmodified_h
+  modified -- modified_h
+  staged -- staged_h
+
+  edge [dir="none"
+        labelfontname="Menlo, Consolas, Courier New, monospace"
+        labelfontsize=20
+        labelfontcolor="#ffffff"
+        labeldistance=0
+        penwidth=40]
+
+  add_untracked -- add_staged      [taillabel="            Add file"]
+  edit_unmodified -- edit_modified [taillabel="            Edit file"]
+  stage_modified -- stage_staged   [taillabel="             Stage file"]
+  remove_unmodified -- remove_untracked [taillabel="Remove file             "]
+  commit_staged -- commit_unmodified    [taillabel="Commit        "]
+}

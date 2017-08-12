@@ -1,0 +1,103 @@
+graph Git {
+  layout=neato
+  bgcolor="transparent"
+
+  edge [color="#8f8a83"
+        penwidth=2]
+
+  node [shape=box
+        style="filled"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=1]
+
+  node [color="#8f8a83"
+        penwidth=2.1
+        fillcolor="#d9d9d9"
+        labelloc=t]
+
+  computer_a [label="\nComputer A"
+              pos="-4,-2.5!"
+              height=6.2
+              width=3.8]
+
+  computer_b [label="\nComputer B"
+              pos="4,-2.5!"
+              height=6.2
+              width=3.8]
+
+  server [label="\nServer"
+          pos="0,4.2!"
+          height=5.2
+          width=3.8]
+
+  server_versions [label="\nVersion Database"
+                   fillcolor="#ffffff"
+                   pos="0,3.9!"
+                   height=3.9]
+
+  a_versions [label="\nVersion Database"
+              fillcolor="#ffffff"
+              pos="-4,-3.3!"
+              height=3.9]
+
+  b_versions [label="\nVersion Database"
+              fillcolor="#ffffff"
+              pos="4,-3.3!"
+              height=3.9]
+
+  node [shape=box
+        style="rounded,filled"
+        fillcolor="#f0efe8"
+        labelloc=c
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  server_version1 [label="Version 1"
+                   pos="0,2.6!"]
+  server_version2 [label="Version 2"
+                   pos="0,3.6!"]
+  server_version3 [label="Version 3"
+                   pos="0,4.6!"]
+
+  server_version3 -- server_version2 -- server_version1
+
+  a_version1 [label="Version 1"
+              pos="-4,-4.6!"]
+  a_version2 [label="Version 2"
+              pos="-4,-3.6!"]
+  a_version3 [label="Version 3"
+              pos="-4,-2.6!"]
+
+  a_version3 -- a_version2 -- a_version1
+
+  b_version1 [label="Version 1"
+              pos="4,-4.6!"]
+  b_version2 [label="Version 2"
+              pos="4,-3.6!"]
+  b_version3 [label="Version 3"
+              pos="4,-2.6!"]
+
+  b_version3 -- b_version2 -- b_version1
+
+  node [fillcolor="#3e8f99"
+        fontcolor="#ffffff"]
+
+  edge [dir="forward"]
+  a_versions -- a_file
+  b_versions -- b_file
+
+  edge [dir="both"]
+
+  a_file [label="File"
+          pos="-4,-.5!"]
+  b_file [label="File"
+          pos="4,-.5!"]
+
+  computer_a -- server
+  computer_b -- server
+  computer_a -- computer_b
+}

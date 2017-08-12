@@ -1,0 +1,31 @@
+graph Git {
+  bgcolor="transparent"
+
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        dir="both"
+        penwidth=2]
+  node [shape=box
+        style="filled"
+        fillcolor="#e93a1d"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        fontcolor="#ffffff"
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  repo [fillcolor="#c8a036"
+        label="shared\nrepository"
+        margin=".7,.4"]
+
+  dev1 [label="developer"]
+  dev2 [label="developer"]
+  dev3 [label="developer"]
+
+  repo -- dev1
+  repo -- dev2
+  repo -- dev3
+}

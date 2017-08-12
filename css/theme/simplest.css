@@ -367,3 +367,11 @@ body {
   .reveal .cross-fade > *:nth-child(3) {
     animation-delay: 32s;
     opacity: 0; }
+
+.reveal .inline-images img {
+  height: 1em;
+  margin: 0;
+  vertical-align: bottom; }
+
+.reveal .inline-images a:hover img {
+  box-shadow: none; }

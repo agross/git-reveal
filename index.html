@@ -32,8 +32,9 @@
 			<div class="slides">
 			<section>
 				<div class="cross-fade">
-					<img src="images/git-logo.png"
-					     alt="Git logo">
+					<img src="images/git-logo.svg"
+							 alt="Git logo"
+							 style="width: 60%">
 					<img src="http://imgs.xkcd.com/comics/git.png"
 					     alt="xkcd">
 					<a href="https://twitter.com/mikehostetler/status/784101927260917760?s=09"
@@ -51,14 +52,15 @@
 			</section>
 
 			<section data-background="#2b2b2b">
-				<img src="images/centralized-vcs.png"
+				<img src="images/centralized-vcs.svg"
 				     alt="Centralized VCS">
 			</section>
 
 			<section style="margin-top: -50px;"
 			         data-transition="linear">
-				<img src="images/distributed-vcs.png"
-				     alt="Distributed VCS">
+				<img src="images/distributed-vcs.svg"
+						 alt="Distributed VCS"
+						 style="max-width: 70%">
 			</section>
 
 			<section data-background="images/offline.jpg">
@@ -78,8 +80,18 @@
 
 				<section>
 					<pre>$ /dont-panic/</pre>
-					<img src="images/command-line-works.png"
-					     alt="Use the bloody command line. It works!">
+
+					<blockquote class="twitter-tweet"
+											data-lang="en"
+											data-dnt="true"
+											data-align="center">
+						<p lang="en"
+							 dir="ltr">
+							note to self, use the bloody command line. It works!
+						</p>
+						&mdash; Channing Walton (@channingwalton)
+						<a href="https://twitter.com/channingwalton/status/160485379248627713">January 20, 2012</a>
+					</blockquote>
 				</section>
 
 				<section>
@@ -121,14 +133,14 @@ index 0000000..4b5fa63
 
 				<section>
 					<h2>Content Lifecycle</h2>
-					<img src="images/lifecycle.png">
+					<img src="images/lifecycle.svg">
 				</section>
 
 				<section>
 					<h2>Staging Area = Power</h2>
 					<a href="http://ndpsoftware.com/git-cheatsheet.html"
-					   target="_blank"><img src="images/areas.png"></a>
-					<small style="display: block; text-align: center">It allows you to do partial operations with <code>git {add|checkout|reset HEAD} --patch</code></small>
+						 target="_blank"><img style="padding-left: 2em" src="images/areas.svg"></a>
+					<small style="display: block; text-align: center">It allows you to do partial operations with<br><code>git {add|checkout|reset HEAD} --patch</code></small>
 				</section>
 			</section>
 
@@ -139,25 +151,25 @@ index 0000000..4b5fa63
 
 				<section>
 					<h2>Simple history</h2>
-					<img src="images/branching/1-simple-history.png">
+					<img src="images/branching/1-simple-history.svg">
 				</section>
 
 				<section>
-					<h2>There is another pointer: <code>HEAD</code></h2>
-					<img src="images/branching/2-HEAD.png">
+					<h2>The <code>HEAD</code> pointer</h2>
+					<img src="images/branching/2-HEAD.svg">
 				</section>
 
 				<section>
 					<h2>Creating a branch</h2>
-					<pre>$ git branch testing &lt;where&gt;</pre>
+					<pre>$ git branch topic &lt;where&gt;</pre>
 					<small>(<code>&lt;where&gt;</code> defaults to <code>HEAD</code>)</small>
-					<img src="images/branching/3-create-branch.png">
+					<img src="images/branching/3-create-branch.svg">
 				</section>
 
 				<section>
 					<h2>Current branch = where <code>HEAD</code> is</h2>
-					<pre>$ git checkout testing</pre>
-					<img src="images/branching/4-switch-branch.png">
+					<pre>$ git checkout topic</pre>
+					<img src="images/branching/4-switch-branch.svg">
 				</section>
 
 				<section>
@@ -171,21 +183,21 @@ $ git branch &lt;name&gt; &lt;where&gt; &amp;&amp; git checkout &lt;name&gt;
 				</section>
 
 				<section>
-					<h2>Advancing the testing branch</h2>
-					<pre>$ git commit -am "work on testing"</pre>
-					<img src="images/branching/5-advance-testing.png">
+					<h2>Advancing the topic branch</h2>
+					<pre>$ git commit -am "work on topic"</pre>
+					<img src="images/branching/5-advance-topic.svg">
 				</section>
 
 				<section>
 					<h2>Back to master</h2>
 					<pre>$ git checkout master</pre>
-					<img src="images/branching/6-back-to-master.png">
+					<img src="images/branching/6-back-to-master.svg">
 				</section>
 
 				<section>
 					<h2>Advancing the master branch</h2>
 					<pre>$ git commit -am "work on master"</pre>
-					<img src="images/branching/7-advance-master.png">
+					<img src="images/branching/7-advance-master.svg">
 				</section>
 			</section>
 
@@ -214,37 +226,42 @@ $ git branch &lt;name&gt; &lt;where&gt; &amp;&amp; git checkout &lt;name&gt;
 
 				<section>
 					<h2>Diverged History</h2>
-					<img src="images/integration/diverged-history.png">
+					<img src="images/integration/diverged-history.svg">
 				</section>
 
 				<section id="merge">
 					<h2><code>git merge</code></h2>
 					<pre>$ git checkout <span class="highlight">master</span>
-$ git merge experiment</pre>
-					<img src="images/integration/diverged-history-merge.png">
+$ git merge topic</pre>
+					<img src="images/integration/diverged-history-merge.svg"
+					     height="420rem">
 
-					<small>This is a <strong>recursive merge</strong>, as it integrates two diverged branches.</small>
+					<small>This is a <strong>recursive merge</strong>, i.e. the strategy used to integrates two diverged branches.</small>
 				</section>
 
 				<section>
 					<h2>Undoing the merge</h2>
-					<pre>$ git reset --hard C3</pre>
+					<pre>$ git reset --hard E
 
-					<img src="images/integration/diverged-history.png">
+# Like a pro:
+$ git reset --hard HEAD~</pre>
+
+					<img src="images/integration/diverged-history.svg"
+						   height="420rem">
 				</section>
 
 				<section>
 					<h2>Linear history</h2>
-					<img src="images/integration/linear-history.png">
+					<img src="images/integration/linear-history.svg">
 				</section>
 
 				<section id="merge-ff">
 					<h2>A <code>git merge</code> special case</h2>
 					<pre>$ git checkout <span class="highlight">master</span>
-$ git merge experiment</pre>
-					<img src="images/integration/linear-history-merge.png">
+$ git merge topic</pre>
+					<img src="images/integration/linear-history-merge.svg">
 
-					<small>This is a <strong>fast-forward merge</strong> as the master pointer can be moved from C3 to C4 without losing commits reachable from master.</small>
+					<small>This is a <strong>fast-forward merge</strong> as the master pointer can be moved from <code>C</code> to <code>E</code> without losing commits reachable from master.</small>
 				</section>
 
 				<section>
@@ -293,11 +310,11 @@ $ git merge experiment</pre>
 
 				<section id="rebase">
 					<h2><code>git rebase</code></h2>
-					<pre>$ git checkout <span class="highlight">experiment</span>
+					<pre>$ git checkout <span class="highlight">topic</span>
 $ git rebase master</pre>
-					<img src="images/integration/diverged-history-rebase.png">
+					<img src="images/integration/diverged-history-rebase.svg">
 
-					<small>Commit C4 is applied on top of master as C4'.</small>
+					<small>Commit <code>C</code> and <code>D</code> is applied on top of master as <code>C'</code> and <code>D'</code>.</small>
 				</section>
 
 				<section style="margin-top: -100px; padding: 0">
@@ -346,15 +363,21 @@ $ git rebase master</pre>
 
 				<section>
 					<h2>Complex Rebase</h2>
-					<small style="display: block; text-align: center">How to get rid of C3 when rebasing client on master?</small>
-					<img src="images/branching/rebase-onto-1.png">
+					<small style="display: block; text-align: center">How to get rid of <code>C</code> when rebasing client on master?</small>
+					<img src="images/branching/rebase-onto-1.svg">
 				</section>
 
 				<section>
 					<h2>Complex Rebase</h2>
 					<small style="display: block; text-align: center">&hellip;is easy when you know the syntax</small>
 					<pre>$ git rebase --onto master server client</pre>
-					<img src="images/branching/rebase-onto-2.png">
+					<img src="images/branching/rebase-onto-2.svg">
+				</section>
+				<section>
+					<h2>A Second Variant</h2>
+					<pre>$ git rebase --onto B server client</pre>
+					<img src="images/branching/rebase-onto-3.svg"
+							 height="500rem">
 				</section>
 			</section>
 
@@ -364,8 +387,8 @@ $ git rebase master</pre>
 				</section>
 
 				<section>
-					<h2>Feature Branches Provide Isolation</h2>
-					<img src="images/branching-strategies/feature-branches.png">
+					<h2>Branches Provide Isolation</h2>
+					<img src="images/branching-strategies/feature-branches.svg">
 
 					<small>
             <p>Again, you have two options:</p>
@@ -420,19 +443,19 @@ $ git rebase master</pre>
 
 				<section>
 					<h2>Centralized</h2>
-					<img src="images/workflow/centralized.png"
+					<img src="images/workflow/centralized.svg"
 					     alt="Centralized workflow">
 				</section>
 
 				<section>
 					<h2>Integration Manager</h2>
-					<img src="images/workflow/integration-manager.png"
+					<img src="images/workflow/integration-manager.svg"
 					     alt="Integration manager">
 				</section>
 
 				<section>
 					<h2>Benevolent Dictator</h2>
-					<img src="images/workflow/benevolent-dictator.png"
+					<img src="images/workflow/benevolent-dictator.svg"
 					     alt="Benevolent dictator">
 				</section>
 			</section>
@@ -444,37 +467,49 @@ $ git rebase master</pre>
 
 				<section>
 					<h2>Commit = Trees + Blobs</h2>
-					<img src="images/internals/commit-objects.png"
+					<img src="images/internals/commit-objects.svg"
 					     alt="A commit object has references to tree and blob objects">
 				</section>
 
 				<section>
 					<h2>History = Linked Commits</h2>
-					<img src="images/internals/commit-history.png"
+					<img src="images/internals/commit-history.svg"
 					     alt="The history is a sequence of commits objects">
 				</section>
 
 				<section>
 					<h2>Pointers Everywhere</h2>
-					<img src="images/internals/branch-and-history.png"
+					<img src="images/internals/branch-and-history.svg"
 					     alt="Pointers reference individual commits">
 				</section>
 
-				<section>
+				<section data-transition="slide-in fade-out">
 					<h2>Pointers Everywhere</h2>
-					<img src="images/internals/data-model.png"
-					     alt="Full data model">
+					<img src="images/internals/data-model-1.svg"
+					     alt="Full data model (first commit)">
+				</section>
+
+				<section data-transition="fade-out">
+					<h2>Pointers Everywhere</h2>
+					<img src="images/internals/data-model-2.svg"
+					     alt="Full data model (second commit)">
+				</section>
+
+				<section data-transition="fade-out">
+					<h2>Pointers Everywhere</h2>
+					<img src="images/internals/data-model-3.svg"
+					     alt="Full data model (third commit)">
 				</section>
 
 				<section>
 					<h2>Delta Storage</h2>
-					<img src="images/internals/delta-storage.png"
+					<img src="images/internals/delta-storage.svg"
 					     alt="Delta storage">
 				</section>
 
 				<section>
 					<h2>Snapshot Storage</h2>
-					<img src="images/internals/snapshot-storage.png"
+					<img src="images/internals/snapshot-storage.svg"
 					     alt="Snapshot storage">
 				</section>
 			</section>
@@ -487,7 +522,11 @@ $ git rebase master</pre>
 				<section>
 					<h2>Written by Experts</h2>
 					<a href="http://git-scm.com/docs"
-					   target="_blank"><img src="images/docs/le-petit-robert.png" alt="Le petit Robert"></a>
+						 target="_blank">
+						<img src="images/docs/le-petit-robert.png"
+								 alt="Le Petit Robert"
+								 style="height: 450px">
+					</a>
 					<blockquote style="margin-top: 0">
 						git-rebase - Forward-port local commits to the updated upstream head
 						<footer>
@@ -498,7 +537,96 @@ $ git rebase master</pre>
 
 				<section>
 					<a href="http://git-scm.com/book/en/v2"
-					   target="_blank"><img src="images/docs/pro-git.png" alt="Pro Git"></a>
+						 target="_blank">
+						<img src="images/docs/pro-git.png" alt="Pro Git">
+					</a>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Image Credits</h1>
+				</section>
+				<section>
+					<ul class="inline-images">
+						<li>
+							<a href="#/">
+								<img src="images/git-logo.svg" alt="Git logo">
+								Git Logo
+							</a>
+							by
+							<a href="https://twitter.com/jasonlong">Jason Long</a>
+							is licensed under the
+							<a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>
+						</li>
+						<li>
+							<a href="#/">
+							 <img src="http://imgs.xkcd.com/comics/git.png" alt="xkcd">
+								Git Comic
+							</a>
+							by
+							<a href="https://xkcd.com/1597/">xkcd</a>
+							is licensed under the
+							<a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 Generic License</a>
+						</li>
+						<li>
+							<a href="#/">
+								<img src="images/search-volume.png" alt="Git search volume">
+								SVN Search Volume
+							</a>
+							by
+							<a href="https://blog.gitprime.com/git-didnt-beat-svn-github-did/?ref=quuu">GitPrime</a>
+						</li>
+						<li>
+							<a href="#/4">
+								<img src="images/offline.jpg" alt="Network cable">
+								Network Cable
+							</a>
+							by
+							<a href="http://www.flickr.com/photos/saschaaa/152502539/">Sascha on flickr</a>
+							is licensed under the
+							<a href="https://creativecommons.org/licenses/by-nd/2.0/">Creative Commons Attribution-NoDerivs 2.0 Generic License</a>
+						</li>
+						<li>
+							<a href="#/8/2">
+								<img src="images/branching-strategies/gitflow.png">
+								git-flow
+							</a>
+							by
+							<a href="http://nvie.com/posts/a-successful-git-branching-model/">Vincent Driessen</a>
+						</li>
+						<li>
+							<a href="#/8/3">
+								<img src="images/branching-strategies/hubflow.png">
+								hubflow
+							</a>
+							by
+							<a href="https://datasift.github.io/gitflow/GitFlowForGitHub.html">DataSift</a>
+						</li>
+						<li>
+							<a href="#/8/4">
+								<img src="https://gitenterprise.files.wordpress.com/2013/02/gitgerrit-webinar-lm-20130126-series-2-final-workflow.png">
+								Gerrit Workflow
+							</a>
+							by
+							<a href="https://www.slideshare.net/collabNet/gerrit-webinar-9414">CollabNet, Inc.</a>
+						</li>
+						<li>
+							<a href="#/11/1">
+								<img src="images/docs/le-petit-robert.png" alt="Le Petit Robert">
+ 								Le Petit Robert
+							</a>
+							by
+							<a href="https://www.lerobert.com">Éditions Le Robert</a>
+						</li>
+						<li>
+							<a href="#/11/2">
+								<img src="images/docs/pro-git.png" alt="Pro Git">
+								Pro Git
+							</a>
+							by
+							<a href="http://http://www.apress.com/">Apress</a>
+						</li>
+					</ul>
 				</section>
 			</section>
 			</div>

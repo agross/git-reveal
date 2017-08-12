@@ -1,0 +1,69 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  A [label="8e93a1d"]
+  B [label="b19dc7f"]
+  C [label="caccf61"]
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+  master
+  tag [label="v1.0"]
+  HEAD [fillcolor="#c8a036"]
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#3e8f99"]
+  snapshot_a [label="Snapshot A"]
+  snapshot_b [label="Snapshot B"]
+  snapshot_c [label="Snapshot C"]
+
+  A -> B -> C
+
+  subgraph cluster_a {
+    style=invis
+
+    {
+      rank=same
+      snapshot_a -> A
+    }
+  }
+
+  subgraph cluster_b {
+    style=invis
+
+    {
+      rank=same
+      snapshot_b -> B
+      B -> tag
+    }
+  }
+
+  subgraph cluster_c {
+    style=invis
+
+    {
+      rank=same
+      snapshot_c -> C
+      C -> master
+      master -> HEAD
+    }
+  }
+}

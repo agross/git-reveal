@@ -1,0 +1,75 @@
+graph Git {
+  layout=neato
+  bgcolor="transparent"
+
+  ranksep=4
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        dir="none"
+        penwidth=2]
+  node [shape=box
+        style="filled"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        fontcolor="#ffffff"
+        margin=".6,.25"
+        width=2.5
+        height=1.1
+        penwidth=0]
+
+  working [fillcolor="#e93a1d"
+           label="Working\nCopy"
+           pos="0,3.5!"]
+
+  index [fillcolor="#3e8f99"
+         label="Index"
+         pos="3,3.5!"]
+
+  repo [fillcolor="#f0efe8"
+        fontcolor="#000000"
+        label="Local\nHistory"
+        pos="6,3.5!"]
+
+  node [color="#8f8a83"
+        width=0
+        penwidth=1
+        label=""]
+  checkout_repo [pos="6,2!"]
+  stage_working [pos="0,1!"]
+  commit_index [pos="3,0!"]
+
+  node [shape=triangle
+        width=1
+        height=1
+        fixedsize=true
+        orientation=270]
+
+  stage_index [pos="2.5,1!"]
+  commit_repo [pos="5.5,0!"]
+
+  node [orientation=90]
+  checkout_working [pos=".5,2!"]
+
+  node [style="invis"
+        height=0
+        fixedsize=true]
+  working_h [pos="0,-.5!"]
+  index_h [pos="3,-.5!"]
+  repo_h [pos="6,-.5!"]
+
+  working -- working_h
+  index -- index_h
+  repo -- repo_h
+
+  edge [dir="none"
+        labelfontname="Menlo, Consolas, Courier New, monospace"
+        labelfontsize=20
+        labelfontcolor="#ffffff"
+        labeldistance=0
+        penwidth=40]
+
+  checkout_repo -- checkout_working [taillabel="Checkout the project                      "]
+  stage_working -- stage_index [taillabel="              Stage fixes"]
+  commit_index -- commit_repo  [taillabel="         Commit"]
+}

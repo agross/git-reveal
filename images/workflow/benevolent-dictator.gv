@@ -1,0 +1,58 @@
+graph Git {
+  layout=neato
+  bgcolor="transparent"
+
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        dir="forward"
+        penwidth=2]
+  node [shape=box
+        style="filled"
+        fillcolor="#e93a1d"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        fontcolor="#ffffff"
+        margin=".6,.25"
+        width=2.4
+        penwidth=0]
+
+  blessed [fillcolor="#c8a036"
+           label="blessed\nrepository"
+           pos="6,4!"]
+
+  dictator [fillcolor="#e93a1d"
+            label="dictator"
+            pos="0,4!"]
+
+  node [fillcolor="#3e8f99"]
+  lt1 [label="lieutenant"
+       pos="0,2!"]
+  lt2 [label="lieutenant"
+       pos="3,2!"]
+
+  node [fillcolor="#f0efe8"
+        fontcolor="#000000"]
+  dev1 [label="developer\npublic"
+        pos="0,0!"]
+  dev2 [label="developer\npublic"
+        pos="3,0!"]
+  dev3 [label="developer\npublic",
+        pos="6,0!"]
+
+  dictator -- blessed
+  lt1 -- dictator
+  lt2 -- dictator
+  dev1 -- lt1
+  dev2 -- lt1
+  dev3 -- lt2
+
+  edge [color="#8f8a8364"]
+  splines=true
+  blessed:s -- dev1:ne
+  blessed:s -- dev2:ne
+  blessed:s -- dev3
+  blessed:s -- lt1:ne
+  blessed:s -- lt2:ne
+}

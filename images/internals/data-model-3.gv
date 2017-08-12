@@ -1,0 +1,292 @@
+graph Git {
+  layout=neato
+  bgcolor="transparent"
+
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        labeldistance=8
+        labelangle=8
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=3.1
+        penwidth=0]
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+  master [
+          label="refs/heads/master"
+          pos="0,4!"]
+  tag [
+       label="refs/tags/v1.0"
+       pos="0,2!"]
+
+  node [margin="0,0"
+        fontcolor="#000000"
+        fillcolor="transparent"]
+  A [pos="4,0!"
+     label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">8e93a</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">💥🍺🎉 Initial commit</font></td>
+      </tr>
+    </table>
+    >]
+
+  B [
+     pos="4,2!"
+     label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">b19dc</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">✅ Implemented test library</font></td>
+      </tr>
+    </table>
+    >]
+
+  C [
+     pos="4,4!"
+     label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">caccf</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">💩 Fixed stack overflow</font></td>
+      </tr>
+    </table>
+    >]
+
+  node [fontcolor="#ffffff"]
+
+  tree_a [pos="8,0!"
+          label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">92ec2</td>
+      </tr>
+      <tr>
+        <td align="left"><font point-size="14">README</font></td>
+      </tr>
+    </table>
+    >]
+
+  tree_b [
+          pos="8,2!"
+          label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">06840</td>
+      </tr>
+      <tr>
+        <td align="left"><font point-size="14">README.md, test.rb</font></td>
+      </tr>
+    </table>
+    >]
+
+  tree_c [
+          pos="8,4!"
+          label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="250"
+           height="90">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">05a2d</td>
+      </tr>
+      <tr>
+        <td align="left"><font point-size="14">README.md, test.rb, bak</font></td>
+      </tr>
+    </table>
+    >]
+
+  readme_1 [pos="14,0!"
+            label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#c8a036"
+           fixedsize="true"
+           width="250"
+           height="120">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">5b1d3</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">## Testing library<br />
+ <br />
+This library is used to<br />
+test Ruby projects.</font>
+</td>
+      </tr>
+    </table>
+    >]
+
+  test_1 [
+          pos="14,2!"
+          label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#c8a036"
+           fixedsize="true"
+           width="250"
+           height="120">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">1f7a7</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">require 'test/unit'<br />
+ <br />
+class Test::Unit::TestCase</font></td>
+      </tr>
+    </table>
+    >]
+
+  test_2 [
+          pos="14,4!"
+          label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#c8a036"
+           fixedsize="true"
+           width="250"
+           height="120">
+      <tr>
+        <td border="1"
+            sides="b"
+            width="250">fa49b</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">require 'logger'<br />
+require 'test/unit'<br />
+<br />
+class Test::Unit::TestCase</font>
+        </td>
+      </tr>
+    </table>
+    >]
+
+  node [
+        width=.033
+        height=.033
+        fixedsize=true
+        label=""
+        fillcolor="#8f8a83"]
+  dummy_bak_1 [pos="10,5.5!"]
+  dummy_bak_2 [pos="16.5,5.5!"]
+  dummy_bak_3 [pos="16.5,-1!"]
+  dummy_bak_4 [pos="10,-1!"]
+
+  dummy_readme_1 [pos="10,5!"]
+  dummy_readme_2 [pos="16.2,5!"]
+  dummy_readme_3 [pos="16.2,0!"]
+
+  readme_1 -- tree_a [headlabel="README"]
+  tree_a -- A
+
+
+
+  readme_1 -- tree_b [headlabel="README.md" labelangle=20 labeldistance=9.3]
+  test_1 -- tree_b [headlabel="test.rb"]
+
+  A -- B
+  B -- tag
+  tree_b -- B
+
+
+
+  test_2 -- tree_c [headlabel="test.rb"]
+
+  tree_a:se -- dummy_bak_4:w
+  readme_1:e -- dummy_readme_3:w
+
+  B -- C
+  C -- master
+  tree_c -- C
+
+  edge [dir=none]
+  dummy_bak_1 -- tree_c:ne [headlabel="bak" labelangle=-18 labeldistance=9.8]
+  dummy_bak_1 -- dummy_bak_2 -- dummy_bak_3 -- dummy_bak_4
+
+  dummy_readme_1 -- tree_c:ne [headlabel="README.md" labelangle=-30 labeldistance=10]
+  dummy_readme_1 -- dummy_readme_2 -- dummy_readme_3
+}

@@ -1,0 +1,62 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="forward"]
+  node [shape=box
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0
+        style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#c8a036"]
+
+  file_c_1 [style=invis]
+  file_c_2 [label="File C"]
+  file_c_3 [style=invis width=0 fixedsize=true]
+  file_c_4 [label="Δ1"]
+
+  file_c_1 -> file_c_2 [style=invis]
+  file_c_2 -> file_c_3 [dir=none]
+  file_c_3 -> file_c_4
+
+
+  file_b_1 [label="File B"]
+  file_b_2 [style=invis width=0 fixedsize=true]
+  file_b_3 [style=invis width=0 fixedsize=true]
+  file_b_4 [label="Δ1"]
+  file_b_5 [label="Δ2"]
+
+  file_b_1 -> file_b_2 [dir=none]
+  file_b_2 -> file_b_3 [dir=none]
+  file_b_3 -> file_b_4 -> file_b_5
+
+  file_a_1 [label="File A"]
+  file_a_2 [label="Δ1"]
+  file_a_3 [style=invis width=0 fixedsize=true]
+  file_a_4 [label="Δ2"]
+
+  file_a_1 -> file_a_2
+  file_a_2 -> file_a_3 [dir=none]
+  file_a_3 -> file_a_4
+
+  node [style="rounded,filled"
+        fontcolor="#000000"
+        fillcolor="#f0efe8"]
+  version_1 [label="Version 1"]
+  version_2 [label="Version 2"]
+  version_3 [label="Version 3"]
+  version_4 [label="Version 4"]
+  version_5 [label="Version 5"]
+
+  edge [style=invis]
+
+  version_1 -> version_2 -> version_3 -> version_4 -> version_5
+}

@@ -140,6 +140,10 @@ module.exports = function(grunt) {
 			markdown: {
 				files: root.map(path => path + '/*.md')
 			},
+			graphviz: {
+				files: 'images/**/*.gv',
+				tasks: 'graphviz'
+			},
 			options: {
 				livereload: true
 			}
@@ -149,8 +153,19 @@ module.exports = function(grunt) {
 			js: ['js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js'],
 			node: ['.'],
 			options: {}
-		}
+		},
 
+		graphviz: {
+			compile: {
+				files: [{
+					expand: true,
+					cwd: 'images',
+					src: ['**/*.gv'],
+					dest: 'images',
+					ext: '.svg'
+				}]
+			}
+		}
 	});
 
 	// Dependencies
@@ -164,9 +179,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 	grunt.loadNpmTasks( 'grunt-retire' );
+	grunt.loadNpmTasks('grunt-graphviz');
 
 	// Default task
-	grunt.registerTask( 'default', [ 'css', 'js' ] );
+	grunt.registerTask('default', ['css', 'js', 'graphviz'] );
 
 	// JS task
 	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );

@@ -1,0 +1,45 @@
+graph Git {
+  bgcolor="transparent"
+
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        dir="back"
+        penwidth=2]
+  node [shape=box
+        style="filled"
+        fillcolor="#e93a1d"
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        fontcolor="#ffffff"
+        margin=".6,.25"
+        width=2.1
+        penwidth=0]
+
+  blessed [fillcolor="#c8a036"
+           label="blessed\nrepository"]
+
+  manager [fillcolor="#e93a1d"
+           label="integration\nmanager"]
+
+  node [fillcolor="#3e8f99"]
+  devpub1 [label="developer\npublic"]
+  devpub2 [label="developer\npublic"]
+
+  node [fillcolor="#f0efe8"
+        fontcolor="#000000"]
+  devpriv1 [label="developer\nprivate"]
+  devpriv2 [label="developer\nprivate"]
+
+  blessed -- manager
+  devpub1 -- devpriv1
+  devpub2 -- devpriv2
+
+  edge [color="#8f8a8364"
+        constraint=false]
+  devpriv1 -- blessed
+  devpriv2 -- blessed
+  manager -- devpub1
+  manager -- devpub2
+}

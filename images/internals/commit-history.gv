@@ -1,0 +1,158 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Consolas, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#3e8f99"]
+  snapshot_a [label="Snapshot A"]
+  snapshot_b [label="Snapshot B"]
+  snapshot_c [label="Snapshot C"]
+
+  node [margin="0,0"
+        fontcolor="#000000"
+        fillcolor="transparent"]
+  A [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="220">
+      <tr>
+        <td border="1"
+            width="250"
+            bgcolor="white"><font color="black">8e93a</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><u><b>commit</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"
+            border="1"
+            sides="b">              <b>tree</b>    92ec2<br />
+          <b>parent</b>    00000<br />
+          <b>author</b>    Scott<br />
+    <b>committer</b>    Scott</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">💥🍺🎉 Initial commit</font></td>
+      </tr>
+    </table>
+    >]
+
+  B [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="220">
+      <tr>
+        <td border="1"
+            width="250"
+            bgcolor="white"><font color="black">b19dc</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><u><b>commit</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"
+            border="1"
+            sides="b">              <b>tree</b>    06840<br />
+          <b>parent</b>    8e93a<br />
+          <b>author</b>    Scott<br />
+    <b>committer</b>    Scott</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">✅ Implemented test library</font></td>
+      </tr>
+    </table>
+    >]
+
+  C [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="250"
+           height="220">
+      <tr>
+        <td border="1"
+            width="250"
+            bgcolor="white"><font color="black">caccf</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><u><b>commit</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"
+            border="1"
+            sides="b">              <b>tree</b>    05a2d<br />
+          <b>parent</b>    b19dc<br />
+          <b>author</b>    Scott<br />
+    <b>committer</b>    Scott</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14">💩 Fixed stack overflow</font></td>
+      </tr>
+    </table>
+    >]
+
+  subgraph cluster_a {
+    style=invis
+
+    {
+      rank=same
+      snapshot_a -> A
+    }
+  }
+
+  subgraph cluster_b {
+    style=invis
+
+    {
+      rank=same
+      snapshot_b -> B
+    }
+  }
+
+  subgraph cluster_c {
+    style=invis
+
+    {
+      rank=same
+      snapshot_c -> C
+    }
+  }
+
+  A -> B -> C
+}
