@@ -37,7 +37,7 @@ digraph Git {
       <tr>
         <td border="1"
             width="250"
-            bgcolor="white"><font color="black">8e93a</font></td>
+            bgcolor="white"><font color="black">deadbeef</font></td>
       </tr>
       <tr>
         <td border="1"
@@ -71,7 +71,7 @@ digraph Git {
       <tr>
         <td border="1"
             width="250"
-            bgcolor="white"><font color="black">b19dc</font></td>
+            bgcolor="white"><font color="black">00cafefe</font></td>
       </tr>
       <tr>
         <td border="1"
@@ -82,7 +82,7 @@ digraph Git {
             balign="left"
             border="1"
             sides="b">              <b>tree</b>    06840<br />
-          <b>parent</b>    8e93a<br />
+          <b>parent</b>    deadb<br />
           <b>author</b>    Scott<br />
     <b>committer</b>    Scott</td>
       </tr>
@@ -105,7 +105,7 @@ digraph Git {
       <tr>
         <td border="1"
             width="250"
-            bgcolor="white"><font color="black">caccf</font></td>
+            bgcolor="white"><font color="black">50fac0de</font></td>
       </tr>
       <tr>
         <td border="1"
@@ -116,7 +116,7 @@ digraph Git {
             balign="left"
             border="1"
             sides="b">              <b>tree</b>    05a2d<br />
-          <b>parent</b>    b19dc<br />
+          <b>parent</b>    00caf<br />
           <b>author</b>    Scott<br />
     <b>committer</b>    Scott</td>
       </tr>

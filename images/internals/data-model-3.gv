@@ -45,7 +45,7 @@ graph Git {
       <tr>
         <td border="1"
             sides="b"
-            width="250">8e93a</td>
+            width="250">deadbeef</td>
       </tr>
       <tr>
         <td align="left"
@@ -68,7 +68,7 @@ graph Git {
       <tr>
         <td border="1"
             sides="b"
-            width="250">b19dc</td>
+            width="250">00cafefe</td>
       </tr>
       <tr>
         <td align="left"
@@ -91,7 +91,7 @@ graph Git {
       <tr>
         <td border="1"
             sides="b"
-            width="250">caccf</td>
+            width="250">50fac0de</td>
       </tr>
       <tr>
         <td align="left"

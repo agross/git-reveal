@@ -21,13 +21,13 @@
 <g id="node1" class="node">
 <title>A</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M162.6572,-164C162.6572,-164 35.6572,-164 35.6572,-164 29.6572,-164 23.6572,-158 23.6572,-152 23.6572,-152 23.6572,-120 23.6572,-120 23.6572,-114 29.6572,-108 35.6572,-108 35.6572,-108 162.6572,-108 162.6572,-108 168.6572,-108 174.6572,-114 174.6572,-120 174.6572,-120 174.6572,-152 174.6572,-152 174.6572,-158 168.6572,-164 162.6572,-164"/>
-<text text-anchor="middle" x="99.1572" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">8e93a1d</text>
+<text text-anchor="middle" x="99.1572" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">deadbeef</text>
 </g>
 <!-- B -->
 <g id="node2" class="node">
 <title>B</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M401.5186,-164C401.5186,-164 274.5186,-164 274.5186,-164 268.5186,-164 262.5186,-158 262.5186,-152 262.5186,-152 262.5186,-120 262.5186,-120 262.5186,-114 268.5186,-108 274.5186,-108 274.5186,-108 401.5186,-108 401.5186,-108 407.5186,-108 413.5186,-114 413.5186,-120 413.5186,-120 413.5186,-152 413.5186,-152 413.5186,-158 407.5186,-164 401.5186,-164"/>
-<text text-anchor="middle" x="338.0186" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">b19dc7f</text>
+<text text-anchor="middle" x="338.0186" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">00cafefe</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
@@ -39,7 +39,7 @@
 <g id="node3" class="node">
 <title>C</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M641.4785,-164C641.4785,-164 514.4785,-164 514.4785,-164 508.4785,-164 502.4785,-158 502.4785,-152 502.4785,-152 502.4785,-120 502.4785,-120 502.4785,-114 508.4785,-108 514.4785,-108 514.4785,-108 641.4785,-108 641.4785,-108 647.4785,-108 653.4785,-114 653.4785,-120 653.4785,-120 653.4785,-152 653.4785,-152 653.4785,-158 647.4785,-164 641.4785,-164"/>
-<text text-anchor="middle" x="577.9785" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">caccf61</text>
+<text text-anchor="middle" x="577.9785" y="-130" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">50fac0de</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge2" class="edge">

@@ -19,9 +19,9 @@ digraph Git {
         fillcolor="#f0efe8"]
   X [style=invis]
   Y [style=invis]
-  A [label="8e93a1d"]
-  B [label="b19dc7f"]
-  C [label="caccf61"]
+  A [label="deadbeef"]
+  B [label="00cafefe"]
+  C [label="50fac0de"]
 
   A -> B -> C
 

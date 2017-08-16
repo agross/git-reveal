@@ -22,14 +22,14 @@
 <g id="node3" class="node">
 <title>A</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M139,-240C139,-240 12,-240 12,-240 6,-240 0,-234 0,-228 0,-228 0,-196 0,-196 0,-190 6,-184 12,-184 12,-184 139,-184 139,-184 145,-184 151,-190 151,-196 151,-196 151,-228 151,-228 151,-234 145,-240 139,-240"/>
-<text text-anchor="middle" x="75.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">8e93a1d</text>
+<text text-anchor="middle" x="75.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">deadbeef</text>
 </g>
 <!-- A&#45;&gt;X -->
 <!-- B -->
 <g id="node4" class="node">
 <title>B</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M362,-240C362,-240 235,-240 235,-240 229,-240 223,-234 223,-228 223,-228 223,-196 223,-196 223,-190 229,-184 235,-184 235,-184 362,-184 362,-184 368,-184 374,-190 374,-196 374,-196 374,-228 374,-228 374,-234 368,-240 362,-240"/>
-<text text-anchor="middle" x="298.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">b19dc7f</text>
+<text text-anchor="middle" x="298.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">00cafefe</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
@@ -42,7 +42,7 @@
 <g id="node5" class="node">
 <title>C</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M585,-240C585,-240 458,-240 458,-240 452,-240 446,-234 446,-228 446,-228 446,-196 446,-196 446,-190 452,-184 458,-184 458,-184 585,-184 585,-184 591,-184 597,-190 597,-196 597,-196 597,-228 597,-228 597,-234 591,-240 585,-240"/>
-<text text-anchor="middle" x="521.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">caccf61</text>
+<text text-anchor="middle" x="521.5" y="-206" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">50fac0de</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge2" class="edge">
