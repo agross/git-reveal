@@ -1,0 +1,100 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+  splines=line
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        height=.8
+        fixedsize=true
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  node [group=master]
+  A -> B -> C
+  node [group=pu]
+  M1 [label="⚡️ M1"]
+  M2 [label="️️⚡️ M2"]
+  M3 [label="⚡️ M3"]
+  C -> M1 [weight=5]
+  M1 -> M2 -> M3
+  node [group=topic_perf]
+  B:s -> D:w
+  D -> E
+  E:e -> M1:s
+  node [group=topic_css]
+  B:s -> F:w
+  F -> G
+  G:e -> M2:s
+  node [group=topic_report]
+  B:s -> H:w [weight=5]
+  H -> I
+  I:e -> M3:s
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+
+  subgraph cluster_master {
+    color=invis
+    {
+      rank=same
+      C -> master
+    }
+  }
+
+  subgraph cluster_pu {
+    color=invis
+    {
+      rank=same
+      pu [label="💩 pu"]
+      M3 -> pu
+    }
+  }
+
+  {
+    rank=same
+    perf [label="✅ perf"]
+    E -> perf
+  }
+
+  {
+    rank=same
+    layout [label="✅ css"]
+    G -> layout
+  }
+
+  {
+    rank=same
+    report [label="✅ report"]
+    I -> report
+  }
+
+  node [shape=cylinder
+        fillcolor="#3e8f99"
+        color="#ffffff"
+        penwidth=2
+        width=2.5
+        height=2.5]
+  edge [constraint=false
+        minlen=10
+        style=dotted
+        penwidth=3]
+  {
+    rank=same
+    rr_cache [label="\n.git/rr-cache\n\npre → post\npre → post\n..."]
+    rr_cache -> M2
+  }
+  rr_cache -> M1:s
+  rr_cache -> M3:s
+}

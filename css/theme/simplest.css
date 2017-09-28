@@ -297,6 +297,12 @@ body {
     border-color: #0073cf;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
+.reveal section.image {
+  padding: 0 !important; }
+  .reveal section.image img {
+    margin: 0;
+    min-width: 100%; }
+
 .reveal section img {
   background: none;
   border: 0;

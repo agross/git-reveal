@@ -516,6 +516,53 @@ $ git rebase master</pre>
 
 			<section>
 				<section>
+					<h1>Advanced Topics</h1>
+				</section>
+
+				<section>
+					<h2>Throw-Away Integration Branches</h2>
+					<ul>
+						<li>Use temporary <code>pu</code> branches</li>
+						<li>Do not base any work off of <code>pu</code></li>
+						<li>Enable “Reuse recorded resolution”:
+						<pre>git config --global rerere.enabled true
+git config --global rerere.autoUpdate true</pre></li>
+					</ul>
+				</section>
+
+				<section class="image" data-transition="slide-in none">
+					<pre># All branches were tested in isolation</pre>
+					<img src="images/pu/pu-1.svg"
+							 alt="Three features are done and work in isolation">
+				</section>
+
+				<section class="image" data-transition="none">
+					<pre>$ git checkout -b pu master</pre>
+					<img src="images/pu/pu-2.svg"
+					     alt="Create a temporary branch for proposed updates">
+				</section>
+
+				<section class="image" data-transition="none">
+					<pre>$ for b in <span class="highlight">perf css report</span>; do git merge $b; done</pre>
+					<img src="images/pu/pu-3.svg"
+					     alt="Merge topics and resolve conflicts, test all feature together">
+				</section>
+
+				<section class="image" data-transition="none">
+					<pre>$ git reset --hard master</pre>
+					<img src="images/pu/pu-4.svg"
+					alt="Back to square one">
+				</section>
+
+				<section class="image" data-transition="none">
+					<pre>$ for b in <span class="highlight">css report</span>; do git merge $b; done</pre>
+					<img src="images/pu/pu-5.svg"
+					     alt="The second integration attempt is successful">
+				</section>
+			</section>
+
+			<section>
+				<section>
 					<h1>Documentation</h1>
 				</section>
 
