@@ -525,7 +525,7 @@ $ git rebase master</pre>
 						<li>Use temporary <code>pu</code> branches</li>
 						<li>Do not base any work off of <code>pu</code></li>
 						<li>Enable “Reuse recorded resolution”:
-						<pre>git config --global rerere.enabled true
+							<pre>git config --global rerere.enabled true
 git config --global rerere.autoUpdate true</pre></li>
 					</ul>
 				</section>
@@ -558,6 +558,89 @@ git config --global rerere.autoUpdate true</pre></li>
 					<pre>$ for b in <span class="highlight">css report</span>; do git merge $b; done</pre>
 					<img src="images/pu/pu-5.svg"
 					     alt="The second integration attempt is successful">
+				</section>
+
+				<section>
+					<h2>Bisecting</h2>
+					<ul>
+						<li>Attempts to find bug-introducing commits by testing a minimum set of revisions</li>
+						<li>Enters detached <code>HEAD</code> state while searching</li>
+						<li>After the bad commit has been found, undo it
+							<pre>git revert [--no-commit] &lt;bad-commit&gt;</pre></li>
+						<li>Automate testing
+							<pre>git bisect run &lt;some-script&gt;</pre></li>
+						<li><code>some-script</code> can do things like <code>cherry-pick</code>ing reproductions, <a href="https://github.com/GROSSWEBER/git-bisect-demo">demo available</a></li>
+					</ul>
+				</section>
+
+				<section class="image" data-transition="slide-in none">
+					<h3>v1.0 works but v1.1 contains a regression</h3>
+					<pre>$ git stash save "whatever you're doing"</pre>
+					<img src="images/bisect/bisect-1.svg"
+							 alt="v1.0 works but commits between v1.0 and v1.1 broke something">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Start looking for the bug</h3>
+					<pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+					<img src="images/bisect/bisect-2.svg"
+					     alt="Start searching the breaking commit">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Test commit D</h3>
+					<pre>$ make test # => error</pre>
+					<img src="images/bisect/bisect-2.svg"
+					     alt="Test your app at commit D">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Give feedback about D</h3>
+					<pre>$ git bisect <span class="highlight">bad</span></pre>
+					<img src="images/bisect/bisect-3.svg"
+					     alt="Give git feedback about the test result">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Test commit B</h3>
+					<pre>$ make test # => success</pre>
+					<img src="images/bisect/bisect-3.svg"
+					     alt="Test your app at commit B">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Give feedback about B</h3>
+					<pre>$ git bisect <span class="highlight">good</span></pre>
+					<img src="images/bisect/bisect-4.svg"
+							 alt="Give git feedback about the test result">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Test commit C</h3>
+					<pre>$ make test # => success</pre>
+					<img src="images/bisect/bisect-4.svg"
+					     alt="Test your app at commit C">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Give feedback about C</h3>
+					<pre>$ git bisect <span class="highlight">good</span></pre>
+					<img src="images/bisect/bisect-4.svg"
+							 alt="Give git feedback about the test result">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Culprit found!</h3>
+					<pre># D is the first bad revision</pre>
+					<img src="images/bisect/bisect-5.svg"
+							 alt="git reports first bad revision">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Exit bisecting</h3>
+					<pre>$ git bisect reset</pre>
+					<img src="images/bisect/bisect-1.svg"
+							 alt="After reset the graph looks like before">
 				</section>
 			</section>
 

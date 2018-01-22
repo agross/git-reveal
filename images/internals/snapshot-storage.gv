@@ -29,7 +29,6 @@ digraph Git {
   file_c_1 -> file_c_2
   file_c_2 -> file_c_3 -> file_c_4 -> file_c_5
 
-
   file_b_1 [label="File B"]
   file_b_2 [label="B" style="dashed,filled" penwidth=2 fillcolor="#c8a03680"]
   file_b_3 [label="B" style="dashed,filled" penwidth=2 fillcolor="#c8a03680"]
