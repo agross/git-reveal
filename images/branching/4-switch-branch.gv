@@ -20,7 +20,7 @@ digraph Git {
   X [style=invis]
   Y [style=invis]
   A [label="deadbeef"]
-  B [label="00cafefe"]
+  B [label="0d06f00d"]
   C [label="50fac0de"]
 
   A -> B -> C

@@ -18,10 +18,10 @@ digraph Git {
   node [style="rounded,filled"
         fillcolor="#f0efe8"]
   A [label="deadbeef"]
-  B [label="00cafefe"]
+  B [label="0d06f00d"]
   C [label="50fac0de"]
-  D [label="01dec0de"]
-  E [label="42424242"]
+  D [label="baada555"]
+  E [label="faceb00c"]
 
   node [style="filled"
         fontcolor="#ffffff"

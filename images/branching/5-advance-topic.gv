@@ -18,9 +18,9 @@ digraph Git {
   node [style="rounded,filled"
         fillcolor="#f0efe8"]
   A [label="deadbeef"]
-  B [label="00cafefe"]
+  B [label="0d06f00d"]
   C [label="50fac0de"]
-  D [label="01dec0de"]
+  D [label="baada555"]
 
   node [style="filled"
         fontcolor="#ffffff"
