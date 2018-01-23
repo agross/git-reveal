@@ -95,11 +95,22 @@ $linkColorHover: $gw-light-blue
   .twitter-video
     margin: 10px auto !important
 
-  pre,
-  code
+  code,
+  pre
     font-family: Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace
     font-size: .92em
     line-height: 2.4rem
+
+  code
+    $color: #f0efe8
+    border: 1px solid darken($color, 20%)
+    border-radius: 3px
+    padding: .05em .1em
+    background-color: $color
+
+  p
+    code
+      display: inline-block
 
   pre
     background-color: $dark-gray
@@ -119,9 +130,6 @@ $linkColorHover: $gw-light-blue
     margin-top: 3em
     text-align: left
     width: 80%
-
-  small
-    font-size: .9em
 
   .cross-fade
     height: 500px
