@@ -648,7 +648,7 @@ git config --global rerere.autoUpdate true</pre></li>
 
 				<section class="image" data-transition="slide-in none">
 					<h3><a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank">Variant</a>: <code>bisect</code> with <code>cherry-pick</code></h3>
-					<pre>$ git commit -m 'reproduction' && git tag repro</pre>
+					<pre>$ git checkout -b repro v1.1 && git commit -m 'repro'</pre>
 					<img src="images/bisect/bisect-cherry-pick-1.svg"
 							 alt="Create bug reproduction commit">
 				</section>
