@@ -645,6 +645,55 @@ git config --global rerere.autoUpdate true</pre></li>
 					<img src="images/bisect/bisect-1.svg"
 							 alt="After reset the graph looks like before">
 				</section>
+
+				<section class="image" data-transition="slide-in none">
+					<h3><a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank">Variant</a>: <code>bisect</code> with <code>cherry-pick</code></h3>
+					<pre>$ git commit -m 'reproduction' && git tag repro</pre>
+					<img src="images/bisect/bisect-cherry-pick-1.svg"
+							 alt="Create bug reproduction commit">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Start looking for the bug</h3>
+					<pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+					<img src="images/bisect/bisect-cherry-pick-2.svg"
+							 alt="Create bug reproduction commit">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Apply <code>repro</code> commit</h3>
+					<pre>$ git cherry-pick <span class="highlight">repro</span></pre>
+					<img src="images/bisect/bisect-cherry-pick-3.svg"
+							 alt="Apply reproduction on top of HEAD">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Test commit <code>D</code> + <code>R'</code></h3>
+					<pre>$ make test # => error</pre>
+					<img src="images/bisect/bisect-cherry-pick-3.svg"
+					     alt="Test your app at commit D with R'">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Undo <code>R'</code></h3>
+					<pre>$ git reset --hard HEAD~</pre>
+					<img src="images/bisect/bisect-cherry-pick-2.svg"
+					     alt="Undo R' and return to commit D">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Give feedback about <code>D</code></h3>
+					<pre>$ git bisect <span class="highlight">bad</span></pre>
+					<img src="images/bisect/bisect-cherry-pick-4.svg"
+							 alt="Give git feedback about the test result">
+				</section>
+
+				<section class="image" data-transition="none">
+					<h3>Repeat!</h3>
+					<pre>$ git cherry-pick <span class="highlight">repro</span></pre>
+					<img src="images/bisect/bisect-cherry-pick-5.svg"
+							 alt="Give git feedback about the test result">
+				</section>
 			</section>
 
 			<section>

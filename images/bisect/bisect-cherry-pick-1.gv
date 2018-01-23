@@ -1,0 +1,79 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+  splines=line
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        height=.8
+        fixedsize=true
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  A [label="✅ A"]
+  B [label="❓ B"]
+  C [label="❓ C"]
+  D [label="❓ D"]
+  E [label="❓ E"]
+  F [label="❓ F"]
+  G [label="💩 G"]
+  R [label="🎲 R"]
+  A -> B -> C -> D -> E -> F -> G -> R
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+
+  subgraph cluster_v1_0 {
+    style=invis
+    {
+      rank=same
+      v1_0 [label="v1.0"]
+      A -> v1_0
+    }
+  }
+
+  subgraph cluster_v1_1 {
+    style=invis
+    {
+      rank=same
+      v1_1 [label="v1.1"]
+      G -> v1_1
+    }
+  }
+
+  subgraph cluster_repro {
+    style=invis
+    {
+      rank=same
+      repro [label="repro"]
+      R -> repro
+      HEAD [fillcolor="#c8a036"]
+      repro -> HEAD
+    }
+  }
+
+  edge [style=invis]
+  node [style=invis]
+
+  1 -> 2 -> 3 -> 4 -> R_
+  D -> R_
+
+  // No cluster draws label below.
+  {
+    rank=same
+    // Hide, but make node occupy space.
+    HEAD_invis
+    R_ -> HEAD_invis
+  }
+}
