@@ -33,7 +33,7 @@ $linkColorHover: $gw-light-blue
 =fade($num, $fade-time, $visible-time)
   $percentage-per-second: 100 / (($fade-time + $visible-time) * $num)
 
-  @keyframes fade
+  @keyframes fade-#{$num}
     0%
       opacity: 0
 
@@ -51,7 +51,7 @@ $linkColorHover: $gw-light-blue
 
   animation-duration: (($fade-time + $visible-time) * $num) + s
   animation-iteration-count: infinite
-  animation-name: fade
+  animation-name: fade-#{$num}
   animation-timing-function: ease-in-out
 
   @for $i from 1 through $num
@@ -136,14 +136,18 @@ $linkColorHover: $gw-light-blue
     position: relative
     width: 100%
 
-  .cross-fade > *
-    +fade($num: 3, $fade-time: 1, $visible-time: 15)
-    bottom: 0
-    left: 0
-    margin: auto
-    position: absolute
-    right: 0
-    top: 0
+    %fade
+      bottom: 0
+      left: 0
+      margin: auto
+      position: absolute
+      right: 0
+      top: 0
+
+    @for $i from 2 through 3
+      &.fade-#{$i} > *
+        @extend %fade
+        +fade($num: $i, $fade-time: 1, $visible-time: 15)
 
   .inline-images
     img
