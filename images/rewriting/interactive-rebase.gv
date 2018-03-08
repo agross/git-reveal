@@ -1,0 +1,66 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=.8
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  node [style="filled"
+        fontcolor="#ffffff"]
+  HEAD [fillcolor="#c8a036"]
+  topic [fillcolor="#e93a1d"]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"
+        fontcolor="black"]
+  A
+
+  node [fillcolor="#f0efe864"
+        fontcolor="#7f7f7f"
+        group=unreachable]
+  edge [color="#8f8a8364"]
+  B [label="💩 B"]
+  C [label="🍋 C"]
+  D [label="🍋 D"]
+  E [label="✂️ E" width=2.5 height=1.5 ]
+  F [label="⏩ F"]
+  G [label="⏪ G"]
+  A -> B [weight=10]
+  B -> C -> D -> E -> F -> G
+
+  node [fillcolor="#f0efe8"
+        fontcolor="black"]
+  edge [color="#8f8a83"]
+
+  // No cluster draws label below.
+  {
+    rank=same
+    Fr -> topic -> HEAD
+  }
+
+  CD [label="🍋 C' (= CD)"]
+  E1 [label="✂️ E'"]
+  E2 [label="✂️ E''"]
+  Gr [label="🔄 G'"]
+  Fr [label="🔄 F'"]
+  A -> CD -> E1 -> E2 -> Gr -> Fr
+
+  node [style=invis]
+  edge [style=invis]
+  A_ -> CD
+
+  {
+    rank=same
+    A -> A_
+  }
+}

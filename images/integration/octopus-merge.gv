@@ -1,0 +1,70 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+  splines=line
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        height=.8
+        fixedsize=true
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  node [group=master]
+  A -> B -> C
+  node [group=pu]
+  M [label="🐙 M"]
+  C -> M [weight=5]
+  node [group=topic_perf]
+  B:s -> D:w
+  D -> E
+  E:e -> M:s
+  node [group=topic_css]
+  B:s -> F:w
+  F -> G
+  G:e -> M:s
+  node [group=topic_report]
+  B:s -> H:w [weight=5]
+  H -> I
+  I:e -> M:s
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+
+  subgraph cluster_master {
+    color=invis
+    {
+      rank=same
+      M -> master
+    }
+  }
+
+  {
+    rank=same
+    perf
+    E -> perf
+  }
+
+  {
+    rank=same
+    css
+    G -> css
+  }
+
+  {
+    rank=same
+    report
+    I -> report
+  }
+}

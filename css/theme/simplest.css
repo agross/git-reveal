@@ -262,6 +262,9 @@ body {
 .reveal h2 {
   margin-bottom: .5em; }
 
+.reveal h3 {
+  line-height: inherit; }
+
 .reveal a {
   transition-duration: .5s; }
   .reveal a:hover img {

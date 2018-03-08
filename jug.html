@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Git</title>
+
+    <meta name="description" content="A completely childish person with no manners">
+    <meta name="author" content="Alexander Groß">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAxTO0AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvEAMk7xADJO8gAyTvIAMk7zAP///wD///8AMUztADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7zADJO8wD///8A////ADFN7gAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zADJO8wAyT/QA////AP///wAxTe4AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x9TJO8vYyTvL/Mk7z/zJO8/8yT/QAM0/1AP///wD///8AMU3uADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8gAyTvIAMk7z/zJO8/8yT/T/M0/1/zNP9QD///8A////ADFN7wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/b/////AP///wAxTe8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7zNzJO8zcyT/T/M0/1/zNP9f8zT/b/M0/2/zNQ9/////8AMk3w/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8zcyT/Q3M0/1/zNP9QAzT/YAM0/29jNQ9/8zUPf/M1D4/zJN8P8yTvH/Mk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/Q3M0/1NzNP9f8zT/YAM0/2ADNQ9/UzUPf/M1D4/zNQ+f8yTvEAMk7x/zJO8v8yTvL/Mk7z/zJO8/8yT/T/M0/1NzNP9TczT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f////8AMk7xADJO8gAyTvL/Mk7z/zJO8/8yT/T/M0/1/zNP9QAzT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f////8A////ADJO8gAyTvIAMk7zADJO8/8yT/T/M0/1/zNP9f8zT/YAM0/2ADNQ9/8zUPj/M1D4/zNQ+f8zUPkA////AP///wAyTvIAMk7zADJO8wAyT/QAM0/1/zNP9f8zT/YAM0/2aDNQ9/QzUPf/M1D4/zNQ+f8zUPkANFD6AP///wD///8AMk7zADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2OjNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gD///8A////ADJO8wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9/8zUPf/M1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoA////AP///wAyT/QAM0/1ADNP9QAzT/YAM0/2ADNQ9wAzUPgAM1D4/zNQ+f8zUPkANFD6ADRR+gA0UfoANFH7AP///wD///8A/n8AAPw/AAD4HwAA8A8AAOGHAADBgwAAgYEAAAGwAAABsAAAgeEAAMHDAADhhwAA8w8AAP4fAAD8PwAA/n8AAA==" rel="icon" type="image/x-icon" />
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simplest.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      <section>
+        <div class="cross-fade fade-2">
+          <img src="images/git-logo.svg"
+               alt="Git logo"
+               style="width: 60%">
+          <img src="//imgs.xkcd.com/comics/git.png"
+               alt="xkcd">
+        </div>
+      </section>
+
+      <section>
+        <h2>🤔</h2>
+        <blockquote class="twitter-tweet"
+                    data-width="550"
+                    data-lang="en"
+                    data-dnt="true"
+                    data-align="center">
+          <p lang="en"
+             dir="ltr">Thorough introduction to
+            <a href="https://twitter.com/hashtag/Java10?src=hash&amp;ref_src=twsrc%5Etfw">#Java10</a>&#39;s new `var` keyword. Where to use it and where not, how it works, and what it does to readability:
+            <a href="https://t.co/Mc4CbiDvb4">https://t.co/Mc4CbiDvb4</a>
+            <a href="https://t.co/GY79ziLEH3">pic.twitter.com/GY79ziLEH3</a>
+          </p>
+          &mdash; Nicolai Parlog (@nipafx)
+          <a href="https://twitter.com/nipafx/status/931066964600147968?ref_src=twsrc%5Etfw">November 16, 2017</a>
+        </blockquote>
+      </section>
+
+      <section>
+        <section>
+          <h1>0. Recap</h1>
+        </section>
+
+        <section>
+          <h2>“git” is not an acronym</h2>
+          <blockquote>
+            A completely ignorant, childish person with no manners.
+            <footer>
+              <cite>—
+                <a href="http://www.urbandictionary.com/define.php?term=Git"
+                    target="_blank">Urban Dictionary</a>
+              </cite>
+            </footer>
+          </blockquote>
+        </section>
+
+        <section style="margin-top: -50px;"
+                  data-transition="linear">
+          <h2>A distributed database</h2>
+          <img src="images/distributed-vcs.svg"
+                alt="Distributed VCS"
+                style="max-width: 60%">
+        </section>
+
+        <section>
+          <h2>What's a commit?</h2>
+          <pre style="font-size: .9em; line-height: 1em">$ git show
+<span style="color: #BFBF00">commit deadbeef16165bb95a541321a7acf9cef9731c1d</span>
+Author: Alexander Groß &lt;agross@therightstuff.de&gt;
+Date:   Sat Feb 6 12:41:24 2010 +0100
+
+    This is an awesome commit!
+
+    Why, you ask? Let me explain how I&hellip;
+
+<span style="color: #7F7F7F">diff --git a/hello.txt b/hello.txt
+index afdb358..4b5fa63 100644
+--- a/hello.txt
++++ b/hello.txt</span>
+<span style="color: #1FAECD">@@ -1,3 +1,4 @@</span>
+<span style="color: #CC0000">-I love deleting code</span>
+
+<span style="color: #CC0000">-I replaced this line</span>
+<span style="color: #00CC00">+with this line, because it’s better</span>
+<span style="color: #00CC00">+</span>
+<span style="color: #00CC00">+This should have been here since forever</span></pre>
+        </section>
+
+        <section>
+          <h2>What's a commit?</h2>
+          <img src="images/internals/commit-objects.svg"
+               alt="A commit object has references to tree and blob objects">
+        </section>
+
+        <section>
+          <h2>History = Linked commits</h2>
+          <img src="images/internals/commit-history.svg"
+               alt="The history is a sequence of commits objects">
+        </section>
+
+        <section>
+          <h2>What's a branch?</h2>
+          <img src="images/branching/1-simple-history.svg">
+        </section>
+
+        <section>
+          <blockquote class="twitter-tweet"
+                      data-lang="en"
+                      data-dnt="true"
+                      data-align="center">
+            <p lang="en"
+               dir="ltr">Here are some better alternative names for the &quot;master&quot; branch in your source code repository:
+              <br>
+              <br>- bleeding-edge
+              <br>- nevergreen
+              <br>- works-on-my-machine
+              <br>- happy-merging-XD
+              <br>- there-be-real-users
+              <br>- features-come-here-to-die
+              <p>- (L°O°)L_|_|_</p>
+            &mdash; Markus Tacker 🇳🇴 (@coderbyheart)
+            <a href="https://twitter.com/coderbyheart/status/970959569781448705?ref_src=twsrc%5Etfw">March 6, 2018</a>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>The <code>HEAD</code> pointer</h2>
+          <img src="images/branching/2-HEAD.svg">
+        </section>
+
+        <section>
+          <h2>Creating a branch</h2>
+          <pre>$ git branch topic [&lt;where&gt;]</pre>
+          <p>(
+            <code>&lt;where&gt;</code> defaults to
+            <code>HEAD</code>)</p>
+          <img src="images/branching/3-create-branch.svg">
+        </section>
+
+        <section>
+          <h2>Current branch = where <code>HEAD</code> is</h2>
+          <pre>$ git checkout topic</pre>
+          <img src="images/branching/4-switch-branch.svg">
+        </section>
+
+        <section>
+          <h2>Rule #1</h2>
+          <h3>The only branch that can change is the current branch.</h3>
+        </section>
+
+        <section>
+          <h2>Rule #2</h2>
+          <h3>When <code>HEAD</code>'s position changes your working copy will
+          be updated.</h3>
+          <p>Uncommitted changes will be attempted to be preserved.</p>
+        </section>
+
+        <section>
+          <h2>Pointers everywhere</h2>
+          <img src="images/internals/branch-and-history.svg"
+              alt="Pointers reference individual commits">
+        </section>
+
+        <section data-transition="slide-in none">
+          <h2>Pointers everywhere</h2>
+          <img src="images/internals/data-model-1.svg"
+              alt="Full data model (first commit)">
+        </section>
+
+        <section data-transition="none">
+          <h2>Pointers everywhere</h2>
+          <img src="images/internals/data-model-2.svg"
+              alt="Full data model (second commit)">
+        </section>
+
+        <section data-transition="none">
+          <h2>Pointers everywhere</h2>
+          <img src="images/internals/data-model-3.svg"
+              alt="Full data model (third commit)">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>1. Detached <code>HEAD</code></h1>
+          <img style="object-fit: cover; height: 700px; width: 70%"
+               alt="A detached head of a sculpture"
+               src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Roman_-_Portrait_of_the_Emperor_Marcus_Aurelius_-_Walters_23215.jpg">
+        </section>
+
+        <section>
+          <h2>Detached <code>HEAD</code></h2>
+          <pre>$ git checkout deadbeef
+Note: checking out 'deadbeef'.
+
+You are in 'detached HEAD' state. You can look
+around, make experimental changes and commit them&hellip;</pre>
+          <img src="images/branching/8-detached-HEAD.svg">
+          <p>You're on no branch when you <code>checkout</code> a SHA, tag or
+          remote branch.</p>
+        </section>
+
+        <section>
+          <h2>Restoring unreachable commits</h2>
+          <pre>$ git reflog
+6bbd21d HEAD@{0}: commit (amend): JUG WIP
+392bf47 HEAD@{1}: commit (amend): JUG WIP
+e7d4298 HEAD@{2}: commit: JUG WIP
+71ab831 HEAD@{3}: checkout: moving from gh-pages to jug
+71ab831 HEAD@{4}: commit: Support more than one fade
+76cd1b0 HEAD@{5}: commit: Tabs -> spaces
+b6f3d91 HEAD@{6}: commit: Tune letter spacing for long git commands
+cbc3b80 HEAD@{7}: commit: Fix creation of reproduction commit</pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>2. The index</h1>
+        </section>
+
+        <section>
+          <h2>Content Lifecycle</h2>
+          <img src="images/lifecycle.svg">
+        </section>
+
+        <section>
+          <h2>Take-aways</h2>
+
+          <ul>
+            <li>
+              Partial operations
+              <pre>$ git {add,reset HEAD,checkout} --patch</pre>
+            </li>
+            <li>
+              Temporarily ignore changes to tracked files
+              <pre>$ git update-index --[no-]assume-unchanged</pre>
+            </li>
+            <li>
+              List ignored changes
+              <pre>$ git ls-files -v | grep '^h'</pre>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>3. History rewriting</h1>
+        </section>
+
+        <section>
+          <h2>Modifying the last commit</h2>
+          <pre>$ git commit --amend -m 'C was bad'</pre>
+          <img src="images/rewriting/amend.svg">
+        </section>
+
+        <section>
+          <h2>Undoing the last commit</h2>
+          <pre>$ git reset --hard HEAD~</pre>
+          <img src="images/rewriting/reset.svg">
+        </section>
+
+        <section>
+          <h2><a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#_the_nuclear_option_filter_branch" target="_blank">Rewriting the whole graph 💣</a></h2>
+          <ul style="margin-left: -3em">
+            <li>
+              Extracting libraries from projects
+              <pre>$ git filter-branch --subdirectory-filter src/lib HEAD</pre>
+            </li>
+            <li>
+              Ensuring no internal files are published when a project is open-sourced
+              <pre>$ git filter-branch --index-filter 'git rm secret.txt' HEAD</pre>
+            </li>
+            <li>
+              Converting Subversion repositories with <code>svn:externals</code> (there be <abbr title="dragons" style="text-decoration: none">🐉</abbr>)
+              <pre>$ git <a href="https://github.com/agross/dotfiles/blob/840272f962c0377e6a6acd62fa42b4f51f5be8e1/git/bin/git-svn-clone-externals" target="_blank">svn-clone-externals</a> svn://&hellip;</pre>
+            </li>
+          </ul>
+        </section>
+
+        <section id="rebase">
+          <h2>Rewriting parts of the graph</h2>
+          <h3>🔜</h3>
+        </section>
+
+        <section>
+          <h2 style="margin-left: -100px; margin-right: -100px">I'll tell my story <a href="https://twitter.com/dan_abramov/status/952572767584604160" target="_blank">after I heard yours</a></h2>
+          <pre>$ git checkout <span class="highlight">topic</span>
+$ git rebase master</pre>
+          <img src="images/integration/diverged-history-rebase.svg">
+
+          <p>Commit <code>C</code> and <code>D</code> is applied on top of <code>master</code> as <code>C'</code> and <code>D'</code>.</p>
+        </section>
+
+        <section style="margin-top: -70px; padding: 0">
+          <blockquote class="twitter-tweet"
+                      lang="en"
+                      data-dnt="true"
+                      data-align="center">
+            <p lang="en" dir="ltr">
+               This is from a project I am working on. <a href="https://twitter.com/hashtag/git?src=hash">#git</a>
+               <a href="https://twitter.com/hashtag/rebase?src=hash">#rebase</a> vs. <a href="https://twitter.com/hashtag/merge?src=hash">#merge</a>
+               <a href="http://t.co/TRgsq7BSin">pic.twitter.com/TRgsq7BSin</a>
+            </p>
+            &mdash;
+            MiCHΛΞl (@michaelhenke)
+            <a href="https://twitter.com/michaelhenke/status/585142133167751169">April 6, 2015</a>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Complex Rebase</h2>
+          <p>How to get rid of <code>C</code> when rebasing <code>client</code> on <code>master</code>?</p>
+          <img src="images/branching/rebase-onto-1.svg">
+        </section>
+
+        <section>
+          <h2>Complex Rebase</h2>
+          <pre>$ git rebase --onto master server client</pre>
+          <img src="images/branching/rebase-onto-2.svg">
+        </section>
+
+        <section>
+          <h2>A Second Variant</h2>
+          <pre>$ git rebase --onto B server client</pre>
+          <img src="images/branching/rebase-onto-3.svg"
+               height="500rem">
+        </section>
+
+        <section style="padding: 0">
+          <blockquote class="twitter-tweet"
+                      lang="en"
+                      data-dnt="true"
+                      data-align="center">
+            <p lang="en" dir="ltr">
+              git rebase -i ;) <a href="https://t.co/Qy2k7Q0EQJ">pic.twitter.com/Qy2k7Q0EQJ</a>
+            </p>
+            &mdash;
+            nixCraft (@nixcraft)
+            <a href="https://twitter.com/nixcraft/status/861233192300273664">May 7, 2017</a>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Preparing for code review</h2>
+          <pre>$ git rebase --interactive A</pre>
+          <img src="images/rewriting/interactive-rebase.svg">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>4. Integration strategies</h1>
+        </section>
+
+        <section>
+          <blockquote class="twitter-video"
+                      data-lang="en">
+            <p lang="en" dir="ltr">
+              Visualizing a &quot;Git Merge&quot; <a href="https://t.co/RQJ2AV7JRQ">pic.twitter.com/RQJ2AV7JRQ</a>
+            </p>
+            &mdash;
+            David Rousset (@davrous)
+            <a href="https://twitter.com/davrous/status/767013225426620417">August 20, 2016</a>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Diverged history</h2>
+          <img src="images/integration/diverged-history.svg">
+        </section>
+
+        <section id="merge">
+          <h2>Recursive merge</h2>
+          <pre>$ git checkout <span class="highlight">master</span>
+$ git merge topic</pre>
+          <img src="images/integration/diverged-history-merge.svg"
+               height="420rem">
+
+          <p><strong>Recursive merge:</strong> Integrates two diverged branches.</p>
+        </section>
+
+        <section>
+          <h2>Undoing the merge</h2>
+          <pre>$ git reset --hard <span class="highlight">E</span>
+
+# Like a pro (covers <a href="#/merge">recursive</a> and <a href="#/merge-ff">ff merges</a>):
+$ git reset --hard <span class="highlight">@@{1}</span></pre>
+
+          <img src="images/integration/diverged-history.svg"
+               height="420rem">
+        </section>
+
+        <section>
+          <h2>Linear history</h2>
+          <img src="images/integration/linear-history.svg">
+        </section>
+
+        <section id="merge-ff">
+          <h2>Fast-forward merge</h2>
+          <pre>$ git checkout <span class="highlight">master</span>
+$ git merge topic</pre>
+          <img src="images/integration/linear-history-merge.svg">
+
+          <p><strong>Fast-forward merge:</strong> The <code>master</code> pointer can be moved from <code>C</code> to <code>E</code> without losing commits reachable from <code>master</code>.</p>
+        </section>
+
+        <section>
+          <h2>Squash merge 🍋</h2>
+          <pre>$ git merge --squash [--commit] topic</pre>
+          <img style="width: 75%" src="images/integration/squash-merge.svg">
+
+          <p>Apply commits from the <code>topic</code> branch combined as a single commit on top of <code>HEAD</code>.</p>
+        </section>
+
+        <section>
+          <h2>Octopus merge 🐙</h2>
+          <pre>$ git merge perf css report</pre>
+          <img style="width: 60%" src="images/integration/octopus-merge.svg">
+
+          <p>Integrate any number of non-conflicting branches with a single merge commit.</p>
+        </section>
+
+        <section>
+          <h2>Cherry-pick 🍒</h2>
+          <pre>$ git cherry-pick [--no-commit] C</pre>
+          <img src="images/integration/cherry-pick.svg">
+
+          <p>Apply a commit from somewhere else.</p>
+        </section>
+
+        <section>
+          <h2>More options</h2>
+
+          <ul>
+            <li>
+              Make <code>obsolete</code>'s commits reachable, but keep tree as-is
+              <br>(i.e. archive <code>obsolete</code>)
+              <pre>$ git merge --strategy=ours obsolete</pre>
+            </li>
+            <li>
+              Craft merge commit with <code>release</code>'s tree
+              <br>(i.e. no file-based merging)
+              <pre>$ git commit-tree release^{tree}
+                  -m "Merge branch 'release'"
+                  -p HEAD
+                  -p release</pre>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Throw-Away Integration Branches</h2>
+          <ul>
+            <li>Use temporary <code>pu</code> branches</li>
+            <li>Do not base any work off of <code>pu</code></li>
+            <li>Enable “Reuse recorded resolution”
+              <pre>git config --global rerere.enabled true
+git config --global rerere.autoUpdate true</pre></li>
+          </ul>
+        </section>
+
+        <section class="image" data-transition="slide-in none">
+          <pre># All branches were tested in isolation</pre>
+          <img src="images/pu/pu-1.svg"
+               alt="Three features are done and work in isolation">
+        </section>
+
+        <section class="image" data-transition="none">
+          <pre>$ git checkout -b pu master</pre>
+          <img src="images/pu/pu-2.svg"
+               alt="Create a temporary branch for proposed updates">
+        </section>
+
+        <section class="image" data-transition="none">
+          <pre>$ for b in <span class="highlight">perf css report</span>; do git merge $b; done</pre>
+          <img src="images/pu/pu-3.svg"
+               alt="Merge topics and resolve conflicts, test all feature together">
+        </section>
+
+        <section class="image" data-transition="none">
+          <pre>$ git reset --hard master</pre>
+          <img src="images/pu/pu-4.svg"
+          alt="Back to square one">
+        </section>
+
+        <section class="image" data-transition="none">
+          <pre>$ for b in <span class="highlight">css report</span>; do git merge $b; done</pre>
+          <img src="images/pu/pu-5.svg"
+               alt="The second integration attempt is successful">
+        </section>
+
+        <section class="image" data-transition="none">
+          <pre style="letter-spacing: -1.5px">$ git checkout master; git merge pu; git branch -d pu</pre>
+          <img src="images/pu/pu-6.svg"
+               alt="Merge pu into master">
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>5. Remotes</h1>
+        </section>
+
+        <section>
+          <blockquote class="twitter-tweet"
+                      lang="en"
+                      data-dnt="true"
+                      data-align="center">
+            <p lang="en" dir="ltr">
+              Our &#39;Always amend commit and force push&#39; model increased communication quality in our team a lot.
+              <a href="https://twitter.com/hashtag/GoldenCommit?src=hash">#GoldenCommit</a>
+              <a href="https://twitter.com/R0MMSEN">@R0MMSEN</a>
+            </p>
+            &mdash;
+            Marco Heimeshoff (@Heimeshoff)
+            <a href="https://twitter.com/Heimeshoff/status/885464794890940416">July 13, 2017</a>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Centralized</h2>
+          <img src="images/workflow/centralized.svg"
+              alt="Centralized workflow">
+        </section>
+
+        <section>
+          <h2>Integration Manager</h2>
+          <img src="images/workflow/integration-manager.svg"
+              alt="Integration manager">
+        </section>
+
+        <section>
+          <h2>Benevolent Dictator</h2>
+          <img src="images/workflow/benevolent-dictator.svg"
+              alt="Benevolent dictator">
+        </section>
+
+        <section>
+          <h2>Ad-hoc</h2>
+
+          <p>Server (9418/tcp)</p>
+          <pre style="width: 115%; margin-left: -10%">$ git daemon --base-path=. --export-all --verbose
+[4242] Ready to rumble</pre>
+
+          <p>Client</p>
+          <pre style="width: 115%; margin-left: -10%">$ git clone git://host/relative/path/to/repo/.git foo
+Cloning into 'foo'...</pre>
+
+         <pre style="width: 115%; margin-left: -10%">$ git remote add <span class="highlight">hans</span> git://host/relative/path/to/repo/.git
+$ git fetch <span class="highlight">hans</span>
+remote: Counting objects: 42, done.
+&hellip;
+From git://host/relative/path/to/repo/.git
+   e3205a5..0282413  master        -> <span class="highlight">hans</span>/master</pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>6. Bug searching</h1>
+        </section>
+
+        <section class="image" data-transition="slide-in none">
+          <h3 style="margin-left: -100px; margin-right: -100px"><code>v1.0</code> works but <code>v1.1</code> contains a regression</h3>
+          <pre>$ git stash push -m "whatever you're doing"</pre>
+          <img src="images/bisect/bisect-1.svg"
+               alt="v1.0 works but commits between v1.0 and v1.1 broke something">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Start looking for the bug</h3>
+          <pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+          <img src="images/bisect/bisect-2.svg"
+               alt="Start searching the breaking commit">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Test commit <code>D</code></h3>
+          <pre>$ make test # => error</pre>
+          <img src="images/bisect/bisect-2.svg"
+               alt="Test your app at commit D">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Give feedback about <code>D</code></h3>
+          <pre>$ git bisect <span class="highlight">bad</span></pre>
+          <img src="images/bisect/bisect-3.svg"
+               alt="Give git feedback about the test result">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Test commit <code>B</code></h3>
+          <pre>$ make test # => success</pre>
+          <img src="images/bisect/bisect-3.svg"
+               alt="Test your app at commit B">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Give feedback about <code>B</code></h3>
+          <pre>$ git bisect <span class="highlight">good</span></pre>
+          <img src="images/bisect/bisect-4.svg"
+               alt="Give git feedback about the test result">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Test commit <code>C</code></h3>
+          <pre>$ make test # => success</pre>
+          <img src="images/bisect/bisect-4.svg"
+               alt="Test your app at commit C">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Give feedback about <code>C</code></h3>
+          <pre>$ git bisect <span class="highlight">good</span></pre>
+          <img src="images/bisect/bisect-5.svg"
+               alt="Give git feedback about the test result">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Culprit found!</h3>
+          <pre># D is the first bad revision</pre>
+          <img src="images/bisect/bisect-5.svg"
+               alt="git reports first bad revision">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Exit search</h3>
+          <pre>$ git bisect reset</pre>
+          <img src="images/bisect/bisect-1.svg"
+               alt="After reset the graph looks like before">
+        </section>
+
+        <section class="image" data-transition="slide-in none">
+          <h3><a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank">Variant</a>: <code>bisect</code> with <code>cherry-pick</code></h3>
+          <pre>$ git <span style="letter-spacing: -1px">checkout -b repro v1.1 && git commit -m 'repro'</span></pre>
+          <img src="images/bisect/bisect-cherry-pick-1.svg"
+               alt="Create bug reproduction commit">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Start looking for the bug</h3>
+          <pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+          <img src="images/bisect/bisect-cherry-pick-2.svg"
+               alt="Create bug reproduction commit">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Apply <code>repro</code> commit</h3>
+          <pre>$ git cherry-pick <span class="highlight">repro</span></pre>
+          <img src="images/bisect/bisect-cherry-pick-3.svg"
+               alt="Apply reproduction on top of HEAD">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Test commit <code>D</code> + <code>R'</code></h3>
+          <pre>$ make test # => error</pre>
+          <img src="images/bisect/bisect-cherry-pick-3.svg"
+               alt="Test your app at commit D with R'">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Undo <code>R'</code></h3>
+          <pre>$ git reset --hard HEAD~</pre>
+          <img src="images/bisect/bisect-cherry-pick-2.svg"
+               alt="Undo R' and return to commit D">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Give feedback about <code>D</code></h3>
+          <pre>$ git bisect <span class="highlight">bad</span></pre>
+          <img src="images/bisect/bisect-cherry-pick-4.svg"
+               alt="Give git feedback about the test result">
+        </section>
+
+        <section class="image" data-transition="none">
+          <h3>Repeat!</h3>
+          <pre>$ git cherry-pick <span class="highlight">repro</span></pre>
+          <img src="images/bisect/bisect-cherry-pick-5.svg"
+               alt="Give git feedback about the test result">
+        </section>
+
+        <section>
+          <h2>Bisecting</h2>
+          <ul>
+            <li>Attempts to find bug-introducing commits by testing a minimum set of revisions</li>
+            <li>Enters detached <code>HEAD</code> state while searching</li>
+            <li>Automate testing
+              <pre>git bisect run &lt;some-script&gt;</pre></li>
+              <li><code>some-script</code> can do things like <code>cherry-pick</code>ing reproductions, <a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank">demo available</a></li>
+            <li>After the bad commit has been found, undo it
+              <pre>git revert [--no-commit] &lt;bad-commit&gt;</pre></li>
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
+        <h1>Thanks!</h1>
+
+        <ul class="inline-images" style="margin-top: 1em">
+          <li>
+            <a href="#/">
+              <img src="images/git-logo.svg"
+                  alt="Git logo"> Git Logo
+            </a>
+            by
+            <a href="https://twitter.com/jasonlong">Jason Long</a>
+            is licensed under the
+            <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>
+          </li>
+          <li>
+            <a href="#/">
+              <img src="//imgs.xkcd.com/comics/git.png"
+                  alt="xkcd"> Git Comic
+            </a>
+            by
+            <a href="https://xkcd.com/1597/">xkcd</a>
+            is licensed under the
+            <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 Generic License</a>
+          </li>
+          <li>
+            <a href="#/">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Roman_-_Portrait_of_the_Emperor_Marcus_Aurelius_-_Walters_23215.jpg"
+                  alt="Portrait of the Emperor Marcus Aurelius"> Portrait of the Emperor Marcus Aurelius
+            </a>
+            by Walters Art Museum
+            is licensed under
+            <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> via Wikimedia Commons
+          </li>
+        </ul>
+      </section>
+      </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1024,
+        height: 768,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.0,
+
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+        ]
+      });
+    </script>
+  </body>
+</html>

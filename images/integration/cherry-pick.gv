@@ -1,0 +1,45 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="back"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin=".45,.25"
+        width=2.1
+        penwidth=0]
+
+  node [style="rounded,filled"
+        fillcolor="#f0efe8"]
+  node [group=master]
+  Dr [label="🍒 D'"]
+  A -> B -> F -> Dr
+  node [group=topic]
+  D [label="🍒 D"]
+  B -> C -> D -> E
+
+  node [style="filled"
+        fontcolor="#ffffff"
+        fillcolor="#e93a1d"]
+  HEAD [fillcolor="#c8a036"]
+
+  subgraph cluster_master {
+    color=invis
+    {
+      rank=same
+      Dr -> master -> HEAD
+    }
+  }
+
+  // No cluster draws label below.
+  {
+    rank=same
+    E -> topic
+  }
+}
