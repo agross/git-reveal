@@ -4,6 +4,7 @@ digraph Git {
   rankdir=LR
   ranksep=1
   nodesep=.5
+  splines=line
 
   edge [color="#8f8a83"
         penwidth=2
@@ -13,29 +14,43 @@ digraph Git {
         fontsize=20
         margin=".45,.25"
         width=2.1
+        height=.8
+        fixedsize=true
         penwidth=0]
 
   node [style="rounded,filled"
         fillcolor="#f0efe8"]
-  A -> B
+  B  [label="💩 B"]
+  Br [label="!B"]
+  A -> B -> C -> D -> E -> Br
 
   node [style="filled"
         fontcolor="#ffffff"
         fillcolor="#e93a1d"]
-  HEAD [fillcolor="#c8a036"]
 
-  subgraph cluster_master {
-    color=invis
+  subgraph cluster_v1_0 {
+    style=invis
     {
       rank=same
-      B -> master -> HEAD
+      v1_0 [label="v1.0"]
+      A -> v1_0
     }
   }
 
-  node [style="rounded,filled"
-        fillcolor="#f0efe864"
-        fontcolor="#7f7f7f"]
-  edge [color="#8f8a8364"]
-  C [label="💩 C"]
-  B -> C
+  subgraph cluster_v1_1 {
+    style=invis
+    {
+      rank=same
+      v1_1 [label="v1.1"]
+      E -> v1_1
+    }
+  }
+
+  // No cluster draws label below.
+  {
+    rank=same
+    Br -> master
+    HEAD [fillcolor="#c8a036"]
+    master -> HEAD
+  }
 }

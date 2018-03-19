@@ -45,8 +45,8 @@
 <!-- C -->
 <g id="node5" class="node">
 <title>C</title>
-<path fill="#f0efe8" fill-opacity="0.392157" stroke="#000000" stroke-width="0" d="M585,-72C585,-72 458,-72 458,-72 452,-72 446,-66 446,-60 446,-60 446,-28 446,-28 446,-22 452,-16 458,-16 458,-16 585,-16 585,-16 591,-16 597,-22 597,-28 597,-28 597,-60 597,-60 597,-66 591,-72 585,-72"/>
-<text text-anchor="middle" x="521.5" y="-38" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#7f7f7f">C</text>
+<path fill="#f0efe8" fill-opacity="0.392157" stroke="#000000" stroke-width="0" d="M585,-76.3751C585,-76.3751 458,-76.3751 458,-76.3751 452,-76.3751 446,-70.3751 446,-64.3751 446,-64.3751 446,-23.6249 446,-23.6249 446,-17.6249 452,-11.6249 458,-11.6249 458,-11.6249 585,-11.6249 585,-11.6249 591,-11.6249 597,-17.6249 597,-23.6249 597,-23.6249 597,-64.3751 597,-64.3751 597,-70.3751 591,-76.3751 585,-76.3751"/>
+<text text-anchor="middle" x="521.5" y="-42.4375" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#7f7f7f">💩 C</text>
 </g>
 <!-- B&#45;&gt;C -->
 <g id="edge4" class="edge">
