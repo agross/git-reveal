@@ -317,7 +317,7 @@ $ git reset --hard HEAD~</pre>
           <ul style="margin-left: -3em">
             <li>
               Extracting libraries from projects
-              <pre>$ git filter-branch --subdirectory-filter src/lib HEAD</pre>
+              <pre>$ git filter-branch --subdirectory-filter src/lib -- --all</pre>
             </li>
             <li>
               Ensuring no internal files are published when a project is open-sourced
