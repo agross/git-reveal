@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/simplest.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -1067,10 +1064,6 @@ git config --global rerere.autoUpdate true</pre></li>
         history: true,
         center: true,
         dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
         ]
       });
