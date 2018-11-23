@@ -59,6 +59,12 @@ $linkColorHover: $gw-light-blue
       animation-delay: ($fade-time + $visible-time) * ($i - 1) * 1s
       opacity: 0
 
+=code
+  $color: #f0efe8
+  background-color: $color
+  border: 1px solid darken($color, 20%)
+  border-radius: 3px
+
 .reveal
   &.overview
     .slides
@@ -105,17 +111,19 @@ $linkColorHover: $gw-light-blue
     line-height: 2.4rem
 
   code
-    $color: #f0efe8
-    border: 1px solid darken($color, 20%)
-    border-radius: 3px
+    +code
     padding: .05em .1em
-    background-color: $color
 
   p
     code
       display: inline-block
 
   pre
+    @media print
+      +code
+      color: $mainColor
+      overflow: hidden
+
     background-color: $dark-gray
     color: $backgroundColor
     overflow: auto
@@ -124,9 +132,17 @@ $linkColorHover: $gw-light-blue
     word-wrap: normal
 
     .highlight
+      @media print
+        color: $mainColor
+        text-decoration: underline
+        text-shadow: none
+
       text-shadow: 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue
 
     a
+      @media print
+        color: $mainColor
+
       color: $backgroundColor
 
   blockquote
@@ -163,3 +179,8 @@ $linkColorHover: $gw-light-blue
         img
           box-shadow: none
 
+@media print
+  .print-pdf
+    .reveal
+      .slide-background
+        background-color: inherit !important

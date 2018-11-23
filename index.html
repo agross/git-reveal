@@ -755,7 +755,7 @@ git config --global rerere.autoUpdate true</pre></li>
         </section>
 
         <section class="image" data-transition="none">
-          <pre>$ for b in <span class="highlight">perf css report</span>; do git merge $b; done</pre>
+          <pre>$ for b in <span class="highlight">perf</span> <span class="highlight">css</span> <span class="highlight">report</span>; do git merge $b; done</pre>
           <img src="images/pu/pu-3.svg"
                alt="Merge topics and resolve conflicts, test all feature together">
         </section>
@@ -767,7 +767,7 @@ git config --global rerere.autoUpdate true</pre></li>
         </section>
 
         <section class="image" data-transition="none">
-          <pre>$ for b in <span class="highlight">css report</span>; do git merge $b; done</pre>
+          <pre>$ for b in <span class="highlight">css</span> <span class="highlight">report</span>; do git merge $b; done</pre>
           <img src="images/pu/pu-5.svg"
                alt="The second integration attempt is successful">
         </section>
@@ -800,7 +800,7 @@ git config --global rerere.autoUpdate true</pre></li>
 
         <section class="image" data-transition="none">
           <h3>Start looking for the bug</h3>
-          <pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+          <pre>$ git bisect start <span class="highlight">v1.1</span> <span class="highlight">v1.0</span></pre>
           <img src="images/bisect/bisect-2.svg"
                alt="Start searching the breaking commit">
         </section>
@@ -870,7 +870,7 @@ git config --global rerere.autoUpdate true</pre></li>
 
         <section class="image" data-transition="none">
           <h3>Start looking for the bug</h3>
-          <pre>$ git bisect start <span class="highlight">v1.1 v1.0</span></pre>
+          <pre>$ git bisect start <span class="highlight">v1.1</span> <span class="highlight">v1.0</span></pre>
           <img src="images/bisect/bisect-cherry-pick-2.svg"
                alt="Create bug reproduction commit">
         </section>
@@ -1033,6 +1033,10 @@ git config --global rerere.autoUpdate true</pre></li>
               <a href="http://http://www.apress.com/">Apress</a>
             </li>
           </ul>
+          <p>
+            <a href="?print-pdf" target="_blank">Show a printable version of
+            this presentation. Use your browser to print.</a>
+          </p>
         </section>
       </section>
       </div>

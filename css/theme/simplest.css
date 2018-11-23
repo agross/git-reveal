@@ -294,10 +294,10 @@ body {
   line-height: 2.4rem; }
 
 .reveal code {
+  background-color: #f0efe8;
   border: 1px solid #c8c4aa;
   border-radius: 3px;
-  padding: .05em .1em;
-  background-color: #f0efe8; }
+  padding: .05em .1em; }
 
 .reveal p code {
   display: inline-block; }
@@ -309,10 +309,25 @@ body {
   padding: 15px;
   width: auto;
   word-wrap: normal; }
+  @media print {
+    .reveal pre {
+      background-color: #f0efe8;
+      border: 1px solid #c8c4aa;
+      border-radius: 3px;
+      color: #000;
+      overflow: hidden; } }
   .reveal pre .highlight {
     text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
+    @media print {
+      .reveal pre .highlight {
+        color: #000;
+        text-decoration: underline;
+        text-shadow: none; } }
   .reveal pre a {
     color: #fff; }
+    @media print {
+      .reveal pre a {
+        color: #000; } }
 
 .reveal blockquote {
   margin-top: 3em;
@@ -387,3 +402,7 @@ body {
 
 .reveal .inline-images a:hover img {
   box-shadow: none; }
+
+@media print {
+  .print-pdf .reveal .slide-background {
+    background-color: inherit !important; } }
