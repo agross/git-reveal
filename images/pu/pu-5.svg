@@ -93,7 +93,7 @@
 <g id="node5" class="node">
 <title>M2</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M1268.5,-622C1268.5,-622 1141.5,-622 1141.5,-622 1135.5,-622 1129.5,-616 1129.5,-610 1129.5,-610 1129.5,-576 1129.5,-576 1129.5,-570 1135.5,-564 1141.5,-564 1141.5,-564 1268.5,-564 1268.5,-564 1274.5,-564 1280.5,-570 1280.5,-576 1280.5,-576 1280.5,-610 1280.5,-610 1280.5,-616 1274.5,-622 1268.5,-622"/>
-<text text-anchor="middle" x="1205" y="-591.4375" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">️️⚡️ M2&#39;</text>
+<text text-anchor="middle" x="1205" y="-591.4375" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">️️💥 M2&#39;</text>
 </g>
 <!-- C&#45;&gt;M2 -->
 <g id="edge4" class="edge">
@@ -118,7 +118,7 @@
 <g id="node6" class="node">
 <title>M3</title>
 <path fill="#f0efe8" stroke="#000000" stroke-width="0" d="M1506,-622C1506,-622 1379,-622 1379,-622 1373,-622 1367,-616 1367,-610 1367,-610 1367,-576 1367,-576 1367,-570 1373,-564 1379,-564 1379,-564 1506,-564 1506,-564 1512,-564 1518,-570 1518,-576 1518,-576 1518,-610 1518,-610 1518,-616 1512,-622 1506,-622"/>
-<text text-anchor="middle" x="1442.5" y="-591.4375" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">⚡️ M3&#39;</text>
+<text text-anchor="middle" x="1442.5" y="-591.4375" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#000000">💥 M3&#39;</text>
 </g>
 <!-- M2&#45;&gt;M3 -->
 <g id="edge6" class="edge">

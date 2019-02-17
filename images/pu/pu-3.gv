@@ -23,9 +23,9 @@ digraph Git {
   node [group=master]
   A -> B -> C
   node [group=pu]
-  M1 [label="⚡️ M1"]
-  M2 [label="️️⚡️ M2"]
-  M3 [label="⚡️ M3"]
+  M1 [label="💥 M1"]
+  M2 [label="️️💥 M2"]
+  M3 [label="💥 M3"]
   C -> M1 [weight=5]
   M1 -> M2 -> M3
   node [group=topic_perf]

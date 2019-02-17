@@ -32,7 +32,7 @@ digraph Git {
   B [label="💩 B"]
   C [label="🍋 C"]
   D [label="🍋 D"]
-  E [label="✂️ E" width=2.5 height=1.5 ]
+  E [label="🔪 E" width=2.5 height=1.5 ]
   F [label="⏩ F"]
   G [label="⏪ G"]
   A -> B [weight=10]
@@ -49,8 +49,8 @@ digraph Git {
   }
 
   CD [label="🍋 C' (= CD)"]
-  E1 [label="✂️ E'"]
-  E2 [label="✂️ E''"]
+  E1 [label="🔪 E'"]
+  E2 [label="🔪 E''"]
   Gr [label="🔄 G'"]
   Fr [label="🔄 F'"]
   A -> CD -> E1 -> E2 -> Gr -> Fr

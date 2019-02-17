@@ -23,11 +23,11 @@ digraph Git {
   node [group=master]
   A -> B -> C
   node [group=pu]
-  M1 [label="⚡️ M1"
+  M1 [label="💥 M1"
       style=invis]
-  M2 [label="️️⚡️ M2"
+  M2 [label="️️💥 M2"
       style=invis]
-  M3 [label="⚡️ M3"
+  M3 [label="💥 M3"
       style=invis]
 
 
