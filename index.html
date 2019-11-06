@@ -160,7 +160,10 @@ index 0000000..4b5fa63
           <ul>
             <li>
               Partial operations
-              <pre>$ git {add,reset HEAD,checkout} --patch</pre>
+              <pre class="badge"
+                   data-badge="git >= 2.23">$ git add --patch
+$ git <span class="alt-off">reset HEAD</span><span class="alt-on">restore --staged</span> --patch
+$ git <span class="alt-off">checkout</span><span class="alt-on">restore</span> --patch</pre>
             </li>
             <li>
               Temporarily ignore changes to tracked files
@@ -218,17 +221,20 @@ index 0000000..4b5fa63
 
         <section>
           <h2>Current branch = where <code>HEAD</code> is</h2>
-          <pre>$ git checkout topic</pre>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span> topic</pre>
           <img src="images/branching/4-switch-branch.svg">
         </section>
 
         <section>
           <h2>A Shortcut</h2>
-          <pre style="width: 100%">$ git checkout -b &lt;name&gt; [&lt;where&gt;]
+          <pre style="width: 100%"
+               class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout -b</span><span class="alt-on">switch -c</span> &lt;name&gt; [&lt;where&gt;]
 
 ==
 
-$ git branch &lt;name&gt; [&lt;where&gt;] &amp;&amp; git checkout &lt;name&gt;
+$ git branch &lt;name&gt; [&lt;where&gt;] &amp;&amp; git <span class="alt-off">checkout</span><span class="alt-on">switch</span> &lt;name&gt;
 </pre>
         </section>
 
@@ -245,7 +251,8 @@ $ git branch &lt;name&gt; [&lt;where&gt;] &amp;&amp; git checkout &lt;name&gt;
 
         <section>
           <h2>Back to <code>master</code></h2>
-          <pre>$ git checkout master</pre>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span> master</pre>
           <img src="images/branching/6-back-to-master.svg">
         </section>
 
@@ -271,11 +278,12 @@ $ git branch &lt;name&gt; [&lt;where&gt;] &amp;&amp; git checkout &lt;name&gt;
 
         <section>
           <h2>Detached <code>HEAD</code></h2>
-          <pre>$ git checkout deadbeef
-Note: checking out 'deadbeef'.
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch --detach</span> deadbeef
+<span class="alt-off">Note: checking out 'deadbeef'.
 
 You are in 'detached HEAD' state. You can look
-around, make experimental changes and commit them&hellip;</pre>
+around, make experimental changes and commit them&hellip;</span><span class="alt-on">HEAD is now at deadbeef</span></pre>
           <img src="images/branching/8-detached-HEAD.svg">
           <p>You're on no branch when you <code>checkout</code> a SHA, tag or
           remote branch.</p>
@@ -349,7 +357,8 @@ $ git reset --hard HEAD~</pre>
 
         <section>
           <h2 style="margin-left: -100px; margin-right: -100px">I'll tell my story <a href="https://twitter.com/dan_abramov/status/952572767584604160" target="_blank">after I heard yours</a></h2>
-          <pre>$ git checkout <span class="highlight">topic</span>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span> <span class="highlight">topic</span>
 $ git rebase master</pre>
           <img src="images/integration/diverged-history-rebase.svg">
 
@@ -458,7 +467,8 @@ $ git rebase master</pre>
 
         <section id="merge">
           <h2>Recursive Merge</h2>
-          <pre>$ git checkout <span class="highlight">master</span>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span> <span class="highlight">master</span>
 $ git merge topic</pre>
           <img src="images/integration/diverged-history-merge.svg"
                height="420rem">
@@ -484,7 +494,8 @@ $ git reset --hard <span class="highlight">@@{1}</span></pre>
 
         <section id="merge-ff">
           <h2>Fast-Forward Merge</h2>
-          <pre>$ git checkout <span class="highlight">master</span>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span>
 $ git merge topic</pre>
           <img src="images/integration/linear-history-merge.svg">
 
@@ -749,7 +760,8 @@ git config --global rerere.autoUpdate true</pre></li>
         </section>
 
         <section class="image" data-transition="none">
-          <pre>$ git checkout -b pu master</pre>
+          <pre class="badge"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout -b</span><span class="alt-on">switch -c</span> pu master</pre>
           <img src="images/pu/pu-2.svg"
                alt="Create a temporary branch for proposed updates">
         </section>
@@ -773,7 +785,9 @@ git config --global rerere.autoUpdate true</pre></li>
         </section>
 
         <section class="image" data-transition="none">
-          <pre style="letter-spacing: -1.5px">$ git checkout master; git merge pu; git branch -d pu</pre>
+          <pre style="letter-spacing: -1.5px"
+               class="badge offset"
+               data-badge="git >= 2.23">$ git <span class="alt-off">checkout</span><span class="alt-on">switch</span> master; git merge pu; git branch -d pu</pre>
           <img src="images/pu/pu-6.svg"
                alt="Merge pu into master">
         </section>
@@ -862,8 +876,9 @@ git config --global rerere.autoUpdate true</pre></li>
         </section>
 
         <section class="image" data-transition="slide-in none">
-          <h3><a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank">Variant</a>: <code>bisect</code> with <code>cherry-pick</code></h3>
-          <pre>$ git <span style="letter-spacing: -1px">checkout -b repro v1.1 && git commit -m 'repro'</span></pre>
+          <h3><a href="https://github.com/GROSSWEBER/git-bisect-demo/tree/retrofit" target="_blank"> <code>bisect</code> and <code>cherry-pick</code></a></h3>
+          <pre class="badge offset"
+               data-badge="git >= 2.23">$ git <span style="letter-spacing: -1px"><span class="alt-off">checkout -b</span><span class="alt-on">switch -c</span> repro v1.1 && git commit -m 'repro'</span></pre>
           <img src="images/bisect/bisect-cherry-pick-1.svg"
                alt="Create bug reproduction commit">
         </section>
@@ -1070,6 +1085,14 @@ git config --global rerere.autoUpdate true</pre></li>
         dependencies: [
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
         ]
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll('.badge').forEach(function (badge) {
+        badge.addEventListener('click', function (_ev) {
+          this.classList.toggle('alt');
+        });
       });
     </script>
   </body>

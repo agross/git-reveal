@@ -265,6 +265,9 @@ body {
   .backgrounds {
     background-color: #fff; } }
 
+.reveal pre .highlight, .badge .alt-on {
+  text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
+
 .reveal.overview .slides section.present {
   outline-color: #0073cf; }
 
@@ -298,7 +301,7 @@ body {
 
 .reveal code,
 .reveal pre {
-  font-family: Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace;
+  font-family: Liga Meslo LG S,  Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace;
   font-size: .92em;
   line-height: 2.4rem; }
 
@@ -314,7 +317,6 @@ body {
 .reveal pre {
   background-color: #3f3f3f;
   color: #fff;
-  overflow: auto;
   padding: 15px;
   width: auto;
   word-wrap: normal; }
@@ -325,13 +327,11 @@ body {
       border-radius: 3px;
       color: #000;
       overflow: hidden; } }
-  .reveal pre .highlight {
-    text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
-    @media print {
-      .reveal pre .highlight {
-        color: #000;
-        text-decoration: underline;
-        text-shadow: none; } }
+  @media print {
+    .reveal pre .highlight {
+      color: #000;
+      text-decoration: underline;
+      text-shadow: none; } }
   .reveal pre a {
     color: #fff; }
     @media print {
@@ -411,6 +411,39 @@ body {
 
 .reveal .inline-images a:hover img {
   box-shadow: none; }
+
+.badge {
+  position: relative;
+  pointer-events: none; }
+  .badge .alt-on {
+    display: none; }
+  .badge .alt-off {
+    display: unset; }
+  .badge.alt .alt-on {
+    display: unset; }
+  .badge.alt .alt-off {
+    display: none; }
+  .badge[data-badge].alt:after {
+    background: #0073cf;
+    color: white; }
+  .badge[data-badge].offset:after {
+    transform: rotate(6deg) translate(10%) translateY(-45px); }
+  .badge[data-badge]:after {
+    cursor: pointer;
+    pointer-events: auto;
+    content: attr(data-badge);
+    letter-spacing: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    color: #0073cf;
+    transform: rotate(10deg) translate(10%) translateY(-10px);
+    padding: .2em;
+    border-radius: .2em;
+    border: 0.1em solid #0073cf;
+    box-shadow: 1px 2px 16px 1px #333;
+    transition: background-color .15s ease-in-out, color .15s ease-in-out; }
 
 @media print {
   .print-pdf .reveal .slide-background {

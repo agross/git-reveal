@@ -65,6 +65,9 @@ $linkColorHover: $gw-light-blue
   border: 1px solid darken($color, 20%)
   border-radius: 3px
 
+%highlight
+  text-shadow: 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue
+
 .reveal
   &.overview
     .slides
@@ -106,7 +109,7 @@ $linkColorHover: $gw-light-blue
 
   code,
   pre
-    font-family: Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace
+    font-family: Liga Meslo LG S,  Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace
     font-size: .92em
     line-height: 2.4rem
 
@@ -126,7 +129,7 @@ $linkColorHover: $gw-light-blue
 
     background-color: $dark-gray
     color: $backgroundColor
-    overflow: auto
+    // overflow: auto
     padding: 15px
     width: auto
     word-wrap: normal
@@ -137,7 +140,7 @@ $linkColorHover: $gw-light-blue
         text-decoration: underline
         text-shadow: none
 
-      text-shadow: 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue
+      @extend %highlight
 
     a
       @media print
@@ -178,6 +181,51 @@ $linkColorHover: $gw-light-blue
       &:hover
         img
           box-shadow: none
+
+.badge
+  position: relative
+  pointer-events: none
+
+  .alt-on
+    @extend %highlight
+    display: none
+
+  .alt-off
+    display: unset
+
+  &.alt
+    .alt-on
+      display: unset
+
+    .alt-off
+      display: none
+
+  &[data-badge]
+    &.alt
+      &:after
+        background: $gw-light-blue
+        color: white
+
+    &.offset
+      &:after
+        transform: rotate(6deg) translate(10%) translateY(-45px)
+
+    &:after
+      cursor: pointer
+      pointer-events: auto
+      content: attr(data-badge)
+      letter-spacing: normal
+      position: absolute
+      top: 0
+      right: 0
+      background: white
+      color: $gw-light-blue
+      transform: rotate(10deg) translate(10%) translateY(-10px)
+      padding: .2em
+      border-radius: .2em
+      border: .1em solid $gw-light-blue
+      box-shadow: 1px 2px 16px 1px #333
+      transition: background-color .15s ease-in-out, color .15s ease-in-out
 
 @media print
   .print-pdf
