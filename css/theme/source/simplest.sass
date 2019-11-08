@@ -211,6 +211,9 @@ $linkColorHover: $gw-light-blue
         transform: rotate(6deg) translate(10%) translateY(-45px)
 
     &::after
+      @media print
+        display: none
+
       background: white
       border: .1em solid $gw-light-blue
       border-radius: .2em

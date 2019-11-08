@@ -444,6 +444,9 @@ body {
     top: 0;
     transform: rotate(10deg) translate(10%) translateY(-10px);
     transition: background-color .15s ease-in-out, color .15s ease-in-out; }
+    @media print {
+      .badge[data-badge]::after {
+        display: none; } }
 
 @media print {
   .print-pdf .reveal .slide-background {
