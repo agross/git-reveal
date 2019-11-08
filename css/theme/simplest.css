@@ -413,8 +413,8 @@ body {
   box-shadow: none; }
 
 .badge {
-  position: relative;
-  pointer-events: none; }
+  pointer-events: none;
+  position: relative; }
   .badge .alt-on {
     display: none; }
   .badge .alt-off {
@@ -423,26 +423,26 @@ body {
     display: unset; }
   .badge.alt .alt-off {
     display: none; }
-  .badge[data-badge].alt:after {
+  .badge[data-badge].alt::after {
     background: #0073cf;
     color: white; }
-  .badge[data-badge].offset:after {
+  .badge[data-badge].offset::after {
     transform: rotate(6deg) translate(10%) translateY(-45px); }
-  .badge[data-badge]:after {
-    cursor: pointer;
-    pointer-events: auto;
-    content: attr(data-badge);
-    letter-spacing: normal;
-    position: absolute;
-    top: 0;
-    right: 0;
+  .badge[data-badge]::after {
     background: white;
-    color: #0073cf;
-    transform: rotate(10deg) translate(10%) translateY(-10px);
-    padding: .2em;
-    border-radius: .2em;
     border: 0.1em solid #0073cf;
+    border-radius: .2em;
     box-shadow: 1px 2px 16px 1px #333;
+    color: #0073cf;
+    content: attr(data-badge);
+    cursor: pointer;
+    letter-spacing: normal;
+    padding: .2em;
+    pointer-events: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(10deg) translate(10%) translateY(-10px);
     transition: background-color .15s ease-in-out, color .15s ease-in-out; }
 
 @media print {

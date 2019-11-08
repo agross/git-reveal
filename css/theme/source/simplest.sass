@@ -183,8 +183,8 @@ $linkColorHover: $gw-light-blue
           box-shadow: none
 
 .badge
-  position: relative
   pointer-events: none
+  position: relative
 
   .alt-on
     @extend %highlight
@@ -202,29 +202,29 @@ $linkColorHover: $gw-light-blue
 
   &[data-badge]
     &.alt
-      &:after
+      &::after
         background: $gw-light-blue
         color: white
 
     &.offset
-      &:after
+      &::after
         transform: rotate(6deg) translate(10%) translateY(-45px)
 
-    &:after
-      cursor: pointer
-      pointer-events: auto
-      content: attr(data-badge)
-      letter-spacing: normal
-      position: absolute
-      top: 0
-      right: 0
+    &::after
       background: white
-      color: $gw-light-blue
-      transform: rotate(10deg) translate(10%) translateY(-10px)
-      padding: .2em
-      border-radius: .2em
       border: .1em solid $gw-light-blue
+      border-radius: .2em
       box-shadow: 1px 2px 16px 1px #333
+      color: $gw-light-blue
+      content: attr(data-badge)
+      cursor: pointer
+      letter-spacing: normal
+      padding: .2em
+      pointer-events: auto
+      position: absolute
+      right: 0
+      top: 0
+      transform: rotate(10deg) translate(10%) translateY(-10px)
       transition: background-color .15s ease-in-out, color .15s ease-in-out
 
 @media print
