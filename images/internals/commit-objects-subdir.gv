@@ -67,9 +67,63 @@ digraph Git {
       <tr>
         <td align="left"
             balign="left"
-            port="port_s"><b>blob</b>   5b1d3 README.md<br />
-<b>blob</b>   911e7 LICENSE<br />
-<b>blob</b>   fa49b test.rb
+            port="port_s"><b>tree</b>   94cbf doc/<br />
+<b>tree</b>   2734a lib/<br />
+<b>blob</b>   5b1d3 README.md
+        </td>
+      </tr>
+    </table>
+    >]
+
+  lib_tree [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="260"
+           height="164">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">2734a</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><u><b>tree</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><b>blob</b>   fa49b test.rb
+        </td>
+      </tr>
+    </table>
+    >]
+
+  doc_tree [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="260"
+           height="164">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">94cbf</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"
+            port="port_n"><u><b>tree</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><b>blob</b>   df25f faq.md<br />
+<b>blob</b>   911e7 LICENSE
         </td>
       </tr>
     </table>
@@ -93,7 +147,8 @@ digraph Git {
       </tr>
       <tr>
         <td border="1"
-            sides="b"><b><u>blob</u></b>   size</td>
+            sides="b"
+            port="port"><b><u>blob</u></b>   size</td>
       </tr>
       <tr>
         <td align="left"
@@ -164,9 +219,43 @@ class Test::Unit::TestCase</font>
     </table>
     >]
 
+  faq_blob [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#c8a036"
+           fixedsize="true"
+           width="260"
+           height="164">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">df25f</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"
+            port="port"><b><u>blob</u></b>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><font point-size="14"># FAQ<br />
+<br />
+## Installation</font>
+        </td>
+      </tr>
+    </table>
+    >]
+
   commit -> root_tree
 
-  root_tree:port_n:ne -> readme_blob:sw
-  root_tree:e -> license_blob
-  root_tree:port_s:se -> testrb_blob:port:nw
+  root_tree:port_n:ne -> doc_tree:sw
+  root_tree:e -> lib_tree
+  root_tree:port_s:se -> readme_blob:port:nw
+
+  doc_tree:port_n:ne -> faq_blob:sw
+  doc_tree:e -> license_blob
+
+  lib_tree:e -> testrb_blob
 }
