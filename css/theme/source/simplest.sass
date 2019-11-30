@@ -10,7 +10,7 @@ $mainFont: 'Lato', sans-serif
 $mainFontSize: 36px
 $mainColor: #000
 $selectionColor: #fff
-$selectionBackgroundColor: lighten($gw-light-blue, 40%)
+$selectionBackgroundColor: $gw-light-blue
 
 $blockMargin: 20px
 $headingFont: 'News Cycle', Impact, sans-serif
@@ -109,9 +109,13 @@ $linkColorHover: $gw-light-blue
 
   code,
   pre
-    font-family: Liga Meslo LG S,  Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace
+    font-family: Liga Meslo LG S, Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace
     font-size: .92em
     line-height: 2.4rem
+
+  pre
+    &::selection
+      background: lighten($selectionBackgroundColor, 40%)
 
   code
     +code

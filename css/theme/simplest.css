@@ -15,12 +15,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #9cd3ff;
+  background: #0073cf;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #9cd3ff;
+  background: #0073cf;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -301,9 +301,12 @@ body {
 
 .reveal code,
 .reveal pre {
-  font-family: Liga Meslo LG S,  Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace;
+  font-family: Liga Meslo LG S, Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace;
   font-size: .92em;
   line-height: 2.4rem; }
+
+.reveal pre::selection {
+  background: #9cd3ff; }
 
 .reveal code {
   background-color: #f0efe8;
