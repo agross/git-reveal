@@ -304,7 +304,7 @@ body {
   font-size: .92em;
   line-height: 2.4rem; }
 
-.reveal pre::selection {
+.reveal pre ::selection {
   background: #9cd3ff; }
 
 .reveal code {
