@@ -70,6 +70,9 @@ $linkColorHover: $gw-light-blue
 %highlight
   text-shadow: 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue, 0 0 10px $gw-light-blue
 
+%selection
+  background: lighten($selectionBackgroundColor, 40%)
+
 .reveal
   &.overview
     .slides
@@ -115,8 +118,13 @@ $linkColorHover: $gw-light-blue
     line-height: 2.4rem
 
   pre
+    &::selection
+      // background: lighten($selectionBackgroundColor, 40%)
+      @extend %selection
+
     ::selection
-      background: lighten($selectionBackgroundColor, 40%)
+      // background: lighten($selectionBackgroundColor, 40%)
+      @extend %selection
 
   code
     +code

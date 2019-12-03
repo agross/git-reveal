@@ -268,6 +268,9 @@ body {
 .reveal pre .highlight, .badge .alt-on {
   text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
 
+.reveal pre::selection, .reveal pre ::selection {
+  background: #9cd3ff; }
+
 .reveal.overview .slides section.present {
   outline-color: #0073cf; }
 
@@ -303,9 +306,6 @@ body {
 .reveal pre {
   font-size: .92em;
   line-height: 2.4rem; }
-
-.reveal pre ::selection {
-  background: #9cd3ff; }
 
 .reveal code {
   background-color: #f0efe8;
