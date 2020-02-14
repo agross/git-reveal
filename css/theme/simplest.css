@@ -427,7 +427,8 @@ body {
     display: none; }
   .badge[data-badge].alt::after {
     background: #0073cf;
-    color: white; }
+    color: white;
+    content: attr(data-badge-on); }
   .badge[data-badge].offset::after {
     transform: rotate(6deg) translate(10%) translateY(-45px); }
   .badge[data-badge]::after {

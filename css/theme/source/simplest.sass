@@ -119,11 +119,9 @@ $linkColorHover: $gw-light-blue
 
   pre
     &::selection
-      // background: lighten($selectionBackgroundColor, 40%)
       @extend %selection
 
     ::selection
-      // background: lighten($selectionBackgroundColor, 40%)
       @extend %selection
 
   code
@@ -218,6 +216,7 @@ $linkColorHover: $gw-light-blue
       &::after
         background: $gw-light-blue
         color: white
+        content: attr(data-badge-on)
 
     &.offset
       &::after
