@@ -1,0 +1,108 @@
+digraph Git {
+  bgcolor="transparent"
+
+  rankdir=LR
+  ranksep=1
+  nodesep=.5
+
+  edge [color="#8f8a83"
+        penwidth=2
+        dir="forward"]
+  node [shape=box
+        fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
+        fontsize=20
+        margin="0,0"
+        penwidth=0]
+
+  node [fontcolor="#000000"
+        fillcolor="transparent"]
+  commit [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#f0efe8"
+           fixedsize="true"
+           width="260"
+           height="184">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">b160ba26</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><u><b>commit</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"><b>tree</b>      82ad2<br />
+<b>author</b>    Alex<br />
+<b>date </b>     2020-02-27<br />
+<b>message  </b> my first…</td>
+      </tr>
+    </table>
+    >]
+
+  node [fontcolor="#ffffff"
+        fillcolor="transparent"]
+  root_tree [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#3e8f99"
+           fixedsize="true"
+           width="260"
+           height="164">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">82ad2</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"
+            port="port_n"><u><b>tree</b></u>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left"
+            port="port_s"><b>blob</b>   4b5fa hello.txt
+        </td>
+      </tr>
+    </table>
+    >]
+
+  node [fontcolor="#ffffff"
+        fillcolor="transparent"]
+  hello_blob [label=<
+    <table cellspacing="0"
+           cellpadding="10"
+           color="white"
+           border="0"
+           bgcolor="#c8a036"
+           fixedsize="true"
+           width="260"
+           height="164">
+      <tr>
+        <td border="1"
+            width="260"
+            bgcolor="white"><font color="black">4b5fa</font></td>
+      </tr>
+      <tr>
+        <td border="1"
+            sides="b"><b><u>blob</u></b>   size</td>
+      </tr>
+      <tr>
+        <td align="left"
+            balign="left">hello, world
+        </td>
+      </tr>
+    </table>
+    >]
+
+  commit -> root_tree
+
+  root_tree -> hello_blob
+}
