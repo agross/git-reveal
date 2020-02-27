@@ -116,7 +116,7 @@ digraph Git {
             balign="left"
             border="1"
             sides="b">              <b>tree</b>    05a2d<br />
-          <b>parent</b>    00caf<br />
+          <b>parent</b>    0d06f<br />
           <b>author</b>    Scott<br />
     <b>committer</b>    Scott</td>
       </tr>
