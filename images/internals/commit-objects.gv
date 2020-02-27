@@ -24,7 +24,7 @@ digraph Git {
            bgcolor="#f0efe8"
            fixedsize="true"
            width="260"
-           height="164">
+           height="184">
       <tr>
         <td border="1"
             width="260"
@@ -35,10 +35,11 @@ digraph Git {
             sides="b"><u><b>commit</b></u>   size</td>
       </tr>
       <tr>
-        <td align="center"
-            balign="center"><b>    tree</b>    05a2d<br />
-  <b>author</b>   Scott<br />
- <b>   message</b>   💩 Fix…</td>
+        <td align="left"
+            balign="left"><b>tree</b>      05a2d<br />
+<b>author</b>    Scott<br />
+<b>date </b>     2007-01-23<br />
+<b>message  </b> 💩 Fix…</td>
       </tr>
     </table>
     >]
