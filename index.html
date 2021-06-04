@@ -373,7 +373,7 @@ $ git reset --hard HEAD~</pre>
 $ git rebase master</pre>
           <img src="images/integration/diverged-history-rebase.svg">
 
-          <p>Commit <code>C</code> and <code>D</code> is applied on top of <code>master</code> as <code>C'</code> and <code>D'</code>.</p>
+          <p>Commits <code>C</code>, <code>D</code> and <code>E</code> are copied on top of <code>master</code> as <code>C'</code>, <code>D'</code> and <nobr></nobr><code>E'</code>.</p>
         </section>
 
         <section style="margin-top: -70px; padding: 0">
@@ -490,7 +490,7 @@ $ git merge topic</pre>
 
         <section>
           <h2>Undoing The Merge</h2>
-          <pre>$ git reset --hard <span class="highlight">E</span>
+          <pre>$ git reset --hard <span class="highlight">F</span>
 
 # Like a pro (covers <a href="#/merge">recursive</a> and <a href="#/merge-ff">ff merges</a>):
 $ git reset --hard <span class="highlight">@@{1}</span></pre>
@@ -541,7 +541,7 @@ $ git merge topic</pre>
           <pre>$ git merge --squash [--commit] topic</pre>
           <img style="width: 75%" src="images/integration/squash-merge.svg">
 
-          <p>Apply commits from the <code>topic</code> branch combined as a single commit on top of <code>HEAD</code>.</p>
+          <p>Merge <code>HEAD</code>'s and <code>topic</code>'s snapshot, create a new commit, but only assign <code>HEAD</code> as its parent.</p>
         </section>
 
         <section>

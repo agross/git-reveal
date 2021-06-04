@@ -18,10 +18,17 @@ digraph Git {
   node [style="rounded,filled"
         fillcolor="#f0efe8"]
   node [group=master]
-  F [label="🍋 F (= CD)"]
-  A -> B -> E -> F
+  G [label="🍋 G (= E + F)"]
+  A -> B -> F
+  F -> G [weight=2]
+  // X and Y are invisible and used for alignment only.
+  X [label="" fillcolor=transparent]
+  Y [label="" fillcolor=transparent]
+  F->X [style=invis]
+  X->Y [style=invis]
+  Y->G [style=invis]
   node [group=topic]
-  B -> C -> D
+  B -> C -> D -> E
 
   node [style="filled"
         fontcolor="#ffffff"
@@ -32,13 +39,13 @@ digraph Git {
     color=invis
     {
       rank=same
-      F -> master -> HEAD
+      G -> master -> HEAD
     }
   }
 
   // No cluster draws label below.
   {
     rank=same
-    D -> topic
+    E -> topic
   }
 }

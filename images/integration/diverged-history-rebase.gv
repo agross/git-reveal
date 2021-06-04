@@ -20,7 +20,8 @@ digraph Git {
   node [group=master]
   Cr [label="C'"]
   Dr [label="D'"]
-  A -> B -> E -> Cr -> Dr
+  Er [label="E'"]
+  A -> B -> F -> Cr -> Dr -> Er
 
   node [style="filled"
         fontcolor="#ffffff"
@@ -31,7 +32,7 @@ digraph Git {
     color=invis
     {
       rank=same
-      Dr -> topic -> HEAD
+      Er -> topic -> HEAD
     }
   }
 
@@ -39,7 +40,7 @@ digraph Git {
     color=invis
     {
       rank=same
-      E -> master
+      F -> master
     }
   }
 
@@ -48,5 +49,5 @@ digraph Git {
         fillcolor="#f0efe864"
         fontcolor="#7f7f7f"]
   edge [color="#8f8a8364"]
-  B -> C -> D
+  B -> C -> D -> E
 }
