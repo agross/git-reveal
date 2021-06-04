@@ -49,7 +49,7 @@
 <!-- topic -->
 <g id="node8" class="node">
 <title>topic</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1266,-240 1115,-240 1115,-184 1266,-184 1266,-240"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1266,-240 1115,-240 1115,-184 1266,-184 1266,-240"/>
 <text text-anchor="middle" x="1190.5" y="-207" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">topic</text>
 </g>
 <!-- Er&#45;&gt;topic -->
@@ -109,7 +109,7 @@
 <!-- master -->
 <g id="node9" class="node">
 <title>master</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="597,-240 446,-240 446,-184 597,-184 597,-240"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="597,-240 446,-240 446,-184 597,-184 597,-240"/>
 <text text-anchor="middle" x="521.5" y="-207" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- F&#45;&gt;master -->
@@ -121,7 +121,7 @@
 <!-- HEAD -->
 <g id="node7" class="node">
 <title>HEAD</title>
-<polygon fill="#c8a036" stroke="black" stroke-width="0" points="1266,-332 1115,-332 1115,-276 1266,-276 1266,-332"/>
+<polygon fill="#3e8f99" stroke="black" stroke-width="0" points="1266,-332 1115,-332 1115,-276 1266,-276 1266,-332"/>
 <text text-anchor="middle" x="1190.5" y="-299" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- topic&#45;&gt;HEAD -->

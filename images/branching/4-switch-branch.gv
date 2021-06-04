@@ -27,9 +27,9 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"
+        fillcolor="#2c942c"
        ]
-  HEAD [fillcolor="#c8a036"]
+  HEAD [fillcolor="#3e8f99"]
 
   X -> Y -> master [style=invis]
 

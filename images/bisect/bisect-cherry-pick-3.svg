@@ -38,7 +38,7 @@
 <!-- v1_0 -->
 <g id="node10" class="node">
 <title>v1_0</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="167,-340 16,-340 16,-282 167,-282 167,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="167,-340 16,-340 16,-282 167,-282 167,-340"/>
 <text text-anchor="middle" x="91.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.0</text>
 </g>
 <!-- A&#45;&gt;v1_0 -->
@@ -134,7 +134,7 @@
 <!-- v1_1 -->
 <g id="node11" class="node">
 <title>v1_1</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1505,-340 1354,-340 1354,-282 1505,-282 1505,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1505,-340 1354,-340 1354,-282 1505,-282 1505,-340"/>
 <text text-anchor="middle" x="1429.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.1</text>
 </g>
 <!-- G&#45;&gt;v1_1 -->
@@ -146,7 +146,7 @@
 <!-- repro -->
 <g id="node12" class="node">
 <title>repro</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1728,-340 1577,-340 1577,-282 1728,-282 1728,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1728,-340 1577,-340 1577,-282 1728,-282 1728,-340"/>
 <text text-anchor="middle" x="1652.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">repro</text>
 </g>
 <!-- R&#45;&gt;repro -->
@@ -158,7 +158,7 @@
 <!-- HEAD -->
 <g id="node14" class="node">
 <title>HEAD</title>
-<polygon fill="#c8a036" stroke="black" stroke-width="0" points="1059,-58 908,-58 908,0 1059,0 1059,-58"/>
+<polygon fill="#3e8f99" stroke="black" stroke-width="0" points="1059,-58 908,-58 908,0 1059,0 1059,-58"/>
 <text text-anchor="middle" x="983.5" y="-24" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- R_&#45;&gt;HEAD -->

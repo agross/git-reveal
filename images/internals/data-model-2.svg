@@ -12,7 +12,7 @@
 <!-- tag -->
 <g id="node2" class="node">
 <title>tag</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="228,-245 5,-245 5,-189 228,-189 228,-245"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="228,-245 5,-245 5,-189 228,-189 228,-245"/>
 <text text-anchor="middle" x="116.5" y="-212" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">refs/tags/v1.0</text>
 </g>
 <!-- A -->
