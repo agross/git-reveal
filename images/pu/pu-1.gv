@@ -47,7 +47,7 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
 
   subgraph cluster_master {
     color=invis

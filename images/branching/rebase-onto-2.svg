@@ -37,7 +37,7 @@
 <!-- client -->
 <g id="node12" class="node">
 <title>client</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1266,-424 1115,-424 1115,-368 1266,-368 1266,-424"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1266,-424 1115,-424 1115,-368 1266,-368 1266,-424"/>
 <text text-anchor="middle" x="1190.5" y="-391" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">client</text>
 </g>
 <!-- Hr&#45;&gt;client -->
@@ -109,7 +109,7 @@
 <!-- master -->
 <g id="node10" class="node">
 <title>master</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="820,-424 669,-424 669,-368 820,-368 820,-424"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="820,-424 669,-424 669,-368 820,-368 820,-424"/>
 <text text-anchor="middle" x="744.5" y="-391" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- F&#45;&gt;master -->
@@ -157,7 +157,7 @@
 <!-- server -->
 <g id="node11" class="node">
 <title>server</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1043,-148 892,-148 892,-92 1043,-92 1043,-148"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1043,-148 892,-148 892,-92 1043,-92 1043,-148"/>
 <text text-anchor="middle" x="967.5" y="-115" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">server</text>
 </g>
 <!-- I&#45;&gt;server -->

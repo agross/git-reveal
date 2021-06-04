@@ -17,8 +17,8 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"]
-  HEAD [fillcolor="#c8a036"]
-  master [fillcolor="#e93a1d"]
+  HEAD [fillcolor="#3e8f99"]
+  master [fillcolor="#2c942c"]
 
   node [style="rounded,filled"
         fillcolor="#f0efe8"

@@ -33,7 +33,7 @@
 <!-- master -->
 <g id="node4" class="node">
 <title>master</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="374,-164 223,-164 223,-108 374,-108 374,-164"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="374,-164 223,-164 223,-108 374,-108 374,-164"/>
 <text text-anchor="middle" x="298.5" y="-131" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- B&#45;&gt;master -->
@@ -57,7 +57,7 @@
 <!-- HEAD -->
 <g id="node3" class="node">
 <title>HEAD</title>
-<polygon fill="#c8a036" stroke="black" stroke-width="0" points="374,-256 223,-256 223,-200 374,-200 374,-256"/>
+<polygon fill="#3e8f99" stroke="black" stroke-width="0" points="374,-256 223,-256 223,-200 374,-200 374,-256"/>
 <text text-anchor="middle" x="298.5" y="-223" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- master&#45;&gt;HEAD -->

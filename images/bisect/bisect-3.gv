@@ -31,7 +31,7 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
 
   subgraph cluster_v1_0 {
     style=invis
@@ -54,7 +54,7 @@ digraph Git {
   // No cluster draws label below.
   {
     rank=same
-    HEAD [fillcolor="#c8a036"]
+    HEAD [fillcolor="#3e8f99"]
     B -> HEAD
   }
 }

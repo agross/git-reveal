@@ -23,7 +23,7 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
   A -> B -> C
 
   subgraph cluster_master {

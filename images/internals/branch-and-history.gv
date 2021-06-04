@@ -23,7 +23,7 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
   master
   tag [label="v1.0"]
   HEAD [fillcolor="#c8a036"]

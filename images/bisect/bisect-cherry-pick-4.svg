@@ -8,14 +8,14 @@
  viewBox="0.00 0.00 1752.00 458.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 454)">
 <title>Git</title>
+<g id="clust5" class="cluster">
+<title>cluster_repro</title>
+</g>
 <g id="clust1" class="cluster">
 <title>cluster_v1_0</title>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_v1_1</title>
-</g>
-<g id="clust5" class="cluster">
-<title>cluster_repro</title>
 </g>
 <!-- A -->
 <g id="node1" class="node">
@@ -38,7 +38,7 @@
 <!-- v1_0 -->
 <g id="node9" class="node">
 <title>v1_0</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="167,-340 16,-340 16,-282 167,-282 167,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="167,-340 16,-340 16,-282 167,-282 167,-340"/>
 <text text-anchor="middle" x="91.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.0</text>
 </g>
 <!-- A&#45;&gt;v1_0 -->
@@ -62,7 +62,7 @@
 <!-- HEAD -->
 <g id="node13" class="node">
 <title>HEAD</title>
-<polygon fill="#c8a036" stroke="black" stroke-width="0" points="390,-152 239,-152 239,-94 390,-94 390,-152"/>
+<polygon fill="#3e8f99" stroke="black" stroke-width="0" points="390,-152 239,-152 239,-94 390,-94 390,-152"/>
 <text text-anchor="middle" x="314.5" y="-118" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">HEAD</text>
 </g>
 <!-- B&#45;&gt;HEAD -->
@@ -136,7 +136,7 @@
 <!-- v1_1 -->
 <g id="node10" class="node">
 <title>v1_1</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1505,-340 1354,-340 1354,-282 1505,-282 1505,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1505,-340 1354,-340 1354,-282 1505,-282 1505,-340"/>
 <text text-anchor="middle" x="1429.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.1</text>
 </g>
 <!-- G&#45;&gt;v1_1 -->
@@ -148,7 +148,7 @@
 <!-- repro -->
 <g id="node11" class="node">
 <title>repro</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="1728,-340 1577,-340 1577,-282 1728,-282 1728,-340"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="1728,-340 1577,-340 1577,-282 1728,-282 1728,-340"/>
 <text text-anchor="middle" x="1652.5" y="-306" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">repro</text>
 </g>
 <!-- R&#45;&gt;repro -->

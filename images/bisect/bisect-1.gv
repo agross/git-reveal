@@ -31,7 +31,7 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
 
   subgraph cluster_v1_0 {
     style=invis
@@ -55,7 +55,7 @@ digraph Git {
   {
     rank=same
     // Hide, but make node occupy space.
-    HEAD [fillcolor="#c8a036"
+    HEAD [fillcolor="#3e8f99"
           style=invis]
     D -> HEAD [style=invis]
   }

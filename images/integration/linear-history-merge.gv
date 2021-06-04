@@ -21,8 +21,8 @@ digraph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
-  HEAD [fillcolor="#c8a036"]
+        fillcolor="#2c942c"]
+  HEAD [fillcolor="#3e8f99"]
 
   subgraph cluster_branches {
     color=invis

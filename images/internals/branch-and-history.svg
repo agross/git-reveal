@@ -50,7 +50,7 @@
 <!-- tag -->
 <g id="node5" class="node">
 <title>tag</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="390,-256 239,-256 239,-200 390,-200 390,-256"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="390,-256 239,-256 239,-200 390,-200 390,-256"/>
 <text text-anchor="middle" x="314.5" y="-223" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">v1.0</text>
 </g>
 <!-- B&#45;&gt;tag -->
@@ -62,7 +62,7 @@
 <!-- master -->
 <g id="node4" class="node">
 <title>master</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="613,-256 462,-256 462,-200 613,-200 613,-256"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="613,-256 462,-256 462,-200 613,-200 613,-256"/>
 <text text-anchor="middle" x="537.5" y="-223" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- C&#45;&gt;master -->

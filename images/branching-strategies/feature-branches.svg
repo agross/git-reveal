@@ -61,7 +61,7 @@
 <!-- master -->
 <g id="node6" class="node">
 <title>master</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="374,-332 223,-332 223,-276 374,-276 374,-332"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="374,-332 223,-332 223,-276 374,-276 374,-332"/>
 <text text-anchor="middle" x="298.5" y="-299" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">master</text>
 </g>
 <!-- B&#45;&gt;master -->
@@ -73,7 +73,7 @@
 <!-- develop -->
 <g id="node7" class="node">
 <title>develop</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="597,-332 446,-332 446,-276 597,-276 597,-332"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="597,-332 446,-332 446,-276 597,-276 597,-332"/>
 <text text-anchor="middle" x="521.5" y="-299" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">develop</text>
 </g>
 <!-- E&#45;&gt;develop -->
@@ -97,7 +97,7 @@
 <!-- ruby_client -->
 <g id="node8" class="node">
 <title>ruby_client</title>
-<polygon fill="#e93a1d" stroke="black" stroke-width="0" points="830,-56 669,-56 669,0 830,0 830,-56"/>
+<polygon fill="#2c942c" stroke="black" stroke-width="0" points="830,-56 669,-56 669,0 830,0 830,-56"/>
 <text text-anchor="middle" x="749.5" y="-23" font-family="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace" font-size="20.00" fill="#ffffff">ruby_client</text>
 </g>
 <!-- D&#45;&gt;ruby_client -->

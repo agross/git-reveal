@@ -21,7 +21,7 @@ graph Git {
 
   node [style="filled"
         fontcolor="#ffffff"
-        fillcolor="#e93a1d"]
+        fillcolor="#2c942c"]
   master [
           label="refs/heads/master"
           pos="0,4!"]
