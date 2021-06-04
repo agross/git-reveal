@@ -18,9 +18,9 @@ digraph Git {
   node [style="rounded,filled"
         fillcolor="#f0efe8"]
   node [group=master]
-  A -> B -> E
+  A -> B -> F
   node [group=topic]
-  B -> C -> D
+  B -> C -> D -> E
 
   node [style="filled"
         fontcolor="#ffffff"
@@ -31,13 +31,13 @@ digraph Git {
     color=invis
     {
       rank=same
-      E -> master -> HEAD
+      F -> master -> HEAD
     }
   }
 
   // No cluster draws label below.
   {
     rank=same
-    D -> topic
+    E -> topic
   }
 }
