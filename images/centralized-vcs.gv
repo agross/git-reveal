@@ -57,7 +57,7 @@ graph Git {
 
   node [fillcolor="#3e8f99"
         fontcolor="#ffffff"]
-  edge [dir="back"]
+  edge [dir="both"]
 
   file_a [label="File"
           pos="0,1.3!"]
