@@ -68,10 +68,9 @@ digraph Git {
       <tr>
         <td align="left"
             balign="left"
-            port="port_s"><b>blob</b>   5b1d3 README.md<br />
-<b>blob</b>   911e7 LICENSE<br />
-<b>blob</b>   fa49b test.rb
-        </td>
+            port="port_s"><b>blob</b>  5b1d3 README.md<br />
+<b>blob</b>  911e7 LICENSE<br />
+<b>blob</b>  fa49b test.rb</td>
       </tr>
     </table>
     >]
@@ -101,8 +100,7 @@ digraph Git {
             balign="left"><font point-size="14">## Testing library<br />
 <br />
 This library is used to<br />
-test Ruby projects.</font>
-        </td>
+test Ruby projects.</font></td>
       </tr>
     </table>
     >]
@@ -129,8 +127,7 @@ test Ruby projects.</font>
         <td align="left"
             balign="left"><font point-size="14">The MIT License<br />
 <br />
-Copyright (c) 2017 Scott</font>
-        </td>
+Copyright (c) 2017 Scott</font></td>
       </tr>
     </table>
     >]
@@ -159,8 +156,7 @@ Copyright (c) 2017 Scott</font>
             balign="left"><font point-size="14">require 'logger'<br />
 require 'test/unit'<br />
 <br />
-class Test::Unit::TestCase</font>
-        </td>
+class Test::Unit::TestCase</font></td>
       </tr>
     </table>
     >]

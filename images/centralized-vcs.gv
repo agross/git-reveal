@@ -9,7 +9,7 @@ graph Git {
         style="filled"
         fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
-        margin=".45,.25"
+        margin=".2,.23"
         width=2.1
         penwidth=1]
 
@@ -42,7 +42,7 @@ graph Git {
         style="rounded,filled"
         fillcolor="#f0efe8"
         labelloc=c
-        margin=".45,.25"
+        margin=".2,.23"
         width=2.1
         penwidth=0]
 

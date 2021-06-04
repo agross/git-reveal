@@ -12,7 +12,7 @@ digraph Git {
   node [shape=box
         fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
-        margin=".45,.25"
+        margin=".2,.23"
         width=2.1
         penwidth=0]
 

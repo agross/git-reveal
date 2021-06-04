@@ -37,9 +37,9 @@ digraph Git {
       <tr>
         <td align="left"
             balign="left"><b>tree</b>      82ad2<br />
-<b>author</b>    Alex<br />
+<b>author </b>   Alex<br />
 <b>date </b>     2020-02-27<br />
-<b>message  </b> my first…</td>
+<b>message </b>  my first…</td>
       </tr>
     </table>
     >]
@@ -68,8 +68,7 @@ digraph Git {
       <tr>
         <td align="left"
             balign="left"
-            port="port_s"><b>blob</b>   4b5fa hello.txt
-        </td>
+            port="port_s"><b>blob</b>  4b5fa hello.txt</td>
       </tr>
     </table>
     >]
@@ -96,8 +95,7 @@ digraph Git {
       </tr>
       <tr>
         <td align="left"
-            balign="left">hello, world
-        </td>
+            balign="left">hello, world</td>
       </tr>
     </table>
     >]

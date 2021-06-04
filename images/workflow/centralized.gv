@@ -13,13 +13,13 @@ graph Git {
         fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
         fontcolor="#ffffff"
-        margin=".45,.25"
+        margin=".2,.23"
         width=2.1
         penwidth=0]
 
   repo [fillcolor="#c8a036"
         label="shared\nrepository"
-        margin=".7,.4"]
+        margin=".45,.4"]
 
   dev1 [label="developer"]
   dev2 [label="developer"]

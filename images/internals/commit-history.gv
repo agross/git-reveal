@@ -11,7 +11,7 @@ digraph Git {
   node [shape=box
         fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
-        margin=".45,.25"
+        margin=".2,.23"
         width=2.1
         penwidth=0]
 
@@ -47,10 +47,10 @@ digraph Git {
         <td align="left"
             balign="left"
             border="1"
-            sides="b">              <b>tree</b>    92ec2<br />
-          <b>parent</b>    00000<br />
-          <b>author</b>    Scott<br />
-    <b>committer</b>    Scott</td>
+            sides="b"><b>tree </b>      92ec2<br />
+<b>parent </b>    00000<br />
+<b>author </b>    Scott<br />
+<b>committer </b> Scott</td>
       </tr>
       <tr>
         <td align="left"
@@ -81,10 +81,10 @@ digraph Git {
         <td align="left"
             balign="left"
             border="1"
-            sides="b">              <b>tree</b>    06840<br />
-          <b>parent</b>    deadb<br />
-          <b>author</b>    Scott<br />
-    <b>committer</b>    Scott</td>
+            sides="b"><b>tree </b>      06840<br />
+<b>parent </b>    deadb<br />
+<b>author </b>    Scott<br />
+<b>committer </b> Scott</td>
       </tr>
       <tr>
         <td align="left"
@@ -115,10 +115,10 @@ digraph Git {
         <td align="left"
             balign="left"
             border="1"
-            sides="b">              <b>tree</b>    05a2d<br />
-          <b>parent</b>    0d06f<br />
-          <b>author</b>    Scott<br />
-    <b>committer</b>    Scott</td>
+            sides="b"><b>tree </b>      05a2d<br />
+<b>parent </b>    0d06f<br />
+<b>author </b>    Scott<br />
+<b>committer </b> Scott</td>
       </tr>
       <tr>
         <td align="left"

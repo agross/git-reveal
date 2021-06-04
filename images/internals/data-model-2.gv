@@ -15,7 +15,7 @@ graph Git {
   node [shape=box
         fontname="Menlo, Monaco, Consolas, Lucida Console, Courier New, monospace"
         fontsize=20
-        margin=".45,.25"
+        margin=".2,.23"
         width=3.1
         penwidth=0]
 
@@ -187,8 +187,7 @@ graph Git {
             balign="left"><font point-size="14">## Testing library<br />
  <br />
 This library is used to<br />
-test Ruby projects.</font>
-</td>
+test Ruby projects.</font></td>
       </tr>
     </table>
     >]
@@ -239,8 +238,7 @@ class Test::Unit::TestCase</font></td>
             balign="left"><font point-size="14">require 'logger'<br />
 require 'test/unit'<br />
 <br />
-class Test::Unit::TestCase</font>
-        </td>
+class Test::Unit::TestCase</font></td>
       </tr>
     </table>
     >]
