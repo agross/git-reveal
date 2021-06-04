@@ -269,7 +269,7 @@ body {
   text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
 
 .reveal pre::selection, .reveal pre ::selection {
-  background: #9cd3ff; }
+  background: #0073cf; }
 
 .reveal.overview .slides section.present {
   outline-color: #0073cf; }
