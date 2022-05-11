@@ -265,7 +265,7 @@ body {
   .backgrounds {
     background-color: #fff; } }
 
-.reveal pre .highlight, .badge .alt-on {
+.reveal pre .highlight, .badge .alt-off {
   text-shadow: 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf, 0 0 10px #0073cf; }
 
 .reveal pre::selection, .reveal pre ::selection {
@@ -446,18 +446,18 @@ body {
 .badge {
   pointer-events: none;
   position: relative; }
-  .badge .alt-on {
-    display: none; }
   .badge .alt-off {
+    display: none; }
+  .badge .alt-on {
     display: unset; }
   .badge.alt .alt-on {
-    display: unset; }
-  .badge.alt .alt-off {
     display: none; }
+  .badge.alt .alt-off {
+    display: unset; }
   .badge[data-badge].alt::after {
     background: #0073cf;
     color: white;
-    content: attr(data-badge-on); }
+    content: attr(data-badge); }
   .badge[data-badge].offset::after {
     transform: rotate(6deg) translate(10%) translateY(-45px); }
   .badge[data-badge]::after {
@@ -466,7 +466,7 @@ body {
     border-radius: .2em;
     box-shadow: 1px 2px 16px 1px #333;
     color: #0073cf;
-    content: attr(data-badge);
+    content: attr(data-badge-on);
     cursor: pointer;
     letter-spacing: normal;
     padding: .2em;
